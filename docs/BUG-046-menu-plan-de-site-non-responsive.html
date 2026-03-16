@@ -1,4 +1,4 @@
-<html><head><title> 045 posts sans dates</title><meta http-equiv="Content-type" content="text/html;charset=utf-8" /><link rel="stylesheet" href="/media/style.css" media="all"></head><body class="markdown-body">
+<html><head><title> 046 menu plan de site non responsive</title><meta http-equiv="Content-type" content="text/html;charset=utf-8" /><link rel="stylesheet" href="/media/style.css" media="all"></head><body class="markdown-body">
 <a href="./">accueil</a><input type="radio" id="men" name="menu" value="site" class="cache" checked><label for="men">Menu du site</label><input type="radio" id="tdm" name="menu" value="page" class="cache" ><label for="tdm">Menu de la page</label><input type="radio" id="rien" name="menu" value="fermer" class="cache"><label for="rien">(FERMER MENU)</label>
 <div class="menu"><ul class="postCategorie"><span>BUG</span>
 <li><a href="BUG-040-nom-categorie-dans-lien-post.html"> 040 nom categorie dans lien post</a></li>
@@ -21,22 +21,23 @@
 </div>
 <div class="toc">
 <ul>
-<li><a href="#bug-045-les-posts-nont-pas-de-date">BUG-045 les posts n'ont pas de date</a></li>
+<li><a href="#bug-046-le-menu-de-plan-de-site-est-non-responsive">BUG-046 le menu de plan de site est non responsive</a></li>
 </ul>
 </div>
 
-<h2 id="bug-045-les-posts-nont-pas-de-date">BUG-045 les posts n'ont pas de date</h2>
+<h2 id="bug-046-le-menu-de-plan-de-site-est-non-responsive">BUG-046 le menu de plan de site est non responsive</h2>
 <ul>
-<li>statuts : ouvert_260315_()</li>
-<li>contexte : contrairement aux blogs classiques, les billets sont sans date</li>
-<li>événement : visualiser un billet seul et noter l'absence de date</li>
-<li>impact : mineur (très peu d'intérêt)</li>
-<li>fréquence : forte, sur chaque page</li>
-<li>détection : moyenne, encore faut-il y faire attention</li>
-<li>contournement : aucun, ou on a reperé que le billet n'était pas présent avant</li>
-<li>arbitrage : ce n'est pas une anomalie mais la question est légitime, un repère temporel est utile pour indiquer le degré de fraîcheur de l'information</li>
-<li>correctif : FCT-001 dans cette version, gérer les dates de création et modification des fichiers md et les véhiculer en référentiel pour affichage, et par configuration activer ou non cet affichage voir cet ordre de tri</li>
-<li>rex : simplicité, épure parfois trop importante</li>
-<li>cause racine : ergonomie</li>
+<li>statuts : ferme_260316_(fermé, pour l'instant ?) / ouvert_260316_() / </li>
+<li>contexte : la catégorie est présente par préfixe du nom de fichier, donc si on transforme le path en label...</li>
+<li>événement : afficher le site sur un écran réduit fait se poursuivre la liste de catagorie 1 sur la catégorie 2 qui devient illisible</li>
+<li>impact : bloquant</li>
+<li>frequence : moyenne</li>
+<li>detection : moyenne, avoir un petit écran pour le détecter au plus vite</li>
+<li>contournement : aucun</li>
+<li>arbitrage : nuit à l’image de marque et rend inaccessible des posts</li>
+<li>correctif : FIX-022 / </li>
+<li>changement : adapter la feuille de de style, déplacer la hauteur sur l'item de c haque liste (li)</li>
+<li>rex : non testé avec beaucoup de contenu</li>
+<li>cause racine : test</li>
 </ul>
 </body></html>
