@@ -1,9 +1,9 @@
-<html><head><title> 042 titre navigateur page accueil</title><meta http-equiv="Content-type" content="text/html;charset=utf-8" /><link rel="stylesheet" href="/media/style.css" media="all"></head><body class="markdown-body">
+<html><head><title> 010 mentions legales obligatoires</title><meta http-equiv="Content-type" content="text/html;charset=utf-8" /><link rel="stylesheet" href="/media/style.css" media="all"></head><body class="markdown-body">
 <a href="./">accueil</a><input type="radio" id="men" name="menu" value="site" class="cache" checked><label for="men">Menu du site</label><input type="radio" id="tdm" name="menu" value="page" class="cache" ><label for="tdm">Menu de la page</label><input type="radio" id="rien" name="menu" value="fermer" class="cache"><label for="rien">(FERMER MENU)</label>
 <div class="menu"><ul class="postCategorie"><span>BUG</span>
 <li><a href="BUG-040-nom-categorie-dans-lien-post.html"> 040 nom categorie dans lien post</a></li>
 <li><a href="BUG-041-hyperlien-md-non-transforme.html"> 041 hyperlien md non transforme</a></li>
-<li><a href="BUG-042-titre-navigateur-page-accueil.html" class="active"> 042 titre navigateur page accueil</a></li>
+<li><a href="BUG-042-titre-navigateur-page-accueil.html"> 042 titre navigateur page accueil</a></li>
 <li><a href="BUG-043-devoir-cliquer-sur-menu.html"> 043 devoir cliquer sur menu</a></li>
 <li><a href="BUG-044-le-menu-prend-trop-de-place.html"> 044 le menu prend trop de place</a></li>
 <li><a href="BUG-045-posts-sans-dates.html"> 045 posts sans dates</a></li>
@@ -11,7 +11,7 @@
 <li><a href="BUG-047-indiquer-ou-on-est-dans-le-menu.html"> 047 indiquer ou on est dans le menu</a></li>
 </ul>
 <ul class="postCategorie"><span>EB</span>
-<li><a href="EB-010-mentions-legales-obligatoires.html"> 010 mentions legales obligatoires</a></li>
+<li><a href="EB-010-mentions-legales-obligatoires.html" class="active"> 010 mentions legales obligatoires</a></li>
 <li><a href="EB-011-remonter-en-haut-de-page.html"> 011 remonter en haut de page</a></li>
 </ul>
 <ul class="postCategorie"><span>PROJET</span>
@@ -25,22 +25,31 @@
 </div>
 <div class="toc">
 <ul>
-<li><a href="#bug-042-le-titre-de-la-derniere-page-listee-en-plan-de-site-est-le-titre-navigateur-de-la-page-daccueil">BUG-042 le titre de la derniere page listée en plan de site est le titre navigateur de la page d'accueil</a></li>
+<li><a href="#eb-010-exposer-les-mentions-legales">EB-010 exposer les mentions légales</a></li>
 </ul>
 </div>
 
-<h2 id="bug-042-le-titre-de-la-derniere-page-listee-en-plan-de-site-est-le-titre-navigateur-de-la-page-daccueil">BUG-042 le titre de la derniere page listée en plan de site est le titre navigateur de la page d'accueil</h2>
+<h1 id="eb-010-exposer-les-mentions-legales">EB-010 exposer les mentions légales</h1>
 <ul>
-<li>statuts : ferme_260315_() / ouvert_260315_()</li>
-<li>contexte : l'accueil est géré à part par une page txt qui est traitée par une fonction personnalisé</li>
-<li>événement : à l'arrivée sur site ou au retoiur à l'accueil par lien de menu, le titre de navigateur est celui du dernier post listé en plan de site</li>
-<li>impact : cosmétique</li>
-<li>fréquence : forte</li>
-<li>détection : moyenne, qui regarde le titre en url à pmart les moteurs de recherche ?</li>
-<li>contournement : aucun</li>
-<li>arbitrage : la page d'accueil donne l'impression première et est donc assez importante</li>
-<li>correctif : utiliser le titre de l'application déjà mis en fichier de configuration</li>
-<li>rex : non testé avec attention, pose la question des doublons de code entre 2 fonctions de generation de fichier</li>
-<li>cause racine : confiance</li>
+<li>Besoin : les sites pro ont besoin de mentions légales, quant au particulier ce n'est pas si clair. Mais dans le doute...</li>
+<li>Statuts : enonce_20260318</li>
+<li>Solution : <ul>
+<li>présenter la page en footer</li>
+<li>ajouter un footer</li>
+<li>gérer la page en contenu normal dans le dossier de contenu</li>
+<li>exclure cette page (et d'autres éventuelles du même type) grâce à un pattern, du type "fausse catégorie" FOOTER-</li>
+<li>laisser le choix du nom de ce préfixe à exclure en configuration</li>
+</ul>
+</li>
+<li>Importance : haute</li>
+<li>Urgence : haute</li>
+<li>Difficulté : moyenne - exclusion dans l'algo, css du footer</li>
+<li>Assertions : <ul>
+<li>le fichier FOOTER est présent en page de referentiel</li>
+<li>le fichier FOOTER est absent de la page plan de site</li>
+<li>le lien vers le fichier FOOTER est visible en footer (test IHM)</li>
+<li>le lien vers le fichier FOOTER affiche au clic la page concernée (test IHM)</li>
+</ul>
+</li>
 </ul>
 </body></html>

@@ -8,7 +8,11 @@
 <li><a href="BUG-044-le-menu-prend-trop-de-place.html"> 044 le menu prend trop de place</a></li>
 <li><a href="BUG-045-posts-sans-dates.html"> 045 posts sans dates</a></li>
 <li><a href="BUG-046-menu-plan-de-site-non-responsive.html"> 046 menu plan de site non responsive</a></li>
-<li><a href="BUG-047-indiquer-ou-on-est-dans-le-menu.html"> 047 indiquer ou on est dans le menu</a></li>
+<li><a href="BUG-047-indiquer-ou-on-est-dans-le-menu.html" class="active"> 047 indiquer ou on est dans le menu</a></li>
+</ul>
+<ul class="postCategorie"><span>EB</span>
+<li><a href="EB-010-mentions-legales-obligatoires.html"> 010 mentions legales obligatoires</a></li>
+<li><a href="EB-011-remonter-en-haut-de-page.html"> 011 remonter en haut de page</a></li>
 </ul>
 <ul class="postCategorie"><span>PROJET</span>
 <li><a href="PROJET-etude-opportunite.html"> etude opportunite</a></li>
@@ -21,13 +25,13 @@
 </div>
 <div class="toc">
 <ul>
-<li><a href="#bug-047-visulaiser-la-page-en-cours-dans-le-menu">BUG-047 visulaiser la page en cours dans le menu</a></li>
+<li><a href="#bug-047-visualiser-la-page-en-cours-dans-le-menu">BUG-047 visualiser la page en cours dans le menu</a></li>
 </ul>
 </div>
 
-<h2 id="bug-047-visulaiser-la-page-en-cours-dans-le-menu">BUG-047 visulaiser la page en cours dans le menu</h2>
+<h2 id="bug-047-visualiser-la-page-en-cours-dans-le-menu">BUG-047 visualiser la page en cours dans le menu</h2>
 <ul>
-<li>statuts : ouvert_260316_() / </li>
+<li>statuts : ouvert_260316_() / ferme_260318_(peu propre et consommateur de ressources)</li>
 <li>contexte : le menu est immuable, la page en cours n'est pas indiquée, contrairement aux standards du web</li>
 <li>événement : dans le menu, on peut recliquer sur la page où on est sans le savoir, car notre position n'est pas indiquée</li>
 <li>impact : ergonomie</li>
@@ -36,8 +40,14 @@
 <li>contournement : le nom de l'url est explicite pour indiquer notre position</li>
 <li>arbitrage : nuit à l’image de marque et rend inaccessible des posts</li>
 <li>correctif : FIX-023 / </li>
-<li>changement : adapter la feuille de de style</li>
-<li>rex : pas vu</li>
+<li>changement : <ul>
+<li>adapter la feuille de style</li>
+<li>appliquer active à la page en cours</li>
+<li>se refuser la facilité d'une solution js, js en dernier recours, philosophie de l'applicatif</li>
+<li>un peu quick and dirty : benchmarker un jour avec remplacement par sub ou autre </li>
+</ul>
+</li>
+<li>rex : pas vu, menu commun généré avant la boucle de post à déplacer dans la boucle (mais redondance en consommation)</li>
 <li>cause racine : test</li>
 </ul>
 </body></html>
