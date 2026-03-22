@@ -1,4 +1,4 @@
-<html><head><title> 011 remonter en haut de page</title><meta http-equiv="Content-type" content="text/html;charset=utf-8" /><link rel="stylesheet" href="/media/style.css" media="all"></head><body class="markdown-body">
+<html><head><title> 014 gerer les images de posts</title><meta http-equiv="Content-type" content="text/html;charset=utf-8" /><link rel="stylesheet" href="/media/style.css" media="all"></head><body class="markdown-body">
 <a href="./">accueil</a><input type="radio" id="men" name="menu" value="site" class="cache" checked><label for="men">Menu du site</label><input type="radio" id="tdm" name="menu" value="page" class="cache" ><label for="tdm">Menu de la page</label><input type="radio" id="rien" name="menu" value="fermer" class="cache"><label for="rien">(FERMER MENU)</label>
 <div class="menu"><ul class="postCategorie"><span>BUG</span>
 <li><a href="BUG-040-nom-categorie-dans-lien-post.html"> 040 nom categorie dans lien post</a></li>
@@ -14,10 +14,10 @@
 </ul>
 <ul class="postCategorie"><span>EB</span>
 <li><a href="EB-010-mentions-legales-obligatoires.html"> 010 mentions legales obligatoires</a></li>
-<li><a href="EB-011-remonter-en-haut-de-page.html" class="active"> 011 remonter en haut de page</a></li>
+<li><a href="EB-011-remonter-en-haut-de-page.html"> 011 remonter en haut de page</a></li>
 <li><a href="EB-012-gerer-les-dates-de-posts.html"> 012 gerer les dates de posts</a></li>
 <li><a href="EB-013-exposer-des-pages-categorie.html"> 013 exposer des pages categorie</a></li>
-<li><a href="EB-014-gerer-les-images-de-posts.html"> 014 gerer les images de posts</a></li>
+<li><a href="EB-014-gerer-les-images-de-posts.html" class="active"> 014 gerer les images de posts</a></li>
 <li><a href="EB-015-gerer-les images-de-categorie.html"> 015 gerer les images de categorie</a></li>
 <li><a href="EB-016-compresser-les-fichiers-affiches.html"> 016 compresser les fichiers affiches</a></li>
 </ul>
@@ -32,21 +32,27 @@
 </div></header>
 <div class="toc">
 <ul>
-<li><a href="#eb-011-remonter-en-haut-de-page">EB-011 remonter en haut de page</a></li>
+<li><a href="#eb-014-gerer-les-images-de-post">EB-014 gérer les images de post</a></li>
 </ul>
 </div>
 
-<article><h1 id="eb-011-remonter-en-haut-de-page">EB-011 remonter en haut de page</h1>
+<article><h1 id="eb-014-gerer-les-images-de-post">EB-014 gérer les images de post</h1>
 <ul>
-<li>Besoin : en cas de contenu important dépassant N fois la taille d'écran, remonter "facilement" en haut de page</li>
-<li>Statuts : enonce_20260318</li>
-<li>Solution : élément visuel  en css de position fixe en bas de page dans une gouttière (espace vertical libre tout le long) à côté du contenu</li>
-<li>Importance : basse - contournement du raccourci clavier de remontée en haut de page</li>
-<li>Urgence : basse</li>
-<li>Difficulté : moyenne - effet de bord en responsive ?</li>
+<li>Besoin : pour illustrer leurs propos, les post comportent des images</li>
+<li>Statuts : enonce_20260322</li>
+<li>Solution : gérer les images liées aux posts<ul>
+<li>En dossier "Content" (ou Content/Images), les images strictement nommées comme leur post d'appartenance et numérotées en préfixe de type -1... seront identifiées comme liées au post par le système.</li>
+<li>Les images seront affichées dans le rendu html du post à l'emplacement où elles étaient insérées en markdown.</li>
+<li>La première image (selon la numérotation) sera gérée en vignette de post (pour la page listing de posts dans une catégorie).</li>
+</ul>
+</li>
+<li>Importance : haute - un site sans image est peu attractif</li>
+<li>Urgence : basse - le positionnment du site actuel et de la version STANDARD peut expliquer uen absence d'image</li>
+<li>Difficulté : moyenne - script d'optimisation et réduction d'image (pour la vignette)</li>
 <li>Assertions :<ul>
-<li>le lien est présent en bas de page (test IHM)</li>
-<li>au clic sur le lien présent, le lien amène en haut de page (test IHM)</li>
+<li>Toutes les images d'un post sont présentes dans le post.</li>
+<li>En page catégorie, la vignette est l'image 1.</li>
+<li>En page catégorie, la vignette est de taille réduite comparée à l'originale (si l'originale était supérieure à la taille de l'encart attendu).</li>
 </ul>
 </li>
 </ul></article>

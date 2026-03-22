@@ -1,4 +1,4 @@
-<html><head><title> 011 remonter en haut de page</title><meta http-equiv="Content-type" content="text/html;charset=utf-8" /><link rel="stylesheet" href="/media/style.css" media="all"></head><body class="markdown-body">
+<html><head><title> 013 exposer des pages categorie</title><meta http-equiv="Content-type" content="text/html;charset=utf-8" /><link rel="stylesheet" href="/media/style.css" media="all"></head><body class="markdown-body">
 <a href="./">accueil</a><input type="radio" id="men" name="menu" value="site" class="cache" checked><label for="men">Menu du site</label><input type="radio" id="tdm" name="menu" value="page" class="cache" ><label for="tdm">Menu de la page</label><input type="radio" id="rien" name="menu" value="fermer" class="cache"><label for="rien">(FERMER MENU)</label>
 <div class="menu"><ul class="postCategorie"><span>BUG</span>
 <li><a href="BUG-040-nom-categorie-dans-lien-post.html"> 040 nom categorie dans lien post</a></li>
@@ -14,9 +14,9 @@
 </ul>
 <ul class="postCategorie"><span>EB</span>
 <li><a href="EB-010-mentions-legales-obligatoires.html"> 010 mentions legales obligatoires</a></li>
-<li><a href="EB-011-remonter-en-haut-de-page.html" class="active"> 011 remonter en haut de page</a></li>
+<li><a href="EB-011-remonter-en-haut-de-page.html"> 011 remonter en haut de page</a></li>
 <li><a href="EB-012-gerer-les-dates-de-posts.html"> 012 gerer les dates de posts</a></li>
-<li><a href="EB-013-exposer-des-pages-categorie.html"> 013 exposer des pages categorie</a></li>
+<li><a href="EB-013-exposer-des-pages-categorie.html" class="active"> 013 exposer des pages categorie</a></li>
 <li><a href="EB-014-gerer-les-images-de-posts.html"> 014 gerer les images de posts</a></li>
 <li><a href="EB-015-gerer-les images-de-categorie.html"> 015 gerer les images de categorie</a></li>
 <li><a href="EB-016-compresser-les-fichiers-affiches.html"> 016 compresser les fichiers affiches</a></li>
@@ -32,21 +32,31 @@
 </div></header>
 <div class="toc">
 <ul>
-<li><a href="#eb-011-remonter-en-haut-de-page">EB-011 remonter en haut de page</a></li>
+<li><a href="#eb-012-exposer-des-pages-de-listing-categorie">EB-012 exposer des pages de listing catégorie</a></li>
 </ul>
 </div>
 
-<article><h1 id="eb-011-remonter-en-haut-de-page">EB-011 remonter en haut de page</h1>
+<article><h1 id="eb-012-exposer-des-pages-de-listing-categorie">EB-012 exposer des pages de listing catégorie</h1>
 <ul>
-<li>Besoin : en cas de contenu important dépassant N fois la taille d'écran, remonter "facilement" en haut de page</li>
-<li>Statuts : enonce_20260318</li>
-<li>Solution : élément visuel  en css de position fixe en bas de page dans une gouttière (espace vertical libre tout le long) à côté du contenu</li>
-<li>Importance : basse - contournement du raccourci clavier de remontée en haut de page</li>
-<li>Urgence : basse</li>
-<li>Difficulté : moyenne - effet de bord en responsive ?</li>
+<li>Besoin : disposer de pages par catégorie, le problème se pose(ra) avec un nombre élevé de posts par catégorie rendant l'affichage en menu de header pénible aux yeux</li>
+<li>Statuts : enonce_20260322</li>
+<li>Solution : se conformer aux standards du marché en offrant des pages catégorie<ul>
+<li>en menu de header, avoir un lien sur la catégorie amenant à la page catégorie</li>
+<li>en menu header (lié à l'EB-012 de gestion des dates), afficher juste les unièmes posts les plus récents (nombre gérable en configuration)</li>
+<li>présenter des pages catégories</li>
+<li>en configuration, ajouter une description possible de chaque catégorie (un peu intrusif, limite pour la philosophie de la version STANDARD, gérer un contenu éditorial propre au site) / cette configuration pourra servir à choisisir le template type du post dans une version plus évoluée</li>
+<li>réaliser une pagination des posts (la priorité de la fonctionnalité sera liée au volume de post)</li>
+<li>lié à la question du volume, afficher devant la catégorie le nombre présent (quel service réellement rendu ?)</li>
+</ul>
+</li>
+<li>Difficulté : moyenne - rajouter des fonctions d'afficcahge dans la version STANDARD sans template est un peu lourd</li>
 <li>Assertions :<ul>
-<li>le lien est présent en bas de page (test IHM)</li>
-<li>au clic sur le lien présent, le lien amène en haut de page (test IHM)</li>
+<li>Le nom de la catégorie du header comporte un lien vers la page de sa catégorie.</li>
+<li>La page de la catégorie affiche une description lorsque la description est présente en configuration.</li>
+<li>La page de la catégorie n'affiche aucune description lorsque la description est absente en configuration.</li>
+<li>Proche du nom de catégorie en header, figure le nombre de posts qui correspond au nombre de posts publiés.</li>
+<li>Proche du nom de catégorie en page catégorie, figure le nombre de posts qui correspond au nombre de posts publiés.</li>
+<li>Une catégorie sans posts, présente en page de configuration, avec ou non sa description, est absente en menu et absente en page catégorie. </li>
 </ul>
 </li>
 </ul></article>

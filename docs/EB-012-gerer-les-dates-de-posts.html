@@ -1,4 +1,4 @@
-<html><head><title> 011 remonter en haut de page</title><meta http-equiv="Content-type" content="text/html;charset=utf-8" /><link rel="stylesheet" href="/media/style.css" media="all"></head><body class="markdown-body">
+<html><head><title> 012 gerer les dates de posts</title><meta http-equiv="Content-type" content="text/html;charset=utf-8" /><link rel="stylesheet" href="/media/style.css" media="all"></head><body class="markdown-body">
 <a href="./">accueil</a><input type="radio" id="men" name="menu" value="site" class="cache" checked><label for="men">Menu du site</label><input type="radio" id="tdm" name="menu" value="page" class="cache" ><label for="tdm">Menu de la page</label><input type="radio" id="rien" name="menu" value="fermer" class="cache"><label for="rien">(FERMER MENU)</label>
 <div class="menu"><ul class="postCategorie"><span>BUG</span>
 <li><a href="BUG-040-nom-categorie-dans-lien-post.html"> 040 nom categorie dans lien post</a></li>
@@ -14,8 +14,8 @@
 </ul>
 <ul class="postCategorie"><span>EB</span>
 <li><a href="EB-010-mentions-legales-obligatoires.html"> 010 mentions legales obligatoires</a></li>
-<li><a href="EB-011-remonter-en-haut-de-page.html" class="active"> 011 remonter en haut de page</a></li>
-<li><a href="EB-012-gerer-les-dates-de-posts.html"> 012 gerer les dates de posts</a></li>
+<li><a href="EB-011-remonter-en-haut-de-page.html"> 011 remonter en haut de page</a></li>
+<li><a href="EB-012-gerer-les-dates-de-posts.html" class="active"> 012 gerer les dates de posts</a></li>
 <li><a href="EB-013-exposer-des-pages-categorie.html"> 013 exposer des pages categorie</a></li>
 <li><a href="EB-014-gerer-les-images-de-posts.html"> 014 gerer les images de posts</a></li>
 <li><a href="EB-015-gerer-les images-de-categorie.html"> 015 gerer les images de categorie</a></li>
@@ -32,21 +32,38 @@
 </div></header>
 <div class="toc">
 <ul>
-<li><a href="#eb-011-remonter-en-haut-de-page">EB-011 remonter en haut de page</a></li>
+<li><a href="#eb-012-gerer-les-dates-de-post">EB-012 gérer les dates de post</a></li>
 </ul>
 </div>
 
-<article><h1 id="eb-011-remonter-en-haut-de-page">EB-011 remonter en haut de page</h1>
+<article><h1 id="eb-012-gerer-les-dates-de-post">EB-012 gérer les dates de post</h1>
 <ul>
-<li>Besoin : en cas de contenu important dépassant N fois la taille d'écran, remonter "facilement" en haut de page</li>
-<li>Statuts : enonce_20260318</li>
-<li>Solution : élément visuel  en css de position fixe en bas de page dans une gouttière (espace vertical libre tout le long) à côté du contenu</li>
-<li>Importance : basse - contournement du raccourci clavier de remontée en haut de page</li>
+<li>Besoin : la date de publication ou réactualisation d'un post est un indicateur de la fraîcheur de l'information et une preuve d'activité éditoriale</li>
+<li>Statuts : enonce_20260322</li>
+<li>Solution : exploiter les dates de création et modification de fichier (fichier source markdown)<ul>
+<li>récupérer date de création et modification en référentiel de page,</li>
+<li>afficher proche du titre de chaque post ses dates de :<ul>
+<li>publication </li>
+<li>et mise à jour,</li>
+</ul>
+</li>
+<li>ordonner la liste des posts par ordre antéchronologique (date la plus récente, d'actualisation ~~si elle existe - existe toujours -, sinon de création~~)</li>
+<li>en fin de post (fonctionnalité moins prioritaire), présenter deux liens (pour une même catégorie) :<ul>
+<li>post plus récent à gauche,</li>
+<li>post plus ancien à droite,</li>
+<li>et si un des deux cas n'existe pas, signifier ce rien (mode encore à définir).</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Importance : basse - nombre de sites de référence n'ont pas de dates (mais cela me gêne un peu)</li>
 <li>Urgence : basse</li>
-<li>Difficulté : moyenne - effet de bord en responsive ?</li>
+<li>Difficulté : basse - ces metadata de fichiers sont accessibles en python</li>
 <li>Assertions :<ul>
-<li>le lien est présent en bas de page (test IHM)</li>
-<li>au clic sur le lien présent, le lien amène en haut de page (test IHM)</li>
+<li>les posts les plus récents (en date d'actualisation) sont devant les posts les plus anciens (en date d'actualisation)</li>
+<li>un post en création récente "mardi" est derrière un post de création plus ancienne "lundi" mais d'actualisation plus récente "mercredi"</li>
+<li>les informations de dates de publication et d'actualisation figurent sur chaque post</li>
+<li>les informations de dates de publication et d'actualisation figurent proche du titre</li>
 </ul>
 </li>
 </ul></article>
