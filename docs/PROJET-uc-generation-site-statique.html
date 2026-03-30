@@ -1,0 +1,105 @@
+<html><head><title>uc generation site statique</title><meta http-equiv="Content-type" content="text/html;charset=utf-8" /><link rel="stylesheet" href="/media/style.css" media="all"></head><body class="markdown-body">
+<a href="./">accueil</a><input type="radio" id="men" name="menu" value="site" class="cache" checked><label for="men">Menu du site</label><input type="radio" id="tdm" name="menu" value="page" class="cache" ><label for="tdm">Menu de la page</label><input type="radio" id="rien" name="menu" value="fermer" class="cache"><label for="rien">(FERMER MENU)</label>
+<div class="menu"><ul class="postCategorie" id=BUG><span title=BUG>BUG</span>
+<li><a href="BUG-040-nom-categorie-dans-lien-post.html">040 nom categorie dans lien post</a></li>
+<li><a href="BUG-041-hyperlien-md-non-transforme.html">041 hyperlien md non transforme</a></li>
+<li><a href="BUG-042-titre-navigateur-page-accueil.html">042 titre navigateur page accueil</a></li>
+<li><a href="BUG-043-devoir-cliquer-sur-menu.html">043 devoir cliquer sur menu</a></li>
+<li><a href="BUG-044-le-menu-prend-trop-de-place.html">044 le menu prend trop de place</a></li>
+<li><a href="BUG-045-posts-sans-dates.html">045 posts sans dates</a></li>
+<li><a href="BUG-046-menu-plan-de-site-non-responsive.html">046 menu plan de site non responsive</a></li>
+<li><a href="BUG-047-indiquer-ou-on-est-dans-le-menu.html">047 indiquer ou on est dans le menu</a></li>
+<li><a href="BUG-048-interpreter-le-markdown-de-raturage.html">048 interpreter le markdown de raturage</a></li>
+<li><a href="BUG-049-la-numeroration-de-second-niveau-est-en-lettres.html">049 la numeroration de second niveau est en lettres</a></li>
+<li><a href="BUG-050-le-label-de-lien-comporte-un-espace-au-debut.html">050 le label de lien comporte un espace au debut</a></li>
+<li><a href="BUG-051-espace-nom-fichier-markdown.html">051 espace nom fichier markdown</a></li>
+</ul>
+<ul class="postCategorie" id=EB><span title=EB>EB</span>
+<li><a href="EB-010-mentions-legales-obligatoires.html">010 mentions legales obligatoires</a></li>
+<li><a href="EB-011-remonter-en-haut-de-page.html">011 remonter en haut de page</a></li>
+<li><a href="EB-012-gerer-les-dates-de-posts.html">012 gerer les dates de posts</a></li>
+<li><a href="EB-013-exposer-des-pages-categorie.html">013 exposer des pages categorie</a></li>
+<li><a href="EB-014-gerer-les-images-de-posts.html">014 gerer les images de posts</a></li>
+<li><a href="EB-015-gerer-les-images-de-categorie.html">015 gerer les images de categorie</a></li>
+<li><a href="EB-016-compresser-les-fichiers-affiches.html">016 compresser les fichiers affiches</a></li>
+</ul>
+<ul class="postCategorie" id=PROJET><span title=PROJET>PROJET</span>
+<li><a href="PROJET-etude-opportunite.html">etude opportunite</a></li>
+<li><a href="PROJET-fonctionnalites.html">fonctionnalites</a></li>
+<li><a href="PROJET-uc-generation-site-statique.html" class="active">uc generation site statique</a></li>
+<li><a href="PROJET-un-produit-par-version.html">un produit par version</a></li>
+<li><a href="PROJET-versioning.html">versioning</a></li>
+<li><a href="PROJET-versions-editeur.html">versions editeur</a></li>
+<li><a href="PROJET-visions-des-produits.html">visions des produits</a></li>
+</ul>
+</div></header>
+<div class="toc">
+<ul>
+<li><a href="#cas-dutilisation-textuel-generation-du-site-statique">Cas d'utilisation textuel : génération du site statique</a><ul>
+<li><a href="#scenario-nominal">Scenario nominal:</a></li>
+<li><a href="#variantes">Variantes :</a></li>
+<li><a href="#extensions">Extensions :</a></li>
+</ul>
+</li>
+</ul>
+</div>
+
+<article><h1 id="cas-dutilisation-textuel-generation-du-site-statique">Cas d'utilisation textuel : génération du site statique</h1>
+<p>Acteur principal : Le système<br />
+Acteur(s) secondair(es) : Le développeur(A)  </p>
+<p>Portée : site statique en local<br />
+Contexte d'utilisation : Le développeur veut générer un site statique.<br />
+Préconditions :  </p>
+<ul>
+<li>Repo du code source récupéré, </li>
+<li>dossier de contenu disponible,</li>
+<li>fichier de configuration personnalisé, </li>
+<li>développeur connecté à la console.  </li>
+</ul>
+<p>Déclencheur : Le développeur lance la commande de génération du site.<br />
+Fréquence : à chaque modification de contenu markdown que souhaite visualiser ou embarquer le dévelopeur, le système recrée la totalité du site statique.<br />
+Garanties en cas de succès : Le développeur navigue en local sur le site statique.<br />
+Garanties minimales (en cas d'échec) : Le développeur voit le programme s'arrêter sur un message d'erreur explicatif.   </p>
+<h2 id="scenario-nominal">Scenario  nominal:</h2>
+<ol>
+<li>Le développeur lance la commande de génération de site statique.</li>
+<li>Le système récupère la configuration et la liste les fichiers markdowns.</li>
+<li>Le système crée un référentiel de pages complet enrichi.</li>
+<li>Le système prépare l'affichage html des éléments de menu.  </li>
+<li>Le système capture le contenu de chaque markdown, l'enrichit et le transforme en html.</li>
+<li>Le système assemble l'ensemble des éléments html en un seul contenu html.</li>
+<li>Le système crée chaque fichier html dans le dossier du site statique et y déplace les éléments de style.</li>
+<li>Le système lance un serveur de debug et ouvre le site statique dans le navigateur.</li>
+<li>Le développeur visualise son contenu et peut naviguer dans le site.</li>
+</ol>
+<h2 id="variantes">Variantes :</h2>
+<p>4.A  Si le système ne trouve aucune page pour alimenter les liens de pied de page,</p>
+<ul>
+<li>les liens de pied de page ne sont pas retournés,</li>
+<li>aucune erreur n'est signalée au développeur,</li>
+<li>le traitement suit son cours.</li>
+</ul>
+<h2 id="extensions">Extensions :</h2>
+<p>*A  Le système indique en console les étapes et les éventuelles erreurs.  </p>
+<p>2.A Si le chemin du répertoire de contenu markdown n'est pas renseigné,</p>
+<ul>
+<li>une erreur signale l'incident</li>
+<li>et le traitement s'arrête.  </li>
+</ul>
+<p>2.B  Si le chemin du répertoire de contenu markdown n'est pas trouvé sur l'espace disque,  </p>
+<ul>
+<li>une erreur signale l'incident</li>
+<li>et le traitement s'arrête.  </li>
+</ul>
+<p>2.C Si le répertoire renseigné et trouvé est sans contenu de type markdown,</p>
+<ul>
+<li>une erreur signale l'incident</li>
+<li>et le traitement s'arrête.</li>
+</ul>
+<p><em>Notes :</em><br />
+- A/ L'utilisateur endosse le rôle de développeur de par sa capacité à récupérer un repo git, à modifier une configuration, et à lancer des lignes de commande en console de type linux.  </p></article>
+<footer></footer><div id="finish"><p class="infos">généré depuis <a href="https://github.com/dev4use/marss" class="trademark">Marss ST-0.2.0</a> </p><ul class="postFooter">
+<li><a href="FOOTER-ligne-editoriale.html">ligne editoriale</a></li>
+<li><a href="FOOTER-mentions-legales.html">mentions legales</a></li>
+</ul>
+</div></body></html>

@@ -1,4 +1,4 @@
-<html><head><title>versioning</title><meta http-equiv="Content-type" content="text/html;charset=utf-8" /><link rel="stylesheet" href="/media/style.css" media="all"></head><body class="markdown-body">
+<html><head><title>050 le label de lien comporte un espace au debut</title><meta http-equiv="Content-type" content="text/html;charset=utf-8" /><link rel="stylesheet" href="/media/style.css" media="all"></head><body class="markdown-body">
 <a href="./">accueil</a><input type="radio" id="men" name="menu" value="site" class="cache" checked><label for="men">Menu du site</label><input type="radio" id="tdm" name="menu" value="page" class="cache" ><label for="tdm">Menu de la page</label><input type="radio" id="rien" name="menu" value="fermer" class="cache"><label for="rien">(FERMER MENU)</label>
 <div class="menu"><ul class="postCategorie" id=BUG><span title=BUG>BUG</span>
 <li><a href="BUG-040-nom-categorie-dans-lien-post.html">040 nom categorie dans lien post</a></li>
@@ -11,7 +11,7 @@
 <li><a href="BUG-047-indiquer-ou-on-est-dans-le-menu.html">047 indiquer ou on est dans le menu</a></li>
 <li><a href="BUG-048-interpreter-le-markdown-de-raturage.html">048 interpreter le markdown de raturage</a></li>
 <li><a href="BUG-049-la-numeroration-de-second-niveau-est-en-lettres.html">049 la numeroration de second niveau est en lettres</a></li>
-<li><a href="BUG-050-le-label-de-lien-comporte-un-espace-au-debut.html">050 le label de lien comporte un espace au debut</a></li>
+<li><a href="BUG-050-le-label-de-lien-comporte-un-espace-au-debut.html" class="active">050 le label de lien comporte un espace au debut</a></li>
 <li><a href="BUG-051-espace-nom-fichier-markdown.html">051 espace nom fichier markdown</a></li>
 </ul>
 <ul class="postCategorie" id=EB><span title=EB>EB</span>
@@ -28,51 +28,33 @@
 <li><a href="PROJET-fonctionnalites.html">fonctionnalites</a></li>
 <li><a href="PROJET-uc-generation-site-statique.html">uc generation site statique</a></li>
 <li><a href="PROJET-un-produit-par-version.html">un produit par version</a></li>
-<li><a href="PROJET-versioning.html" class="active">versioning</a></li>
+<li><a href="PROJET-versioning.html">versioning</a></li>
 <li><a href="PROJET-versions-editeur.html">versions editeur</a></li>
 <li><a href="PROJET-visions-des-produits.html">visions des produits</a></li>
 </ul>
 </div></header>
 <div class="toc">
 <ul>
-<li><a href="#versionning-logiciel">Versionning logiciel</a><ul>
-<li><a href="#gestionnaire-de-code-source">Gestionnaire de code source</a></li>
-<li><a href="#structure-de-fichiers">Structure de fichiers</a></li>
-</ul>
-</li>
+<li><a href="#bug-050-le-label-de-lien-vers-post-debute-par-un-espace">BUG-050 le label de lien vers post débute par un espace</a></li>
 </ul>
 </div>
 
-<article><h1 id="versionning-logiciel">Versionning logiciel</h1>
-<p>Pour maintenir le cycle de vie de plusieurs versions d'un même produit en parallèle, il faut être organisé.</p>
-<h2 id="gestionnaire-de-code-source">Gestionnaire de code source</h2>
-<p>Ces niveaux de produit peuvent se matérialiser par des préfixes de tags de version :</p>
+<article><h2 id="bug-050-le-label-de-lien-vers-post-debute-par-un-espace">BUG-050 le label de lien vers post débute par un espace</h2>
 <ul>
-<li>ST- pour STANDRD</li>
-<li>PR- pour PREMIUM</li>
-<li>OP- pour OPTIMUM</li>
-</ul>
-<p>Ces versions appliqueront le système <a href="https://semver.org/lang/fr/">SEM</a> : MAJEURE.MINEURE.CORRECTIF.
- Le préfixe cité plus haut sera apposé. <br />
- A noter que la recommandation est de ne pas gérer les préfixes de zéro, soit 9 vers 10 et non 09 vers 10 (ce qui peut gêner le classement alphabétique).<br />
- Une fois approprié, ce système de notation se traduit par :</p>
-<ol>
-<li>version complète et cohérente pour son niveau d'ambition,</li>
-<li>nouveauté fonctionnelle,</li>
-<li>correctif.</li>
-</ol>
-<h2 id="structure-de-fichiers">Structure de fichiers</h2>
-<p>Chaque version du produit pourra être maintenue conjointement par un système de fichiers du type :</p>
-<ul>
-<li>Code :<ul>
-<li>workflow : squelette de l'application, ensemble ordonné des traitements, tel un plan batch.</li>
-<li>common : code source partagé par toutes les versions</li>
-<li>interface : méthodes utilisées par tous, en format plus ou moins dégradé jusqu'à être à vide.</li>
-<li>standard : fonctions propres à cette version</li>
-<li>premium : fonctions propres à cette version</li>
-<li>optimum : fonctions propres à cette version</li>
+<li>statuts : ferme_260325_() / ouvert_260325_()</li>
+<li>contexte : étape par étape, les données sont transformées, mais pas forcément vérifiées en pas à pas</li>
+<li>événement : la création du référentiel html détecte les catégories, mais ce faisant, laisse un blanc en remplacement dans le label</li>
+<li>impact : pratiquement invisible</li>
+<li>fréquence : haute</li>
+<li>detection : difficile, voir le code source</li>
+<li>contournement : inutile, qui s'en rend compte ?</li>
+<li>arbitrage : détecté par le test et corrigé aussitôt (typiquement un incident non communiqué qui passe en action de debug)</li>
+<li>correctif : oui</li>
+<li>changement :<ul>
+<li>ajouter un .strip() au label</li>
 </ul>
 </li>
+<li>cause racine : ni test automatique ni code source scruté à la loupe</li>
 </ul></article>
 <footer></footer><div id="finish"><p class="infos">généré depuis <a href="https://github.com/dev4use/marss" class="trademark">Marss ST-0.2.0</a> </p><ul class="postFooter">
 <li><a href="FOOTER-ligne-editoriale.html">ligne editoriale</a></li>

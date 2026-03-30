@@ -1,0 +1,22 @@
+# EB-012 gérer les dates de post
+
+- Besoin : la date de publication ou réactualisation d'un post est un indicateur de la fraîcheur de l'information et une preuve d'activité éditoriale
+- Statuts : enonce_20260322
+- Solution : exploiter les dates de création et modification de fichier (fichier source markdown)
+    - récupérer date de création et modification en référentiel de page,
+    - afficher proche du titre de chaque post ses dates de :
+        - publication 
+        - et mise à jour,
+    - ordonner la liste des posts par ordre antéchronologique (date la plus récente, d'actualisation ~~si elle existe - existe toujours -, sinon de création~~)
+    - en fin de post (fonctionnalité moins prioritaire), présenter deux liens (pour une même catégorie) :
+        - post plus récent à gauche,
+        - post plus ancien à droite,
+        - et si un des deux cas n'existe pas, signifier ce rien (mode encore à définir).
+- Importance : basse - nombre de sites de référence n'ont pas de dates (mais cela me gêne un peu)
+- Urgence : basse
+- Difficulté : basse - ces metadata de fichiers sont accessibles en python
+- Assertions :
+    - les posts les plus récents (en date d'actualisation) sont devant les posts les plus anciens (en date d'actualisation)
+    - un post en création récente "mardi" est derrière un post de création plus ancienne "lundi" mais d'actualisation plus récente "mercredi"
+    - les informations de dates de publication et d'actualisation figurent sur chaque post
+    - les informations de dates de publication et d'actualisation figurent proche du titre
