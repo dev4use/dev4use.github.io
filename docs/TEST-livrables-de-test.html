@@ -1,0 +1,120 @@
+<html><head><title>livrables de test</title><meta http-equiv="Content-type" content="text/html;charset=utf-8" /><link rel="stylesheet" href="/media/style.css" media="all"></head><body class="markdown-body">
+<a href="./">accueil</a><input type="radio" id="men" name="menu" value="site" class="cache" checked><label for="men">Menu du site</label><input type="radio" id="tdm" name="menu" value="page" class="cache" ><label for="tdm">Menu de la page</label><input type="radio" id="rien" name="menu" value="fermer" class="cache"><label for="rien">(FERMER MENU)</label>
+<div class="menu"><ul class="postCategorie" id=BUG><span title=BUG>BUG</span>
+<li><a href="BUG-040-nom-categorie-dans-lien-post.html">040 nom categorie dans lien post</a></li>
+<li><a href="BUG-041-hyperlien-md-non-transforme.html">041 hyperlien md non transforme</a></li>
+<li><a href="BUG-042-titre-navigateur-page-accueil.html">042 titre navigateur page accueil</a></li>
+<li><a href="BUG-043-devoir-cliquer-sur-menu.html">043 devoir cliquer sur menu</a></li>
+<li><a href="BUG-044-le-menu-prend-trop-de-place.html">044 le menu prend trop de place</a></li>
+<li><a href="BUG-045-posts-sans-dates.html">045 posts sans dates</a></li>
+<li><a href="BUG-046-menu-plan-de-site-non-responsive.html">046 menu plan de site non responsive</a></li>
+<li><a href="BUG-047-indiquer-ou-on-est-dans-le-menu.html">047 indiquer ou on est dans le menu</a></li>
+<li><a href="BUG-048-interpreter-le-markdown-de-raturage.html">048 interpreter le markdown de raturage</a></li>
+<li><a href="BUG-049-la-numerotation-de-second-niveau-est-en-lettres.html">049 la numerotation de second niveau est en lettres</a></li>
+<li><a href="BUG-050-le-label-de-lien-comporte-un-espace-au-debut.html">050 le label de lien comporte un espace au debut</a></li>
+<li><a href="BUG-051-espace-nom-fichier-markdown.html">051 espace nom fichier markdown</a></li>
+</ul>
+<ul class="postCategorie" id=EB><span title=EB>EB</span>
+<li><a href="EB-010-mentions-legales-obligatoires.html">010 mentions legales obligatoires</a></li>
+<li><a href="EB-011-remonter-en-haut-de-page.html">011 remonter en haut de page</a></li>
+<li><a href="EB-012-gerer-les-dates-de-posts.html">012 gerer les dates de posts</a></li>
+<li><a href="EB-013-exposer-des-pages-categorie.html">013 exposer des pages categorie</a></li>
+<li><a href="EB-014-gerer-les-images-de-posts.html">014 gerer les images de posts</a></li>
+<li><a href="EB-015-gerer-les-images-de-categorie.html">015 gerer les images de categorie</a></li>
+<li><a href="EB-016-compresser-les-fichiers-affiches.html">016 compresser les fichiers affiches</a></li>
+<li><a href="EB-017-plan-de-site-cible.html">017 plan de site cible</a></li>
+</ul>
+<ul class="postCategorie" id=PROJET><span title=PROJET>PROJET</span>
+<li><a href="PROJET-etude-opportunite.html">etude opportunite</a></li>
+<li><a href="PROJET-fonctionnalites.html">fonctionnalites</a></li>
+<li><a href="PROJET-uc-generation-site-statique.html">uc generation site statique</a></li>
+<li><a href="PROJET-un-produit-par-version.html">un produit par version</a></li>
+<li><a href="PROJET-versioning.html">versioning</a></li>
+<li><a href="PROJET-versions-editeur.html">versions editeur</a></li>
+<li><a href="PROJET-visions-des-produits.html">visions des produits</a></li>
+</ul>
+<ul class="postCategorie" id=TEST><span title=TEST>TEST</span>
+<li><a href="TEST-bilan-de-test.html">bilan de test</a></li>
+<li><a href="TEST-couverture-de-code.html">couverture de code</a></li>
+<li><a href="TEST-livrables-de-test.html" class="active">livrables de test</a></li>
+<li><a href="TEST-politique-de-test.html">politique de test</a></li>
+</ul>
+</div></header>
+<div class="toc">
+<ul>
+<li><a href="#livrables-de-test">Livrables de test</a><ul>
+<li><a href="#contexte-de-la-mission-marss">Contexte de la mission Marss</a></li>
+<li><a href="#contexte-elargi">Contexte élargi</a><ul>
+<li><a href="#livrable-exploitable">Livrable exploitable</a></li>
+<li><a href="#livrable-officiel">Livrable officiel</a></li>
+<li><a href="#livrable-exploite">Livrable exploité</a></li>
+</ul>
+</li>
+<li><a href="#liste-des-livrables">Liste des livrables</a></li>
+</ul>
+</li>
+</ul>
+</div>
+
+<article><h1 id="livrables-de-test">Livrables de test</h1>
+<p>J'hésitais sur le terme :</p>
+<ul>
+<li>artefact - trop savant - ,</li>
+<li><a href="https://glossary.istqb.org/fr_FR/search?term=testware&amp;exact_matches_first=true">testware ISTQB</a> - encore plus savant - ,</li>
+<li>documentation - prêtant à confusion - .  </li>
+</ul>
+<p>Finalement, le terme de "livrable" pour tous les éléments produits par <strong>le processus de test</strong> semble plus approprié. <br />
+Pris au pied de la lettre, ce terme signifie : </p>
+<blockquote>
+<p>(dé)livrable produit par le test.  </p>
+</blockquote>
+<h2 id="contexte-de-la-mission-marss">Contexte de la mission Marss</h2>
+<p>Dans le contexte projet <a href="https://github.com/dev4use/marss" class="trademark">Marss</a>, je livre l'ensemble des éléments de test :</p>
+<ul>
+<li>les outils de test (requirements.txt),</li>
+<li>les scripts de test automatique et leurs jeux de donnés,</li>
+<li>les rapports de tests automatique,</li>
+<li>les compte-rendus qualité (convention de nommage, couverture de code, quantité de code),  </li>
+<li>les choix stratégiques liés aux tests.  </li>
+</ul>
+<h2 id="contexte-elargi">Contexte élargi</h2>
+<p>Le terme retenu, livrable, peut avoir plusieures connotations.  </p>
+<h3 id="livrable-exploitable">Livrable exploitable</h3>
+<p>Bien-sûr, tout n'est pas facilement montrable, exploitable, mais</p>
+<blockquote>
+<p>tout devrait être (dé)livrable à qui le réclame et est capable d'en tirer des enseignements.  </p>
+</blockquote>
+<p>Le test est une activité basée sur la communication et la transparence. Tout document produit devrait donc pouvoir être accessible.
+Il n'y a guère de question à se poser (  </p>
+<ul>
+<li>sinon sur la politique de sauvegarde et de stockage des données,</li>
+<li>sinon sur la durée de rétention des rapports et logs automatiques de tests....</li>
+</ul>
+<p>).</p>
+<h3 id="livrable-officiel">Livrable officiel</h3>
+<p>Seul un sous ensemble de tous les éléments produits par <strong>l'activité de test</strong> aura peut-être "le statut officiel de livrable" dans votre organisation.
+Peu importe pour notre propos.</p>
+<h3 id="livrable-exploite">Livrable exploité</h3>
+<p>Ce qui importe le plus, c'est l'utilité du livrable. A quoi bon produire le livrable si son utilité est nulle ou limitée ?</p>
+<p>Je peux citer ici :</p>
+<ul>
+<li>une stratégie de test ou une approche de test ni suivie ni enrichie durant le test,  </li>
+<li>une communication de rapport de tests de régression qui comporte en évidence l'ensemble des tests (dont une majorité écrasante de tests OK), au lieu de ne communiquer que sur les tests NOK (tout en donnant un accès complémentaire à l'ensemble des autres tests).  </li>
+</ul>
+<blockquote>
+<p>Ce que vous faîtes est-il utile et donc utilisé ?</p>
+</blockquote>
+<p>Parfois la réponse peut venir d'en haut : c'est demandé, imposé, contractuel. Vous réalisez une activité de conformité légale, point barre, circulez il n'y a à voir. Ce document est incompréhensible et ne sera lu qu'une fois et archivé ensuite.
+Dommage si vous n'avez pas réussi à produire un deux en un qui aurait pu servir de fil rouge au processus de test. Mais tant pis, passez à autre chose.</p>
+<h2 id="liste-des-livrables">Liste des livrables</h2>
+<p>Listons les élements dans l'ordre pseudo chronologique de la cinématique de notre processus (processus forcément plus complexe avec imbrications et allers retours entre différentes phases).</p>
+<ul>
+<li><a href="TEST-politique-de-test.html">politique de test</a></li>
+<li>...</li>
+<li><a href="TEST-bilan-de-test.html">bilan de test</a></li>
+</ul></article>
+<footer></footer><div id="finish"><p class="infos">généré depuis <a href="https://github.com/dev4use/marss" class="trademark">Marss ST-1.0.1</a> </p><ul class="postFooter">
+<li><a href="FOOTER-ligne-editoriale.html">ligne editoriale</a></li>
+<li><a href="FOOTER-mentions-legales.html">mentions legales</a></li>
+</ul>
+</div></body></html>

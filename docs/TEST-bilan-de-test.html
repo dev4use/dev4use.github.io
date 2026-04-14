@@ -1,0 +1,98 @@
+<html><head><title>bilan de test</title><meta http-equiv="Content-type" content="text/html;charset=utf-8" /><link rel="stylesheet" href="/media/style.css" media="all"></head><body class="markdown-body">
+<a href="./">accueil</a><input type="radio" id="men" name="menu" value="site" class="cache" checked><label for="men">Menu du site</label><input type="radio" id="tdm" name="menu" value="page" class="cache" ><label for="tdm">Menu de la page</label><input type="radio" id="rien" name="menu" value="fermer" class="cache"><label for="rien">(FERMER MENU)</label>
+<div class="menu"><ul class="postCategorie" id=BUG><span title=BUG>BUG</span>
+<li><a href="BUG-040-nom-categorie-dans-lien-post.html">040 nom categorie dans lien post</a></li>
+<li><a href="BUG-041-hyperlien-md-non-transforme.html">041 hyperlien md non transforme</a></li>
+<li><a href="BUG-042-titre-navigateur-page-accueil.html">042 titre navigateur page accueil</a></li>
+<li><a href="BUG-043-devoir-cliquer-sur-menu.html">043 devoir cliquer sur menu</a></li>
+<li><a href="BUG-044-le-menu-prend-trop-de-place.html">044 le menu prend trop de place</a></li>
+<li><a href="BUG-045-posts-sans-dates.html">045 posts sans dates</a></li>
+<li><a href="BUG-046-menu-plan-de-site-non-responsive.html">046 menu plan de site non responsive</a></li>
+<li><a href="BUG-047-indiquer-ou-on-est-dans-le-menu.html">047 indiquer ou on est dans le menu</a></li>
+<li><a href="BUG-048-interpreter-le-markdown-de-raturage.html">048 interpreter le markdown de raturage</a></li>
+<li><a href="BUG-049-la-numerotation-de-second-niveau-est-en-lettres.html">049 la numerotation de second niveau est en lettres</a></li>
+<li><a href="BUG-050-le-label-de-lien-comporte-un-espace-au-debut.html">050 le label de lien comporte un espace au debut</a></li>
+<li><a href="BUG-051-espace-nom-fichier-markdown.html">051 espace nom fichier markdown</a></li>
+</ul>
+<ul class="postCategorie" id=EB><span title=EB>EB</span>
+<li><a href="EB-010-mentions-legales-obligatoires.html">010 mentions legales obligatoires</a></li>
+<li><a href="EB-011-remonter-en-haut-de-page.html">011 remonter en haut de page</a></li>
+<li><a href="EB-012-gerer-les-dates-de-posts.html">012 gerer les dates de posts</a></li>
+<li><a href="EB-013-exposer-des-pages-categorie.html">013 exposer des pages categorie</a></li>
+<li><a href="EB-014-gerer-les-images-de-posts.html">014 gerer les images de posts</a></li>
+<li><a href="EB-015-gerer-les-images-de-categorie.html">015 gerer les images de categorie</a></li>
+<li><a href="EB-016-compresser-les-fichiers-affiches.html">016 compresser les fichiers affiches</a></li>
+<li><a href="EB-017-plan-de-site-cible.html">017 plan de site cible</a></li>
+</ul>
+<ul class="postCategorie" id=PROJET><span title=PROJET>PROJET</span>
+<li><a href="PROJET-etude-opportunite.html">etude opportunite</a></li>
+<li><a href="PROJET-fonctionnalites.html">fonctionnalites</a></li>
+<li><a href="PROJET-uc-generation-site-statique.html">uc generation site statique</a></li>
+<li><a href="PROJET-un-produit-par-version.html">un produit par version</a></li>
+<li><a href="PROJET-versioning.html">versioning</a></li>
+<li><a href="PROJET-versions-editeur.html">versions editeur</a></li>
+<li><a href="PROJET-visions-des-produits.html">visions des produits</a></li>
+</ul>
+<ul class="postCategorie" id=TEST><span title=TEST>TEST</span>
+<li><a href="TEST-bilan-de-test.html" class="active">bilan de test</a></li>
+<li><a href="TEST-couverture-de-code.html">couverture de code</a></li>
+<li><a href="TEST-livrables-de-test.html">livrables de test</a></li>
+<li><a href="TEST-politique-de-test.html">politique de test</a></li>
+</ul>
+</div></header>
+<div class="toc">
+<ul>
+<li><a href="#bilan-de-test">Bilan de test</a><ul>
+<li><a href="#contexte-de-la-mission-marss">Contexte de la mission Marss</a><ul>
+<li><a href="#testabilite">Testabilité :</a></li>
+<li><a href="#effort-de-test">Effort de test :</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+
+<article><h1 id="bilan-de-test">Bilan de test</h1>
+<p>Il y a plusieurs niveaux de bilan de tests :</p>
+<ul>
+<li>par niveau de test,  </li>
+<li>par application,  </li>
+<li>par application et niveau de test,  </li>
+<li>sur une excécution,  </li>
+<li>sur une campagne,   </li>
+<li>sur une release,    </li>
+<li>sur un projet.  </li>
+</ul>
+<p>Difficile de savoir de quoi on parle.<br />
+Ce qui manque peut-être ajourd'hui, mais peut-être pas demain dans le référentiel ISTQB au tournant Agile(A) affirmé, c'est l'angle rétrospective.  </p>
+<h2 id="contexte-de-la-mission-marss">Contexte de la mission Marss</h2>
+<p>En testant l'application <a href="https://github.com/dev4use/marss" class="trademark">Marss</a>, certains éléments sont ressortis :</p>
+<h3 id="testabilite">Testabilité :</h3>
+<p>En version ST-01,   </p>
+<ul>
+<li>Le fichier de configuration initialisé et aujourd'hui partagé en globale est le point d'accès principal et redondant en test. Vivement le passage en classe où cette phase d'init sera plus assumée.   </li>
+<li>Certaines balises html ont été retravaillées pour être plus faciles à atteindre en tests, mais aussi pour facilier leur gestion et robustesse en développement css.  </li>
+</ul>
+<p>Analyse :</p>
+<ul>
+<li>En assumant les deux rôles développeur et testeur, il devient visible en quoi la collaboration développeur/testeur peut être bénéfique pour les deux parties. </li>
+</ul>
+<h3 id="effort-de-test">Effort de test :</h3>
+<p>En version ST-01,   </p>
+<ul>
+<li>Viser une couverture de code à 100 % par les tests   </li>
+<li>et utiliser la conception de test BDD au format Gherkin, qui plus est souvent au niveau unitaire,   </li>
+</ul>
+<p>semble parfois contre-productif ou absurde.</p>
+<p>Analyse :</p>
+<ul>
+<li>Pratique pour l'instant assumée au titre d'une démonstration de mise en oeuvre.</li>
+</ul>
+<p><em>Notes :</em>  <br />
+A/ L'ISTQB a pris comme prétexte le tournant Agile pour vulgariser et simplifier au point de vider certaines notions de leur substance ou de faire disparaître ces notions.  </p></article>
+<footer></footer><div id="finish"><p class="infos">généré depuis <a href="https://github.com/dev4use/marss" class="trademark">Marss ST-1.0.1</a> </p><ul class="postFooter">
+<li><a href="FOOTER-ligne-editoriale.html">ligne editoriale</a></li>
+<li><a href="FOOTER-mentions-legales.html">mentions legales</a></li>
+</ul>
+</div></body></html>

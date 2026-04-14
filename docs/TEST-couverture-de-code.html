@@ -1,0 +1,94 @@
+<html><head><title>couverture de code</title><meta http-equiv="Content-type" content="text/html;charset=utf-8" /><link rel="stylesheet" href="/media/style.css" media="all"></head><body class="markdown-body">
+<a href="./">accueil</a><input type="radio" id="men" name="menu" value="site" class="cache" checked><label for="men">Menu du site</label><input type="radio" id="tdm" name="menu" value="page" class="cache" ><label for="tdm">Menu de la page</label><input type="radio" id="rien" name="menu" value="fermer" class="cache"><label for="rien">(FERMER MENU)</label>
+<div class="menu"><ul class="postCategorie" id=BUG><span title=BUG>BUG</span>
+<li><a href="BUG-040-nom-categorie-dans-lien-post.html">040 nom categorie dans lien post</a></li>
+<li><a href="BUG-041-hyperlien-md-non-transforme.html">041 hyperlien md non transforme</a></li>
+<li><a href="BUG-042-titre-navigateur-page-accueil.html">042 titre navigateur page accueil</a></li>
+<li><a href="BUG-043-devoir-cliquer-sur-menu.html">043 devoir cliquer sur menu</a></li>
+<li><a href="BUG-044-le-menu-prend-trop-de-place.html">044 le menu prend trop de place</a></li>
+<li><a href="BUG-045-posts-sans-dates.html">045 posts sans dates</a></li>
+<li><a href="BUG-046-menu-plan-de-site-non-responsive.html">046 menu plan de site non responsive</a></li>
+<li><a href="BUG-047-indiquer-ou-on-est-dans-le-menu.html">047 indiquer ou on est dans le menu</a></li>
+<li><a href="BUG-048-interpreter-le-markdown-de-raturage.html">048 interpreter le markdown de raturage</a></li>
+<li><a href="BUG-049-la-numerotation-de-second-niveau-est-en-lettres.html">049 la numerotation de second niveau est en lettres</a></li>
+<li><a href="BUG-050-le-label-de-lien-comporte-un-espace-au-debut.html">050 le label de lien comporte un espace au debut</a></li>
+<li><a href="BUG-051-espace-nom-fichier-markdown.html">051 espace nom fichier markdown</a></li>
+</ul>
+<ul class="postCategorie" id=EB><span title=EB>EB</span>
+<li><a href="EB-010-mentions-legales-obligatoires.html">010 mentions legales obligatoires</a></li>
+<li><a href="EB-011-remonter-en-haut-de-page.html">011 remonter en haut de page</a></li>
+<li><a href="EB-012-gerer-les-dates-de-posts.html">012 gerer les dates de posts</a></li>
+<li><a href="EB-013-exposer-des-pages-categorie.html">013 exposer des pages categorie</a></li>
+<li><a href="EB-014-gerer-les-images-de-posts.html">014 gerer les images de posts</a></li>
+<li><a href="EB-015-gerer-les-images-de-categorie.html">015 gerer les images de categorie</a></li>
+<li><a href="EB-016-compresser-les-fichiers-affiches.html">016 compresser les fichiers affiches</a></li>
+<li><a href="EB-017-plan-de-site-cible.html">017 plan de site cible</a></li>
+</ul>
+<ul class="postCategorie" id=PROJET><span title=PROJET>PROJET</span>
+<li><a href="PROJET-etude-opportunite.html">etude opportunite</a></li>
+<li><a href="PROJET-fonctionnalites.html">fonctionnalites</a></li>
+<li><a href="PROJET-uc-generation-site-statique.html">uc generation site statique</a></li>
+<li><a href="PROJET-un-produit-par-version.html">un produit par version</a></li>
+<li><a href="PROJET-versioning.html">versioning</a></li>
+<li><a href="PROJET-versions-editeur.html">versions editeur</a></li>
+<li><a href="PROJET-visions-des-produits.html">visions des produits</a></li>
+</ul>
+<ul class="postCategorie" id=TEST><span title=TEST>TEST</span>
+<li><a href="TEST-bilan-de-test.html">bilan de test</a></li>
+<li><a href="TEST-couverture-de-code.html" class="active">couverture de code</a></li>
+<li><a href="TEST-livrables-de-test.html">livrables de test</a></li>
+<li><a href="TEST-politique-de-test.html">politique de test</a></li>
+</ul>
+</div></header>
+<div class="toc">
+<ul>
+<li><a href="#la-couverture-de-code-par-les-tests">La couverture de code par les tests</a><ul>
+<li><a href="#instaurer-une-fausse-confiance">Instaurer une fausse confiance</a></li>
+<li><a href="#un-moyen-de-travailler">Un moyen de travailler</a></li>
+<li><a href="#un-outil-de-precision">Un outil de précision</a></li>
+</ul>
+</li>
+</ul>
+</div>
+
+<article><h1 id="la-couverture-de-code-par-les-tests">La couverture de code par les tests</h1>
+<p>Pratique assez controversée, la couverture de code par les tests est quantitative mais peut néanmoins servir de garde fou.  </p>
+<h2 id="instaurer-une-fausse-confiance">Instaurer une fausse confiance</h2>
+<p>Dans <a href="https://github.com/dev4use/marss" class="trademark">Marss</a>, j'ai recours à la couverture de code, et à une couverture à 100 % pour <a href="PROJET-versions-editeur.html#approches-qualite">une livraison officielle majeure.</a>  </p>
+<p>Il s'agit de rassurer l'éventuel utilisateur. <br />
+Mais si je veux au contraire inquiéter cet utilisateur (qui le veut, qui le doit parfois si nécessaire ?), je peux aussi le faire.   </p>
+<p>Le test exécute l'ensemble du code et des branches (dans ma configuration de pytest --cov et coverage). Oui, le test "exécute". <br />
+Si j'enlève la totalité des assertions, le test continue de s'exécuter et la couverture se maintient à 100 %.  </p>
+<ol>
+<li>Rien sur l'existence des tests à proprement parler ou des assertions.  </li>
+<li>Rien sur les éléments contrôles par les assertions et la pertinence de ces éléments.  </li>
+</ol>
+<blockquote>
+<p>Autrement dit, un testeur peut tester "à côté", tout en testant/exécutant "tout"</p>
+</blockquote>
+<p>Cela, il faut le dire, quelque part comme dans <a href="TEST-politique-de-test.html">la politique de test</a>. Il faut le dire afin de :  </p>
+<ul>
+<li>clarifier la situation,</li>
+<li>ne pas insuffler un niveau de confiance illégitime dans la qualité de l'application et des tests,</li>
+<li>ne pas réaliser une <strong>campagne de désinformation</strong>.  </li>
+</ul>
+<h2 id="un-moyen-de-travailler">Un moyen de travailler</h2>
+<p>Cela ne veut pas dire que connaître la couverture de code par les tests est inutile.<br />
+Admettons que moi développeur/testeur je veux bien faire et ai pour objectif de tout tester, du moins ce qui me semble principal.<br />
+Je peux contrôler si je n'ai rien oublié en faisant une couverture de code. Le rapport me montre que, tiens, j'ai oublié un petit point.  </p>
+<p><em>Arbitrage à faire :</em>  </p>
+<p>Point trivial, à ne pas tester car la rentabilité n'y serait pas : <br />
+l'exclure du rapport de couverture par la pattern adéquat, tel que <code># pragma: no cover</code> par exemple.   </p>
+<p>Point important au contraire et nécessitant un investissement pour le couvrir :<br />
+soit on l'ajoute à un test existant où il est cohérent et n'ajoute que peu d'asserts, <br />
+soit on crée un test dédié pour mieux le suivre ou parce qu'il nécessite un nombre d'assert assez conséquent.</p>
+<h2 id="un-outil-de-precision">Un outil de précision</h2>
+<p>Et si mes assertions vérifient réellement des points importants vis-à-vis de mon algorithme, de mon processus métier ou des points importants pour mes parties prenantes,  </p>
+<blockquote>
+<p>je teste "juste", juste là où il faut, en vérifiant juste ce qu'il faut.</p>
+</blockquote></article>
+<footer></footer><div id="finish"><p class="infos">généré depuis <a href="https://github.com/dev4use/marss" class="trademark">Marss ST-1.0.1</a> </p><ul class="postFooter">
+<li><a href="FOOTER-ligne-editoriale.html">ligne editoriale</a></li>
+<li><a href="FOOTER-mentions-legales.html">mentions legales</a></li>
+</ul>
+</div></body></html>

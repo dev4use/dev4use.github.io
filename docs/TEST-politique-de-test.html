@@ -1,0 +1,122 @@
+<html><head><title>politique de test</title><meta http-equiv="Content-type" content="text/html;charset=utf-8" /><link rel="stylesheet" href="/media/style.css" media="all"></head><body class="markdown-body">
+<a href="./">accueil</a><input type="radio" id="men" name="menu" value="site" class="cache" checked><label for="men">Menu du site</label><input type="radio" id="tdm" name="menu" value="page" class="cache" ><label for="tdm">Menu de la page</label><input type="radio" id="rien" name="menu" value="fermer" class="cache"><label for="rien">(FERMER MENU)</label>
+<div class="menu"><ul class="postCategorie" id=BUG><span title=BUG>BUG</span>
+<li><a href="BUG-040-nom-categorie-dans-lien-post.html">040 nom categorie dans lien post</a></li>
+<li><a href="BUG-041-hyperlien-md-non-transforme.html">041 hyperlien md non transforme</a></li>
+<li><a href="BUG-042-titre-navigateur-page-accueil.html">042 titre navigateur page accueil</a></li>
+<li><a href="BUG-043-devoir-cliquer-sur-menu.html">043 devoir cliquer sur menu</a></li>
+<li><a href="BUG-044-le-menu-prend-trop-de-place.html">044 le menu prend trop de place</a></li>
+<li><a href="BUG-045-posts-sans-dates.html">045 posts sans dates</a></li>
+<li><a href="BUG-046-menu-plan-de-site-non-responsive.html">046 menu plan de site non responsive</a></li>
+<li><a href="BUG-047-indiquer-ou-on-est-dans-le-menu.html">047 indiquer ou on est dans le menu</a></li>
+<li><a href="BUG-048-interpreter-le-markdown-de-raturage.html">048 interpreter le markdown de raturage</a></li>
+<li><a href="BUG-049-la-numerotation-de-second-niveau-est-en-lettres.html">049 la numerotation de second niveau est en lettres</a></li>
+<li><a href="BUG-050-le-label-de-lien-comporte-un-espace-au-debut.html">050 le label de lien comporte un espace au debut</a></li>
+<li><a href="BUG-051-espace-nom-fichier-markdown.html">051 espace nom fichier markdown</a></li>
+</ul>
+<ul class="postCategorie" id=EB><span title=EB>EB</span>
+<li><a href="EB-010-mentions-legales-obligatoires.html">010 mentions legales obligatoires</a></li>
+<li><a href="EB-011-remonter-en-haut-de-page.html">011 remonter en haut de page</a></li>
+<li><a href="EB-012-gerer-les-dates-de-posts.html">012 gerer les dates de posts</a></li>
+<li><a href="EB-013-exposer-des-pages-categorie.html">013 exposer des pages categorie</a></li>
+<li><a href="EB-014-gerer-les-images-de-posts.html">014 gerer les images de posts</a></li>
+<li><a href="EB-015-gerer-les-images-de-categorie.html">015 gerer les images de categorie</a></li>
+<li><a href="EB-016-compresser-les-fichiers-affiches.html">016 compresser les fichiers affiches</a></li>
+<li><a href="EB-017-plan-de-site-cible.html">017 plan de site cible</a></li>
+</ul>
+<ul class="postCategorie" id=PROJET><span title=PROJET>PROJET</span>
+<li><a href="PROJET-etude-opportunite.html">etude opportunite</a></li>
+<li><a href="PROJET-fonctionnalites.html">fonctionnalites</a></li>
+<li><a href="PROJET-uc-generation-site-statique.html">uc generation site statique</a></li>
+<li><a href="PROJET-un-produit-par-version.html">un produit par version</a></li>
+<li><a href="PROJET-versioning.html">versioning</a></li>
+<li><a href="PROJET-versions-editeur.html">versions editeur</a></li>
+<li><a href="PROJET-visions-des-produits.html">visions des produits</a></li>
+</ul>
+<ul class="postCategorie" id=TEST><span title=TEST>TEST</span>
+<li><a href="TEST-bilan-de-test.html">bilan de test</a></li>
+<li><a href="TEST-couverture-de-code.html">couverture de code</a></li>
+<li><a href="TEST-livrables-de-test.html">livrables de test</a></li>
+<li><a href="TEST-politique-de-test.html" class="active">politique de test</a></li>
+</ul>
+</div></header>
+<div class="toc">
+<ul>
+<li><a href="#politique-de-test">Politique de test</a><ul>
+<li><a href="#contexte-de-la-mission-marss">Contexte de la mission Marss</a></li>
+<li><a href="#contexte-elargi">Contexte élargi</a></li>
+<li><a href="#moi-ca-va-et-vous">Moi ça va, et vous ?</a></li>
+<li><a href="#cerner-le-contexte-et-les-attentes">Cerner le contexte et les attentes</a></li>
+<li><a href="#entre-extremisme">Entre extrémisme</a></li>
+<li><a href="#et-pragmatisme">Et pragmatisme</a></li>
+</ul>
+</li>
+</ul>
+</div>
+
+<article><h1 id="politique-de-test">Politique de test</h1>
+<p>La politique de test, <a href="https://glossary.istqb.org/fr_FR/search?term=politique%20de%20test&amp;exact_matches_first=true">définition ISTQB</a>,</p>
+<blockquote>
+<p>c'est un peu la mécanique de l'arroseur arrosé.</p>
+</blockquote>
+<p>Mais c'est aussi un principe de précaution pour savoir où vous mettez les pieds, ce que l'organisation attend de vous et quel est le degré de mâturité en test de l'organisation.  </p>
+<h2 id="contexte-de-la-mission-marss">Contexte de la mission Marss</h2>
+<p>Dans le cadre d'auto-organisation extrême à un seul individu, je me fixe, quand-même :  </p>
+<ul>
+<li>une ligne directrice à suivre,   </li>
+<li>et quelques principes à respecter.  </li>
+</ul>
+<p>Pour moi, pour l'organisation que représente mon système de pensée,  </p>
+<ol>
+<li>Le test a pour action principale de trouver des défauts.</li>
+<li>Le test a pour effet (recherché ou non) de questionner et d'améliorer le processus de développement logiciel.</li>
+<li>Le test a pour vocation de donner un niveau de confiance dans l'application testée.</li>
+</ol>
+<p>Et à chaque fois, je le prouve, en mettant en oeuvre ces principes et en analysant <strong>le retour sur investissement</strong>.  <br />
+Voir <a href="TEST-bilan-de-test.html">le REX ou RETEX</a>.</p>
+<h2 id="contexte-elargi">Contexte élargi</h2>
+<ul>
+<li>Dans la mesure où vous avez ou aurez à rendre des comptes,    </li>
+<li>dans la mesure où vous souhaitez être utile à l'organisation,    </li>
+</ul>
+<p>il n'est pas inutile (euphémisme) de disposer d'une politique de test (quel que soit le nom d'un tel document ou chapitre). </p>
+<h2 id="moi-ca-va-et-vous">Moi ça va, et vous ?</h2>
+<p>Vous me demandez un plan de test ? <br />
+En fait, vous me demandez une <strong>approche de test</strong> et un <strong>plan de test maître</strong>. <br />
+Mais avez-vous déjà une politique de test, voire même une <strong>stratégie de tests</strong> si vos applications ne sont pas nouvelles ?</p>
+<h2 id="cerner-le-contexte-et-les-attentes">Cerner le contexte et les attentes</h2>
+<p>Quelle place apportez-vous au test dans l'organisation ?  </p>
+<ul>
+<li>Vous voulez découvrir le plus de défaut au plus tôt avant la mise en production OU vous voulez vérifier que cela fonctionne ?  </li>
+<li>Vous voulez vous assurer que toutes les exigences sont couvertes OU vous prêtez plus d'attention à certains points plus critiques que d'autres ?  </li>
+<li>Vous me demandez un GO pour tamponner la mise en production OU vous me demandez de l'information pour faciliter votre prise de décision ?  </li>
+</ul>
+<p>Voila quelques exemples de questions à se poser et à poser si la politique de test n'existe pas ou n'a pas répondu à ces questions.</p>
+<h2 id="entre-extremisme">Entre extrémisme</h2>
+<p>Bien-sûr vous aurez remarqué que les positions sont un peu tranchées entre les deux parties séparées du OU, et que c'est un peu une vision manichéenne du test qui se dégage(A).<br />
+Il semble y avoir le bien d'un côté et le mal de l'autre. La réalité terrain est bien plus subtile et les lignes ne sont pas si claires. </p>
+<h2 id="et-pragmatisme">Et pragmatisme</h2>
+<p>Par pragmatisme, vou serez peut-être amenés à franchir ces lignes que vous pensiez vous être imposées de par</p>
+<ul>
+<li>votre sacerdoce professionnel,    </li>
+<li>votre signature de serment,   </li>
+<li>votre profession de foi,   </li>
+<li>vos principes quasi moraux   </li>
+</ul>
+<p>et votre suivi strict de la politique de test. <br />
+J'attire votre attention sur le fait suivant :</p>
+<blockquote>
+<p>tous ces documents, comme le sont bien des normes, servent de fils directeurs, d'orientations, de boîtes à idée.</p>
+</blockquote>
+<p>Que dans certaines circonstances bien établies et partagées vous fassiez des écarts peut et doit se justifier.<br />
+Mais l'existence de tels documents permet justement d'identifier ces écarts.   </p>
+<blockquote>
+<p>On ne pourra pas dire qu'on ne vous l'avait pas dit et que vous n'êtiez pas au courant. Ici, on fait entorse à tel principe... Merci de ne pas réécrire l'histoire.</p>
+</blockquote>
+<p><em>Notes :</em> <br />
+A/ <a href="https://agilemanifesto.org/iso/fr/manifesto.html">Le manifeste agile</a> n'était pas manichéen en ajoutant un avertissement tel que : "Nous reconnaissons la valeur des seconds éléments, mais privilégions les premiers.".</p></article>
+<footer></footer><div id="finish"><p class="infos">généré depuis <a href="https://github.com/dev4use/marss" class="trademark">Marss ST-1.0.1</a> </p><ul class="postFooter">
+<li><a href="FOOTER-ligne-editoriale.html">ligne editoriale</a></li>
+<li><a href="FOOTER-mentions-legales.html">mentions legales</a></li>
+</ul>
+</div></body></html>
