@@ -4,7 +4,7 @@ Pratique assez controversée, la couverture de code par les tests est quantitati
 
 ## Instaurer une fausse confiance
 
-Dans <a href="https://github.com/dev4use/marss" class="trademark">Marss</a>, j'ai recours à la couverture de code, et à une couverture à 100 % pour [une livraison officielle majeure.](PROJET-versions-editeur.md#approches-qualite)  
+Dans <a href="https://github.com/dev4use/marss" class="trademark">Marss</a>, j'ai recours à la couverture de code, et à une couverture à 100 % pour [une livraison officielle majeure.](PROJET-versions-editeur.md#approche-qualite)  
 
 Il s'agit de rassurer l'éventuel utilisateur.   
 Mais si je veux au contraire inquiéter cet utilisateur (qui le veut, qui le doit parfois si nécessaire ?), je peux aussi le faire.   
