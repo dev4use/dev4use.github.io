@@ -1033,14 +1033,17 @@ body > #finish p.infos{
   margin: 0em 0em 0em 0em;
   padding: 0em 0em 0em 0em;
 }
-body > #finish a.trademark{
+/* body > #finish  */
+a.trademark{
   color:coral;
 }
-body > #finish a.trademark:link{  /*  el.cls */
+/* body > #finish */
+a.trademark:link{  /*  el.cls */
   color:coral;
    margin: 0em 0.5em 0em 0em;  
 }
-#finish a.trademark:hover{ 
+/* #finish */
+a.trademark:hover{ 
   color:coral;
   text-decoration: none;
   text-shadow: rgb(59, 55, 53) 1px 0 10px;

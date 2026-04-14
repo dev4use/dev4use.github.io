@@ -24,4 +24,15 @@ Il ne s'agit pas tant de décliner une logique commerciale que de mesurer la pro
 - product (sous entendu final et idéal)
 
 A tout moment il faut pouvoir maintenir ou enrichir une version minimum.  
-Cette version réduite est réputée stable et peut servir de repli en cas de bug majeur avec retour arrière difficile sur une version usine à gaz buggée.
+Cette version réduite est réputée stable et peut servir de repli en cas de bug majeur avec retour arrière difficile sur une version usine à gaz buggée.  
+
+## Approche qualité
+
+Pour preuve que même la version Standard de <a href="https://github.com/dev4use/marss" class="trademark">Marss</a> n'est pas délaissée, toute [version officielle du produit](PROJET-versioning.md) respecte **une barrière de qualité** avant publication.
+
+Toute version majeure du produit, de niveau de numérotation 1 sur 3, respecte donc les règles suivantes (que je sais contestables mais dont je m'amuse) :
+
+1. Couverture du code par les tests à 100 %.
+1. Tests à 100 % OK.
+1. 0 violation de convention de codage (léger ajustement et sans excès sur la taille des lignes).
+1. Documentation de code source actualisée et lisible.
