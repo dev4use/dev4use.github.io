@@ -51,7 +51,7 @@
 
 <article><h1 id="liste-des-fonctionnalites">Liste des fonctionnalités</h1>
 <p>Une application offre un ensemble de fonctionnalités.
-Lorsqu'il existe une pluralité de versions, ces versions peuvent décliner des mêmes fonctionnalités dans un niveau de services différent.</p>
+Lorsqu'il existe une pluralité de versions, ces versions peuvent décliner les mêmes fonctionnalités dans un niveau de service différent.</p>
 <h2 id="declinaison-de-loffre">Déclinaison de l'offre</h2>
 <p>A noter une perméabilité descendante ou rétrocompatibilité des versions.
 Une version supérieure doit être capable de réaliser les opérations d'une version inférieure. Cette possibilité doit rester offerte à l'utilisateur.</p>
@@ -62,14 +62,20 @@ Une version supérieure doit être capable de réaliser les opérations d'une ve
 <ul>
 <li>WebServer : serveur <ul>
 <li>ST : python http (dossier inexistant dans cette offre),</li>
-<li>PR : gunicorn,</li>
+<li>PR : gunicorn, ou déploiement par une mécanique telle que GithubPages,  </li>
 <li>OP : nginx https et N backend pour réaliser un hébergement plus conforme aux standards.</li>
 </ul>
 </li>
-<li>Content : contenu<ul>
+<li>Content : provenance du contenu<ul>
 <li>ST : à déposer,</li>
 <li>PR : récupéré d'autres dossiers</li>
-<li>OP : récupéré du cloud.</li>
+<li>OP : récupéré du cloud.  </li>
+</ul>
+</li>
+<li>Content : type de contenu<ul>
+<li>ST : un minimum de contraintes utilisateur,  </li>
+<li>PR : des métadata markdown,  </li>
+<li>OP : des templates sélectionnables.  </li>
 </ul>
 </li>
 <li>Themes : templates<ul>

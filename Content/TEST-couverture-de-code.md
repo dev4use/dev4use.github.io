@@ -40,6 +40,10 @@ soit on crée un test dédié pour mieux le suivre ou parce qu'il nécessite un 
 
 ## Un outil de précision
 
-Et si mes assertions vérifient réellement des points importants vis-à-vis de mon algorithme, de mon processus métier ou des points importants pour mes parties prenantes,  
+Et si mes assertions vérifient réellement des points importants vis-à-vis :  
+
+-  de l'algorithme,  
+- du processus métier  
+- ou des préoccupations pour mes parties prenantes,   
 
 > je teste "juste", juste là où il faut, en vérifiant juste ce qu'il faut.

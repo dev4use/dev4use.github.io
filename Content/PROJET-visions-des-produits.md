@@ -1,6 +1,10 @@
 # Vision(s) produit(s)
 
+Puisque l'Agiliste a des visions (LOL), prêtons nous à l'exercice. Quel produit voyons nous à l'avenir, pour satisfaire nos besoins et envies ?     
+
 ## Version STANDARD
+
+La version ST (ST.andard) est le premier niveau par ordre croissant des [déclinaisons de version](PROJET-un-produit-par-version.md).   
 
 ### Version initiale
 

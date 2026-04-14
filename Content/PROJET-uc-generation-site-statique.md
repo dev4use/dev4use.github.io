@@ -1,5 +1,8 @@
 # Cas d'utilisation textuel : génération du site statique
 
+Application présentée en cas d'utilisation textuel, tel que prôné par Alistair Cockburn.
+
+## Contexte :
 
 Acteur principal : Le système  
 Acteur(s) secondair(es) : Le développeur(A)  
@@ -18,7 +21,7 @@ Fréquence : à chaque modification de contenu markdown que souhaite visualiser 
 Garanties en cas de succès : Le développeur navigue en local sur le site statique.  
 Garanties minimales (en cas d'échec) : Le développeur voit le programme s'arrêter sur un message d'erreur explicatif.   
 
-## Scenario  nominal:
+## Scenario  nominal :
 
 1. Le développeur lance la commande de génération de site statique.
 1. Le système récupère la configuration et la liste les fichiers markdowns.

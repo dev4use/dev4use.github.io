@@ -43,7 +43,8 @@
 <div class="toc">
 <ul>
 <li><a href="#cas-dutilisation-textuel-generation-du-site-statique">Cas d'utilisation textuel : génération du site statique</a><ul>
-<li><a href="#scenario-nominal">Scenario nominal:</a></li>
+<li><a href="#contexte">Contexte :</a></li>
+<li><a href="#scenario-nominal">Scenario nominal :</a></li>
 <li><a href="#variantes">Variantes :</a></li>
 <li><a href="#extensions">Extensions :</a></li>
 </ul>
@@ -52,6 +53,8 @@
 </div>
 
 <article><h1 id="cas-dutilisation-textuel-generation-du-site-statique">Cas d'utilisation textuel : génération du site statique</h1>
+<p>Application présentée en cas d'utilisation textuel, tel que prôné par Alistair Cockburn.</p>
+<h2 id="contexte">Contexte :</h2>
 <p>Acteur principal : Le système<br />
 Acteur(s) secondair(es) : Le développeur(A)  </p>
 <p>Portée : site statique en local<br />
@@ -67,7 +70,7 @@ Préconditions :  </p>
 Fréquence : à chaque modification de contenu markdown que souhaite visualiser ou embarquer le dévelopeur, le système recrée la totalité du site statique.<br />
 Garanties en cas de succès : Le développeur navigue en local sur le site statique.<br />
 Garanties minimales (en cas d'échec) : Le développeur voit le programme s'arrêter sur un message d'erreur explicatif.   </p>
-<h2 id="scenario-nominal">Scenario  nominal:</h2>
+<h2 id="scenario-nominal">Scenario  nominal :</h2>
 <ol>
 <li>Le développeur lance la commande de génération de site statique.</li>
 <li>Le système récupère la configuration et la liste les fichiers markdowns.</li>

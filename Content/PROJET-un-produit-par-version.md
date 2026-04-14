@@ -2,6 +2,8 @@
 
 Chaque gamme de produit a une approche différente, avec sa vision produit, sa philosophie.
 
+## Déclinaison produit :
+
 Un produit,  
 
 - STANDARD : robuste et sans effort utilisateur, pour un usage individuel;
