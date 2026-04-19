@@ -1,8 +1,8 @@
-<html><head><title>041 hyperlien md non transforme</title><meta http-equiv="Content-type" content="text/html;charset=utf-8" /><link rel="stylesheet" href="/media/style.css" media="all"></head><body class="markdown-body">
+<html><head><title>perennite solution</title><meta http-equiv="Content-type" content="text/html;charset=utf-8" /><link rel="stylesheet" href="/media/style.css" media="all"></head><body class="markdown-body">
 <a href="./">accueil</a><input type="radio" id="men" name="menu" value="site" class="cache" checked><label for="men">Menu du site</label><input type="radio" id="tdm" name="menu" value="page" class="cache" ><label for="tdm">Menu de la page</label><input type="radio" id="rien" name="menu" value="fermer" class="cache"><label for="rien">(FERMER MENU)</label>
 <div class="menu"><ul class="postCategorie" id=BUG><span title=BUG>BUG</span>
 <li><a href="BUG-040-nom-categorie-dans-lien-post.html">040 nom categorie dans lien post</a></li>
-<li><a href="BUG-041-hyperlien-md-non-transforme.html" class="active">041 hyperlien md non transforme</a></li>
+<li><a href="BUG-041-hyperlien-md-non-transforme.html">041 hyperlien md non transforme</a></li>
 <li><a href="BUG-042-titre-navigateur-page-accueil.html">042 titre navigateur page accueil</a></li>
 <li><a href="BUG-043-devoir-cliquer-sur-menu.html">043 devoir cliquer sur menu</a></li>
 <li><a href="BUG-044-le-menu-prend-trop-de-place.html">044 le menu prend trop de place</a></li>
@@ -27,7 +27,7 @@
 <ul class="postCategorie" id=PROJET><span title=PROJET>PROJET</span>
 <li><a href="PROJET-etude-opportunite.html">etude opportunite</a></li>
 <li><a href="PROJET-fonctionnalites.html">fonctionnalites</a></li>
-<li><a href="PROJET-perennite-solution.html">perennite solution</a></li>
+<li><a href="PROJET-perennite-solution.html" class="active">perennite solution</a></li>
 <li><a href="PROJET-uc-generation-site-statique.html">uc generation site statique</a></li>
 <li><a href="PROJET-un-produit-par-version.html">un produit par version</a></li>
 <li><a href="PROJET-versioning.html">versioning</a></li>
@@ -43,24 +43,32 @@
 </div></header>
 <div class="toc">
 <ul>
-<li><a href="#bug-041-un-hyperlien-en-extension-md-nest-pas-traduit-en-extension-html-lors-de-la-transformation-md-html">BUG-041 un hyperlien en extension md n’est pas traduit en extension html lors de la transformation md html</a></li>
+<li><a href="#perenite-de-la-solution">Pérénité de la solution</a><ul>
+<li><a href="#du-sur-mesure-maitrise">Du sur mesure maîtrisé</a></li>
+<li><a href="#une-solution-disparue">Une solution disparue</a></li>
+</ul>
+</li>
 </ul>
 </div>
 
-<article><h2 id="bug-041-un-hyperlien-en-extension-md-nest-pas-traduit-en-extension-html-lors-de-la-transformation-md-html">BUG-041 un hyperlien en extension md n’est pas traduit en extension html lors de la transformation md html</h2>
-<ul>
-<li>statuts : ferme_260316_(fixé assez légèrement, sûrement peu robuste) / ouvert_260314_()</li>
-<li>contexte : puisque le md est traduit en html, on s’attend à ce que la transformation soit complète. Il s’agit d’une librairie externe.</li>
-<li>événement : au clic sur le lien en extension .md, on aboutit à une erreur 404</li>
-<li>impact : bloquant ( l’action ne peut aboutir)</li>
-<li>fréquence : faible, les liens entre fichiers ne sont pas constants par contenu</li>
-<li>détection : moyenne, l’utilisateur doit cliquer sur le lien pour savoir qu’il est brisé</li>
-<li>contournement : l’utilisateur saisit par anticipation l’extension .html dans son fichier .md</li>
-<li>arbitrage : la version de l’application veut imposer le moins de contraintes possibles lors de la création du .md, donc le correctif est nécessaire</li>
-<li>correctif : détecter la présence d’un hyperlien (au plus tôt en md et non en html ?) en .md et changer l’extension en .html</li>
-<li>rex : trop grande confiance accordée à une dépendance</li>
-<li>cause racine : confiance</li>
-</ul></article>
+<article><h1 id="perenite-de-la-solution">Pérénité de la solution</h1>
+<p>Quoi de plus pérenne qu’une solution interne sur mesure. Tant que l’organisaton est là, le produit est maintenu.</p>
+<h2 id="du-sur-mesure-maitrise">Du sur mesure maîtrisé</h2>
+<p>S’il s’agit d’un besoin interne, il n’est pas absurde d’apporter une réponse par une solution elle aussi interne et qui sera sur mesure.    </p>
+<p>Tant que toutes les problématiques relevées semblent pouvoir être maîtrisées en interne, pourquoi aller voir ailleurs ?<br />
+Développée au plus près du besoin et à mesure, la solution s’adapte au besoin et parfois réciproquement.   </p>
+<p>C’est le cas de <a href="https://github.com/dev4use/marss" class="trademark">Marss</a>, avec en plus <a href="PROJET-visions-des-produits.html#version-initiale">une version MVP assumée</a>.  </p>
+<h2 id="une-solution-disparue">Une solution disparue</h2>
+<p>Aller voir ailleurs comporte des risques.<br />
+En 2026, je viens de retrouver <a href="https://phpdudimanche.github.io/koorok/">un blog égaré datant de 2017, sur le sujet du test</a>.<br />
+Le générateur de test statique n’est plus. il s’agit de feu spress : framework php sponsorisé par symfony.   </p>
+<p>Pour un besoin rudimentaire, être tributaire d’une solution qui peut être abandonnée ou dépréciée ou connaître des ruptures technologiques comporte un risque (in)certain. Cela peut vous prendre au dépourvu.   </p>
+<p>Bien sûr, pour un générateur de site statique où seul le rendu est publié, tant que l’ancienne source avec l’ancienne version du langage est disponible, le mal est moindre. Mais quand même.  </p>
+<p><em>Notes :</em> <br />
+A vrai dire, le véritable problème d’une solution sur étagére est l’effet usine à gaz et la méthode de travail imposée. En plus, apprendre un framework plutôt qu’un langage est souvent, à long terme une perte de temps. Et là, </p>
+<blockquote>
+<p>continuer de s’investir dans la connaissance d’une solution technique abandonnée peut sembler un investissement discutable.  </p>
+</blockquote></article>
 <footer></footer><div id="finish"><p class="infos">généré depuis <a href="https://github.com/dev4use/marss" class="trademark">Marss ST-1.0.1</a> </p><ul class="postFooter">
 <li><a href="FOOTER-ligne-editoriale.html">ligne editoriale</a></li>
 <li><a href="FOOTER-mentions-legales.html">mentions legales</a></li>
