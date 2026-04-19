@@ -1,4 +1,4 @@
-# Pérénité de la solution
+# Pérennité de la solution
 
 Quoi de plus pérenne qu’une solution interne sur mesure. Tant que l’organisaton est là, le produit est maintenu.
 
