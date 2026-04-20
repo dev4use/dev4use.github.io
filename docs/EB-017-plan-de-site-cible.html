@@ -43,13 +43,19 @@
 </div></header>
 <div class="toc">
 <ul>
-<li><a href="#eb-017-un-plan-de-site-plus-restreint-et-plus-approprie">EB-017 un plan de site plus restreint et plus approprié</a></li>
+<li><a href="#eb-017-un-plan-de-site-plus-restreint-et-plus-approprie">EB-017 un plan de site plus restreint et plus approprié</a><ul>
+<li><a href="#propositions">Propositions</a></li>
+<li><a href="#arbitrages">Arbitrages</a></li>
+<li><a href="#controles">Contrôles</a></li>
+</ul>
+</li>
 </ul>
 </div>
 
 <article><h1 id="eb-017-un-plan-de-site-plus-restreint-et-plus-approprie">EB-017 un plan de site plus restreint et plus approprié</h1>
+<p>Pour guider le lecteur dans un site qui prend de l'ampleur, en plan de site, présenter par défaut les posts liés à la rubrique.</p>
+<h2 id="propositions">Propositions</h2>
 <ul>
-<li>Besoin : pour guider le lecteur dans un site qui prend de l'ampleur, en plan de site, présenter par défaut les posts liés à la rubrique.</li>
 <li>Statuts : enonce_20260411</li>
 <li>Solution : cibler les posts de la catégorie en cours<ul>
 <li>Parce que cela dépend du nombre de posts, laisser la décision à l'administrateur en présentant une gestion par configuration (pour l'instant, ne pas détecter automatiquement la quantité de posts et laisser le système décider : ou fixer le seuil en configuration).</li>
@@ -57,9 +63,15 @@
 <li>Sous les posts de la catégorie, un bouton "voir plus" permet d'afficher les posts des autres catégories.</li>
 </ul>
 </li>
+</ul>
+<h2 id="arbitrages">Arbitrages</h2>
+<ul>
 <li>Importance : moyenne - le site va devenir de moins en moins ergonomique</li>
 <li>Urgence : basse - le positionnment du site actuel et de la version STANDARD peut excuser cette lacune ergonomique</li>
 <li>Difficulté : moyenne - alimenter deux listes (seulement la catégorie actuelle, seulement les autres catégories)</li>
+</ul>
+<h2 id="controles">Contrôles</h2>
+<ul>
 <li>Assertions :<ul>
 <li>En cas de non activation de l'option, rien ne change (ou lorsque le seuil n'est pas atteint).</li>
 <li>En cas d'activation de l'option, seuls les posts de la catégorie sont visibles.</li>

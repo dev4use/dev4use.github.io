@@ -43,22 +43,34 @@
 </div></header>
 <div class="toc">
 <ul>
-<li><a href="#eb-016-accelerer-le-temps-de-chargement-des-pages-du-site-par-la-minification">EB-016 accélérer le temps de chargement des pages du site par la minification</a></li>
+<li><a href="#eb-016-accelerer-le-temps-de-chargement-des-pages-du-site-par-la-minification">EB-016 accélérer le temps de chargement des pages du site par la minification</a><ul>
+<li><a href="#propositions">Propositions</a></li>
+<li><a href="#arbitrages">Arbitrages</a></li>
+<li><a href="#controles">Contrôles</a></li>
+</ul>
+</li>
 </ul>
 </div>
 
 <article><h1 id="eb-016-accelerer-le-temps-de-chargement-des-pages-du-site-par-la-minification">EB-016 accélérer le temps de chargement des pages du site par la minification</h1>
+<p>Pour accélérer le temps de chargement des pages du site, compresser les éléments.</p>
+<h2 id="propositions">Propositions</h2>
 <ul>
-<li>Besoin : pour accélérer le temps de chargement des pages du site, compresser les éléments</li>
 <li>Statuts : enonce_20260322</li>
 <li>Solution : optimiser les contenus<ol>
 <li>Compresser le css, ajouter "minify" en suffixe, et lier le fichier au html.</li>
 <li>Compresser le html généré</li>
 </ol>
 </li>
+</ul>
+<h2 id="arbitrages">Arbitrages</h2>
+<ul>
 <li>Importance : moyenne - les temps d'affichage peuvent (vite ?) devenir problématiques (un comble pour un site statique)</li>
 <li>Urgence : basse - dédié à une version OPTIMUM de la solution</li>
 <li>Difficulté : moyenne - des scripts python existent (sont-ils encore maintenus ?)</li>
+</ul>
+<h2 id="controles">Contrôles</h2>
+<ul>
 <li>Assertions :<ol>
 <li>Mesurer la taille du fichier CSS avant/après.</li>
 <li>Mesurer la taille du fichier HTML avan/apres.</li>

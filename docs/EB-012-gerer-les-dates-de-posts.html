@@ -43,13 +43,19 @@
 </div></header>
 <div class="toc">
 <ul>
-<li><a href="#eb-012-gerer-les-dates-de-post">EB-012 gérer les dates de post</a></li>
+<li><a href="#eb-012-gerer-les-dates-de-post">EB-012 gérer les dates de post</a><ul>
+<li><a href="#propositions">Propositions</a></li>
+<li><a href="#arbitrages">Arbitrages</a></li>
+<li><a href="#controles">Contrôles</a></li>
+</ul>
+</li>
 </ul>
 </div>
 
 <article><h1 id="eb-012-gerer-les-dates-de-post">EB-012 gérer les dates de post</h1>
+<p>La date de publication ou réactualisation d'un post est un indicateur de la fraîcheur de l'information et une preuve d'activité éditoriale.</p>
+<h2 id="propositions">Propositions</h2>
 <ul>
-<li>Besoin : la date de publication ou réactualisation d'un post est un indicateur de la fraîcheur de l'information et une preuve d'activité éditoriale</li>
 <li>Statuts : enonce_20260322</li>
 <li>Solution : exploiter les dates de création et modification de fichier (fichier source markdown)<ul>
 <li>récupérer date de création et modification en référentiel de page,</li>
@@ -67,9 +73,15 @@
 </li>
 </ul>
 </li>
+</ul>
+<h2 id="arbitrages">Arbitrages</h2>
+<ul>
 <li>Importance : basse - nombre de sites de référence n'ont pas de dates (mais cela me gêne un peu)</li>
 <li>Urgence : basse</li>
 <li>Difficulté : basse - ces metadata de fichiers sont accessibles en python</li>
+</ul>
+<h2 id="controles">Contrôles</h2>
+<ul>
 <li>Assertions :<ul>
 <li>les posts les plus récents (en date d'actualisation) sont devant les posts les plus anciens (en date d'actualisation)</li>
 <li>un post en création récente "mardi" est derrière un post de création plus ancienne "lundi" mais d'actualisation plus récente "mercredi"</li>

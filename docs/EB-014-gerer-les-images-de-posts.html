@@ -43,13 +43,19 @@
 </div></header>
 <div class="toc">
 <ul>
-<li><a href="#eb-014-gerer-les-images-de-post">EB-014 gérer les images de post</a></li>
+<li><a href="#eb-014-gerer-les-images-de-post">EB-014 gérer les images de post</a><ul>
+<li><a href="#propositions">Propositions</a></li>
+<li><a href="#arbitrages">Arbitrages</a></li>
+<li><a href="#controles">Contrôles</a></li>
+</ul>
+</li>
 </ul>
 </div>
 
 <article><h1 id="eb-014-gerer-les-images-de-post">EB-014 gérer les images de post</h1>
+<p>Pour illustrer leurs propos, les post comportent des images.</p>
+<h2 id="propositions">Propositions</h2>
 <ul>
-<li>Besoin : pour illustrer leurs propos, les post comportent des images</li>
 <li>Statuts : enonce_20260322</li>
 <li>Solution : gérer les images liées aux posts<ul>
 <li>En dossier "Content" (ou Content/Images), les images strictement nommées comme leur post d'appartenance et numérotées en préfixe de type -1... seront identifiées comme liées au post par le système.</li>
@@ -57,9 +63,15 @@
 <li>La première image (selon la numérotation) sera gérée en vignette de post (pour la page listing de posts dans une catégorie).</li>
 </ul>
 </li>
+</ul>
+<h2 id="arbitrages">Arbitrages</h2>
+<ul>
 <li>Importance : haute - un site sans image est peu attractif</li>
 <li>Urgence : basse - le positionnment du site actuel et de la version STANDARD peut expliquer uen absence d'image</li>
 <li>Difficulté : moyenne - script d'optimisation et réduction d'image (pour la vignette)</li>
+</ul>
+<h2 id="controles">Contrôles</h2>
+<ul>
 <li>Assertions :<ul>
 <li>Toutes les images d'un post sont présentes dans le post.</li>
 <li>En page catégorie, la vignette est l'image 1.</li>
