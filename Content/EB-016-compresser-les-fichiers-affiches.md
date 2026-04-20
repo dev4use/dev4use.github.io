@@ -1,4 +1,4 @@
-# EB-016 accélérer le temps de chargement des pages du site par la mninification
+# EB-016 accélérer le temps de chargement des pages du site par la minification
 
 - Besoin : pour accélérer le temps de chargement des pages du site, compresser les éléments
 - Statuts : enonce_20260322
