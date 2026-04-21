@@ -43,22 +43,38 @@
 </div></header>
 <div class="toc">
 <ul>
-<li><a href="#bug-046-le-menu-de-plan-de-site-est-non-responsive">BUG-046 le menu de plan de site est non responsive</a></li>
+<li><a href="#bug-046-le-menu-de-plan-de-site-est-non-responsive">BUG-046 le menu de plan de site est non responsive</a><ul>
+<li><a href="#historique">Historique</a></li>
+<li><a href="#criticite">Criticité</a></li>
+<li><a href="#correction">Correction</a></li>
+<li><a href="#analyse">Analyse</a></li>
+</ul>
+</li>
 </ul>
 </div>
 
-<article><h2 id="bug-046-le-menu-de-plan-de-site-est-non-responsive">BUG-046 le menu de plan de site est non responsive</h2>
+<article><h1 id="bug-046-le-menu-de-plan-de-site-est-non-responsive">BUG-046 le menu de plan de site est non responsive</h1>
+<p>Afficher le site sur un écran réduit fait se poursuivre la liste de catégorie 1 sur la catégorie 2 qui devient illisible.</p>
+<h2 id="historique">Historique</h2>
 <ul>
 <li>statuts : ferme_260316_(fermé, pour l'instant ?) / ouvert_260316_() / </li>
 <li>contexte : la catégorie est présente par préfixe du nom de fichier, donc si on transforme le path en label...</li>
-<li>événement : afficher le site sur un écran réduit fait se poursuivre la liste de catagorie 1 sur la catégorie 2 qui devient illisible</li>
+</ul>
+<h2 id="criticite">Criticité</h2>
+<ul>
 <li>impact : bloquant</li>
 <li>frequence : moyenne</li>
 <li>detection : moyenne, avoir un petit écran pour le détecter au plus vite</li>
 <li>contournement : aucun</li>
+</ul>
+<h2 id="correction">Correction</h2>
+<ul>
 <li>arbitrage : nuit à l’image de marque et rend inaccessible des posts</li>
 <li>correctif : FIX-022 / </li>
-<li>changement : adapter la feuille de de style, déplacer la hauteur sur l'item de c haque liste (li)</li>
+<li>changement : adapter la feuille de de style, déplacer la hauteur sur l'item de chaque liste (li)</li>
+</ul>
+<h2 id="analyse">Analyse</h2>
+<ul>
 <li>rex : non testé avec beaucoup de contenu</li>
 <li>cause racine : test</li>
 </ul></article>

@@ -43,19 +43,32 @@
 </div></header>
 <div class="toc">
 <ul>
-<li><a href="#bug-048-barrer-un-texte-en-markdown">BUG-048 barrer un texte en markdown</a></li>
+<li><a href="#bug-048-barrer-un-texte-en-markdown">BUG-048 barrer un texte en markdown</a><ul>
+<li><a href="#historique">Historique</a></li>
+<li><a href="#criticite">Criticité</a></li>
+<li><a href="#correction">Correction</a></li>
+<li><a href="#analyse">Analyse</a></li>
+</ul>
+</li>
 </ul>
 </div>
 
-<article><h2 id="bug-048-barrer-un-texte-en-markdown">BUG-048 barrer un texte en markdown</h2>
+<article><h1 id="bug-048-barrer-un-texte-en-markdown">BUG-048 barrer un texte en markdown</h1>
+<p>Barrer un texte en markdown ~~de la sorte~~ par des tildes ne fonctionne pas avec la libaririe externe utilisée.</p>
+<h2 id="historique">Historique</h2>
 <ul>
 <li>statuts : ouvert_260322_() / </li>
 <li>contexte : <a href="https://www.markdownlang.com/fr/extended/strikethrough.html">un texte peut être barré en markdown</a> pour signifier une rature, une obsolescence, un repentir, et a une signification forte qui doit être gardée en html</li>
-<li>événement : barrer un texte en markdown ~~de la sorte~~ par des tildes ne fonctionne pas avec la libaririe externe utilisée</li>
+</ul>
+<h2 id="criticite">Criticité</h2>
+<ul>
 <li>impact : fonctionnalité non délivrée, effet cosmétique</li>
 <li>fréquence : basse (pas tous les jours qu'on barre du texte et laisse ce texte dans un document, sauf dans des specs, solutions...)</li>
 <li>detection : moyenne (tomber sur le cas) mais facile (se voit à l'oeil nu)</li>
 <li>contournement : ne pas utiliser le tilde de suppression</li>
+</ul>
+<h2 id="correction">Correction</h2>
+<ul>
 <li>arbitrage : il serait bien d'avoir une compatibilité maximum avec le langage markdown</li>
 <li>correctif : voir s'il ne faut pas une extension supplémentaire dans la librairie externe</li>
 <li>changement : <ul>
@@ -63,6 +76,9 @@
 <li>soit signaler l'incident à l'éditeur et attendre une montée de version corrective</li>
 </ul>
 </li>
+</ul>
+<h2 id="analyse">Analyse</h2>
+<ul>
 <li>cause racine : dépendance externe</li>
 </ul></article>
 <footer></footer><div id="finish"><p class="infos">généré depuis <a href="https://github.com/dev4use/marss" class="trademark">Marss ST-1.0.1</a> </p><ul class="postFooter">

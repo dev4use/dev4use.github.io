@@ -43,19 +43,32 @@
 </div></header>
 <div class="toc">
 <ul>
-<li><a href="#bug-051-oubli-despace-en-nom-de-fichier-markdown">BUG-051 oubli d'espace en nom de fichier markdown</a></li>
+<li><a href="#bug-051-oubli-despace-en-nom-de-fichier-markdown">BUG-051 oubli d'espace en nom de fichier markdown</a><ul>
+<li><a href="#historique">Historique</a></li>
+<li><a href="#criticite">Criticité</a></li>
+<li><a href="#correction">Correction</a></li>
+<li><a href="#analyse">Analyse</a></li>
+</ul>
+</li>
 </ul>
 </div>
 
-<article><h2 id="bug-051-oubli-despace-en-nom-de-fichier-markdown">BUG-051 oubli d'espace en nom de fichier markdown</h2>
+<article><h1 id="bug-051-oubli-despace-en-nom-de-fichier-markdown">BUG-051 oubli d'espace en nom de fichier markdown</h1>
+<p>En regardant attentivement les urls, il m'arrive de voir des pourcentages liés aux espaces/vides/blancs en nom de fichier.</p>
+<h2 id="historique">Historique</h2>
 <ul>
 <li>statuts : ouvert_260328_()</li>
 <li>contexte : erreur humaine finalement assez fréquente, je ne vois pas que j'ai écrit des noms de fichiers markdown avec espace</li>
-<li>événement : en regardant attentivement les urls, il m'arrive de voir des pourcentages liés aux espaces/vides/blancs en nom de fichier</li>
+</ul>
+<h2 id="criticite">Criticité</h2>
+<ul>
 <li>impact : pratiquement invisible</li>
 <li>fréquence : moyenne</li>
 <li>detection : facile, en barre de navigation</li>
 <li>contournement : aucun</li>
+</ul>
+<h2 id="correction">Correction</h2>
+<ul>
 <li>arbitrage : même si c'est une erreur humaine, anticiper et se prémunir de cette erreur pour rendre service à l'utilisateur et futur lecteur</li>
 <li>correctif : oui</li>
 <li>changement :<ul>
@@ -64,6 +77,9 @@
 <li>notifier l'erreur en console</li>
 </ul>
 </li>
+</ul>
+<h2 id="analyse">Analyse</h2>
+<ul>
 <li>cause racine : erreur humaine</li>
 </ul></article>
 <footer></footer><div id="finish"><p class="infos">généré depuis <a href="https://github.com/dev4use/marss" class="trademark">Marss ST-1.0.1</a> </p><ul class="postFooter">

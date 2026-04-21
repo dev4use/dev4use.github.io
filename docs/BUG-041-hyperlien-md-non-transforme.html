@@ -43,21 +43,37 @@
 </div></header>
 <div class="toc">
 <ul>
-<li><a href="#bug-041-un-hyperlien-en-extension-md-nest-pas-traduit-en-extension-html-lors-de-la-transformation-md-html">BUG-041 un hyperlien en extension md n’est pas traduit en extension html lors de la transformation md html</a></li>
+<li><a href="#bug-041-un-hyperlien-en-extension-md-nest-pas-traduit-en-extension-html-lors-de-la-transformation-md-html">BUG-041 un hyperlien en extension md n’est pas traduit en extension html lors de la transformation md html</a><ul>
+<li><a href="#historique">Historique</a></li>
+<li><a href="#criticite">Criticité</a></li>
+<li><a href="#correction">Correction</a></li>
+<li><a href="#analyse">Analyse</a></li>
+</ul>
+</li>
 </ul>
 </div>
 
-<article><h2 id="bug-041-un-hyperlien-en-extension-md-nest-pas-traduit-en-extension-html-lors-de-la-transformation-md-html">BUG-041 un hyperlien en extension md n’est pas traduit en extension html lors de la transformation md html</h2>
+<article><h1 id="bug-041-un-hyperlien-en-extension-md-nest-pas-traduit-en-extension-html-lors-de-la-transformation-md-html">BUG-041 un hyperlien en extension md n’est pas traduit en extension html lors de la transformation md html</h1>
+<p>Au clic sur le lien en extension .md, on aboutit à une erreur 404.</p>
+<h2 id="historique">Historique</h2>
 <ul>
 <li>statuts : ferme_260316_(fixé assez légèrement, sûrement peu robuste) / ouvert_260314_()</li>
 <li>contexte : puisque le md est traduit en html, on s’attend à ce que la transformation soit complète. Il s’agit d’une librairie externe.</li>
-<li>événement : au clic sur le lien en extension .md, on aboutit à une erreur 404</li>
+</ul>
+<h2 id="criticite">Criticité</h2>
+<ul>
 <li>impact : bloquant ( l’action ne peut aboutir)</li>
 <li>fréquence : faible, les liens entre fichiers ne sont pas constants par contenu</li>
 <li>détection : moyenne, l’utilisateur doit cliquer sur le lien pour savoir qu’il est brisé</li>
 <li>contournement : l’utilisateur saisit par anticipation l’extension .html dans son fichier .md</li>
+</ul>
+<h2 id="correction">Correction</h2>
+<ul>
 <li>arbitrage : la version de l’application veut imposer le moins de contraintes possibles lors de la création du .md, donc le correctif est nécessaire</li>
 <li>correctif : détecter la présence d’un hyperlien (au plus tôt en md et non en html ?) en .md et changer l’extension en .html</li>
+</ul>
+<h2 id="analyse">Analyse</h2>
+<ul>
 <li>rex : trop grande confiance accordée à une dépendance</li>
 <li>cause racine : confiance</li>
 </ul></article>

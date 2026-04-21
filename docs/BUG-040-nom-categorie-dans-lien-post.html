@@ -43,22 +43,38 @@
 </div></header>
 <div class="toc">
 <ul>
-<li><a href="#bug-040-le-nom-de-la-categorie-est-repete-en-libelle-de-chaque-post">BUG-040 le nom de la catégorie est répété en libellé de chaque post</a></li>
+<li><a href="#bug-040-le-nom-de-la-categorie-est-repete-en-libelle-de-chaque-post">BUG-040 le nom de la catégorie est répété en libellé de chaque post</a><ul>
+<li><a href="#historique">Historique</a></li>
+<li><a href="#criticite">Criticité</a></li>
+<li><a href="#correction">Correction</a></li>
+<li><a href="#analyse">Analyse</a></li>
+</ul>
+</li>
 </ul>
 </div>
 
-<article><h2 id="bug-040-le-nom-de-la-categorie-est-repete-en-libelle-de-chaque-post">BUG-040 le nom de la catégorie est répété en libellé de chaque post</h2>
+<article><h1 id="bug-040-le-nom-de-la-categorie-est-repete-en-libelle-de-chaque-post">BUG-040 le nom de la catégorie est répété en libellé de chaque post</h1>
+<p>La liste horizontale des posts met en évidence la répétition du nom de la catégorie.</p>
+<h2 id="historique">Historique</h2>
 <ul>
 <li>statuts : ferme_260315_(fermé, plus simple que prévu) / ouvert_260314_() / </li>
 <li>contexte : la catégorie est présente par préfixe du nom de fichier, donc si on transforme le path en label...</li>
-<li>événement : la liste horizontale des posts met en évidence la répétition du nom de la catégorie</li>
+</ul>
+<h2 id="criticite">Criticité</h2>
+<ul>
 <li>impact : cosmétique</li>
 <li>frequence : élevée, dans le plan de site facilement visible</li>
 <li>detection : facile, visible dès l’accueil</li>
 <li>contournement : aucun</li>
 <li>arbitrage : nuit à l’image de marque</li>
+</ul>
+<h2 id="correction">Correction</h2>
+<ul>
 <li>correctif : FIX-020 / retirer la catégorie du label lors de la récupération en liste</li>
 <li>changement : ajouter la variable categorie et déplacer dans l'algo après l'interception de la catégorie</li>
+</ul>
+<h2 id="analyse">Analyse</h2>
+<ul>
 <li>rex : manque de bon sens dans le contrôle, aurait pu être vu avant</li>
 <li>cause racine : confiance</li>
 </ul></article>

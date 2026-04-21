@@ -43,25 +43,41 @@
 </div></header>
 <div class="toc">
 <ul>
-<li><a href="#bug-050-le-label-de-lien-vers-post-debute-par-un-espace">BUG-050 le label de lien vers post débute par un espace</a></li>
+<li><a href="#bug-050-le-label-de-lien-vers-post-debute-par-un-espace">BUG-050 le label de lien vers post débute par un espace</a><ul>
+<li><a href="#historique">Historique</a></li>
+<li><a href="#criticite">Criticité</a></li>
+<li><a href="#correction">Correction</a></li>
+<li><a href="#analyse">Analyse</a></li>
+</ul>
+</li>
 </ul>
 </div>
 
-<article><h2 id="bug-050-le-label-de-lien-vers-post-debute-par-un-espace">BUG-050 le label de lien vers post débute par un espace</h2>
+<article><h1 id="bug-050-le-label-de-lien-vers-post-debute-par-un-espace">BUG-050 le label de lien vers post débute par un espace</h1>
+<p>La création du référentiel html détecte les catégories, mais ce faisant, laisse un blanc en remplacement dans le label.</p>
+<h2 id="historique">Historique</h2>
 <ul>
 <li>statuts : ferme_260325_() / ouvert_260325_()</li>
 <li>contexte : étape par étape, les données sont transformées, mais pas forcément vérifiées en pas à pas</li>
-<li>événement : la création du référentiel html détecte les catégories, mais ce faisant, laisse un blanc en remplacement dans le label</li>
+</ul>
+<h2 id="criticite">Criticité</h2>
+<ul>
 <li>impact : pratiquement invisible</li>
 <li>fréquence : haute</li>
 <li>detection : difficile, voir le code source</li>
 <li>contournement : inutile, qui s'en rend compte ?</li>
+</ul>
+<h2 id="correction">Correction</h2>
+<ul>
 <li>arbitrage : détecté par le test et corrigé aussitôt (typiquement un incident non communiqué qui passe en action de debug)</li>
 <li>correctif : oui</li>
 <li>changement :<ul>
 <li>ajouter un .strip() au label</li>
 </ul>
 </li>
+</ul>
+<h2 id="analyse">Analyse</h2>
+<ul>
 <li>cause racine : ni test automatique ni code source scruté à la loupe</li>
 </ul></article>
 <footer></footer><div id="finish"><p class="infos">généré depuis <a href="https://github.com/dev4use/marss" class="trademark">Marss ST-1.0.1</a> </p><ul class="postFooter">

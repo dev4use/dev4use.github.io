@@ -43,19 +43,32 @@
 </div></header>
 <div class="toc">
 <ul>
-<li><a href="#bug-049-numerotation-de-second-niveau-en-chiffres-romains">BUG-049 numérotation de second niveau en chiffres romains</a></li>
+<li><a href="#bug-049-numerotation-de-second-niveau-en-chiffres-romains">BUG-049 numérotation de second niveau en chiffres romains</a><ul>
+<li><a href="#historique">Historique</a></li>
+<li><a href="#criticite">Criticité</a></li>
+<li><a href="#correction">Correction</a></li>
+<li><a href="#analyse">Analyse</a></li>
+</ul>
+</li>
 </ul>
 </div>
 
-<article><h2 id="bug-049-numerotation-de-second-niveau-en-chiffres-romains">BUG-049 numérotation de second niveau en chiffres romains</h2>
+<article><h1 id="bug-049-numerotation-de-second-niveau-en-chiffres-romains">BUG-049 numérotation de second niveau en chiffres romains</h1>
+<p>Même sans numéroter le niveau 1, dès que le niveau deux est numéroté il s'écrit sous forme de chiffres romains i, ii (ce qui est peu compréhensible si on veut avoir une grande lisibilité pour plus tard effectuer de la traçabilité).</p>
+<h2 id="historique">Historique</h2>
 <ul>
 <li>statuts : ouvert_260322_() / </li>
 <li>contexte : <a href="https://www.markdownlang.com/fr/basic/lists.html">les liste en markdown</a> peuvent avoir plusieurs niveaux, mais comment garder ces niveaux au format numérique</li>
-<li>événement : même sans numéroter le niveau 1, dès que le niveau deux est numéroté il s'écrit sous forme de chiffres romains i, ii (ce qui est peu compréhensible si on veut avoir une grande lisibilité pour plus tard effectuer de la traçabilité)</li>
+</ul>
+<h2 id="criticite">Criticité</h2>
+<ul>
 <li>impact : fonctionnalité dégradée, manque de visibilité de la hiérarchie</li>
 <li>fréquence : moyenne (recours aux listes numérotes pour la traçabilité des expressions de besoins)</li>
 <li>detection : haute</li>
 <li>contournement : ne pas utiliser la numérotation en liste de niveau 2 (en niveau 1 la numéroation est en chiffre)</li>
+</ul>
+<h2 id="correction">Correction</h2>
+<ul>
 <li>arbitrage : il serait bien d'avoir une compatibilité maximum avec le langage markdown (même si effectivmentle i, ii est pratiqué)</li>
 <li>correctif : voir s'il  existe une option dans la librairie externe</li>
 <li>changement : (on peut voir ci dessous i, ii, tant que incident non résolu)<ol>
@@ -64,6 +77,9 @@
 <li>ou gestion par simple css en enlevant les chiffres romains</li>
 </ol>
 </li>
+</ul>
+<h2 id="analyse">Analyse</h2>
+<ul>
 <li>cause racine : dépendance externe</li>
 </ul></article>
 <footer></footer><div id="finish"><p class="infos">généré depuis <a href="https://github.com/dev4use/marss" class="trademark">Marss ST-1.0.1</a> </p><ul class="postFooter">

@@ -43,21 +43,37 @@
 </div></header>
 <div class="toc">
 <ul>
-<li><a href="#bug-042-le-titre-de-la-derniere-page-listee-en-plan-de-site-est-le-titre-navigateur-de-la-page-daccueil">BUG-042 le titre de la derniere page listée en plan de site est le titre navigateur de la page d'accueil</a></li>
+<li><a href="#bug-042-le-titre-de-la-derniere-page-listee-en-plan-de-site-est-le-titre-navigateur-de-la-page-daccueil">BUG-042 le titre de la derniere page listée en plan de site est le titre navigateur de la page d'accueil</a><ul>
+<li><a href="#historique">Historique</a></li>
+<li><a href="#criticite">Criticité</a></li>
+<li><a href="#correction">Correction</a></li>
+<li><a href="#analyse">Analyse</a></li>
+</ul>
+</li>
 </ul>
 </div>
 
-<article><h2 id="bug-042-le-titre-de-la-derniere-page-listee-en-plan-de-site-est-le-titre-navigateur-de-la-page-daccueil">BUG-042 le titre de la derniere page listée en plan de site est le titre navigateur de la page d'accueil</h2>
+<article><h1 id="bug-042-le-titre-de-la-derniere-page-listee-en-plan-de-site-est-le-titre-navigateur-de-la-page-daccueil">BUG-042 le titre de la derniere page listée en plan de site est le titre navigateur de la page d'accueil</h1>
+<p>A l'arrivée sur site ou au retour à l'accueil par lien de menu, le titre de navigateur est celui du dernier post listé en plan de site.</p>
+<h2 id="historique">Historique</h2>
 <ul>
 <li>statuts : ferme_260315_() / ouvert_260315_()</li>
-<li>contexte : l'accueil est géré à part par une page txt qui est traitée par une fonction personnalisé</li>
-<li>événement : à l'arrivée sur site ou au retoiur à l'accueil par lien de menu, le titre de navigateur est celui du dernier post listé en plan de site</li>
+<li>contexte : l'accueil est géré à part par une page txt qui est traitée par une fonction personnalisée.</li>
+</ul>
+<h2 id="criticite">Criticité</h2>
+<ul>
 <li>impact : cosmétique</li>
 <li>fréquence : forte</li>
-<li>détection : moyenne, qui regarde le titre en url à pmart les moteurs de recherche ?</li>
+<li>détection : moyenne, qui regarde le titre en url à part les moteurs de recherche ?</li>
 <li>contournement : aucun</li>
+</ul>
+<h2 id="correction">Correction</h2>
+<ul>
 <li>arbitrage : la page d'accueil donne l'impression première et est donc assez importante</li>
 <li>correctif : utiliser le titre de l'application déjà mis en fichier de configuration</li>
+</ul>
+<h2 id="analyse">Analyse</h2>
+<ul>
 <li>rex : non testé avec attention, pose la question des doublons de code entre 2 fonctions de generation de fichier</li>
 <li>cause racine : confiance</li>
 </ul></article>

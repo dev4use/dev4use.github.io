@@ -43,19 +43,32 @@
 </div></header>
 <div class="toc">
 <ul>
-<li><a href="#bug-047-visualiser-la-page-en-cours-dans-le-menu">BUG-047 visualiser la page en cours dans le menu</a></li>
+<li><a href="#bug-047-visualiser-la-page-en-cours-dans-le-menu">BUG-047 visualiser la page en cours dans le menu</a><ul>
+<li><a href="#historique">Historique</a></li>
+<li><a href="#criticite">Criticité</a></li>
+<li><a href="#correction">Correction</a></li>
+<li><a href="#analyse">Analyse</a></li>
+</ul>
+</li>
 </ul>
 </div>
 
-<article><h2 id="bug-047-visualiser-la-page-en-cours-dans-le-menu">BUG-047 visualiser la page en cours dans le menu</h2>
+<article><h1 id="bug-047-visualiser-la-page-en-cours-dans-le-menu">BUG-047 visualiser la page en cours dans le menu</h1>
+<p>Dans le menu, on peut recliquer sur la page où on est sans le savoir, car notre position n'est pas indiquée.</p>
+<h2 id="historique">Historique</h2>
 <ul>
 <li>statuts : ouvert_260316_() / ferme_260318_(peu propre et consommateur de ressources)</li>
 <li>contexte : le menu est immuable, la page en cours n'est pas indiquée, contrairement aux standards du web</li>
-<li>événement : dans le menu, on peut recliquer sur la page où on est sans le savoir, car notre position n'est pas indiquée</li>
+</ul>
+<h2 id="criticite">Criticité</h2>
+<ul>
 <li>impact : ergonomie</li>
 <li>frequence : élevée</li>
 <li>detection : moyenne, avoir u n petit écran pour le détecter au plus vite</li>
 <li>contournement : le nom de l'url est explicite pour indiquer notre position</li>
+</ul>
+<h2 id="correction">Correction</h2>
+<ul>
 <li>arbitrage : nuit à l’image de marque et rend inaccessible des posts</li>
 <li>correctif : FIX-023 / </li>
 <li>changement : <ul>
@@ -65,6 +78,9 @@
 <li>un peu quick and dirty : benchmarker un jour avec remplacement par sub ou autre </li>
 </ul>
 </li>
+</ul>
+<h2 id="analyse">Analyse</h2>
+<ul>
 <li>rex : pas vu, menu commun généré avant la boucle de post à déplacer dans la boucle (mais redondance en consommation)</li>
 <li>cause racine : test</li>
 </ul></article>
