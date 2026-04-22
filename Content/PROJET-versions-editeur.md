@@ -1,9 +1,13 @@
 # Plusieurs versions de la solution
 
 Pourquoi ne pas entretenir et maintenir plusieurs versions de la solution ?  
+Exercice de style intéressant et maîtrise précise des périmètres fonctionnels.  
+
+## Maîtrise du périmètre fonctionnel
+
 Il est si facile de s'égarer, d'aller trop loin, de tomber dans le gadget et le superflu.  
 Mais il est aussi si tentant d'avoir un objet technologique qui élargit sans cesse son périmètre.  
- > Il en faudrait donc pour tous les goûts ? 
+ > Il en faudrait donc pour tous les goûts ?  
 
 D'où la gestion en parallèle de plusieurs versions.    
 

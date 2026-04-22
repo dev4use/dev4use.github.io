@@ -1,6 +1,9 @@
 # Bilan de test
 
 Si vous pensez au PV de recette, en tant que référentiel de haut niveau, l'ISTQB n'entre pas dans ce niveau de détail et ne cite pas un tel document.   
+
+## Quel bilan de test ?
+
 Il existe plusieurs niveaux de bilan de tests :
 
 - par niveau de test,  

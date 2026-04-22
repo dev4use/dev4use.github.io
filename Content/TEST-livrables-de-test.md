@@ -1,15 +1,17 @@
 # Livrables de test
 
+le terme de "livrable" pour tous les éléments produits par **le processus de test** semble approprié.   
+Pris au pied de la lettre, ce terme signifie : 
+
+> (dé)livrable produit par le test.  
+
+## Terminologie
+
 J'hésitais sur le terme :
 
 - artefact - trop savant - ,
 - [testware ISTQB](https://glossary.istqb.org/fr_FR/search?term=testware&exact_matches_first=true) - encore plus savant - ,
 - documentation - prêtant à confusion - .  
-
-Finalement, le terme de "livrable" pour tous les éléments produits par **le processus de test** semble plus approprié.   
-Pris au pied de la lettre, ce terme signifie : 
-
-> (dé)livrable produit par le test.  
 
 ## Contexte de la mission Marss
 

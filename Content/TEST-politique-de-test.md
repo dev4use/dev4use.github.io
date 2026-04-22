@@ -1,10 +1,14 @@
 # Politique de test
 
-La politique de test, [définition ISTQB](https://glossary.istqb.org/fr_FR/search?term=politique%20de%20test&exact_matches_first=true),
+La politique de test peut être vue comme un principe de précaution pour savoir où vous mettez les pieds, ce que l'organisation attend de vous et quel est le degré de mâturité en test de l'organisation.  
+
+## Un document a effet boomerang
+
+De ce fait, lorqu'un nouveau venu rejoint une organisation,   
+la politique de test, [définition ISTQB](https://glossary.istqb.org/fr_FR/search?term=politique%20de%20test&exact_matches_first=true),
 
 > c'est un peu la mécanique de l'arroseur arrosé.
 
-Mais c'est aussi un principe de précaution pour savoir où vous mettez les pieds, ce que l'organisation attend de vous et quel est le degré de mâturité en test de l'organisation.  
 
 ## Contexte de la mission Marss
 
