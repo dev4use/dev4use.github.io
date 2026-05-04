@@ -4,7 +4,7 @@ Sur un post, le menu déplié à la verticale va très vite prendre tout l'écra
 
 ## Historique
 
-- statuts : ferme_ (20260320) / ouvert_260315_()
+- statuts : ferme_ 20260320_() / ouvert_260315_()
 - contexte : le menu reste tout le temps déplié
 
 ## Criticité

@@ -13,7 +13,7 @@ Pour illustrer leurs propos, les post comportent des images.
 ## Arbitrages
 
 - Importance : haute - un site sans image est peu attractif
-- Urgence : basse - le positionnment du site actuel et de la version STANDARD peut expliquer uen absence d'image
+- Urgence : basse - le positionnement du site actuel et de la version STANDARD peut expliquer uen absence d'image
 - Difficulté : moyenne - script d'optimisation et réduction d'image (pour la vignette)
 
 ## Contrôles

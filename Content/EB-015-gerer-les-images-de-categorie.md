@@ -1,4 +1,4 @@
-# EB-014 gérer les images de catégorie
+# EB-015 gérer les images de catégorie
 
 Pour illustrer leurs propos, les post comportent des images.
 
@@ -13,7 +13,7 @@ Pour illustrer leurs propos, les post comportent des images.
 ## Arbitrages
 
 - Importance : haute - un site sans image est peu attractif
-- Urgence : basse - le positionnment du site actuel et de la version STANDARD peut expliquer une absence d'image
+- Urgence : basse - le positionnement du site actuel et de la version STANDARD peut expliquer une absence d'image
 - Difficulté : moyenne - script d'optimisation et réduction d'image (pour la vignette)
 
 ## Contrôles
@@ -21,5 +21,5 @@ Pour illustrer leurs propos, les post comportent des images.
 - Assertions :
     - En page catégorie, la vignette de catégorie est l'image de catégorie.
     - En page catégorie, la vignette est de taille réduite comparée à l'originale (si l'originale était supérieure à la taille de l'encart attendu).
-    - En l'bsence d'image pour une catégorie, aucune imge n'est affichée et aucune erreur liée n'apparait à l'affichage.
+    - En l'absence d'image pour une catégorie, aucune imge n'est affichée et aucune erreur liée n'apparait à l'affichage.
     - En présence de plusieurs images pour une catégorie, le script de génération provoque un vartissement explicite mais continue son traitement.

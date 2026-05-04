@@ -1,4 +1,4 @@
-# EB-016 accélérer le temps de chargement des pages du site par la minification
+# EB-016 minifier pour accélérer le temps de chargement des pages
 
 Pour accélérer le temps de chargement des pages du site, compresser les éléments.
 

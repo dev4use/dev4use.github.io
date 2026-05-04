@@ -1,5 +1,5 @@
 <html><head><title>013 exposer des pages categorie</title><meta http-equiv="Content-type" content="text/html;charset=utf-8" /><link rel="stylesheet" href="/media/style.css" media="all"></head><body class="markdown-body">
-<a href="./">accueil</a><input type="radio" id="men" name="menu" value="site" class="cache" checked><label for="men">Menu du site</label><input type="radio" id="tdm" name="menu" value="page" class="cache" ><label for="tdm">Menu de la page</label><input type="radio" id="rien" name="menu" value="fermer" class="cache"><label for="rien">(FERMER MENU)</label>
+<a href="./">accueil</a> > <a href="EB.html">EB</a><input type="radio" id="men" name="menu" value="site" class="cache" ><label for="men">Menu du site</label><input type="radio" id="tdm" name="menu" value="page" class="cache" ><label for="tdm">Menu de la page</label><input type="radio" id="rien" name="menu" value="fermer" class="cache"><label for="rien">(FERMER MENU)</label>
 <div class="menu"><ul class="postCategorie" id=BUG><span title=BUG>BUG</span>
 <li><a href="BUG-040-nom-categorie-dans-lien-post.html">040 nom categorie dans lien post</a></li>
 <li><a href="BUG-041-hyperlien-md-non-transforme.html">041 hyperlien md non transforme</a></li>
@@ -52,16 +52,16 @@
 </ul>
 </div>
 
-<article><h1 id="eb-013-exposer-des-pages-de-listing-categorie">EB-013 exposer des pages de listing catégorie</h1>
+<article>< <a href="EB-012-gerer-les-dates-de-posts.html">012 gerer les dates de posts</a> | ... | <a href="EB-014-gerer-les-images-de-posts.html">014 gerer les images de posts</a> ><h1 id="eb-013-exposer-des-pages-de-listing-categorie">EB-013 exposer des pages de listing catégorie</h1>
 <p>Disposer de pages par catégorie, le problème se pose(ra) avec un nombre élevé de posts par catégorie rendant l'affichage en menu de header pénible aux yeux.</p>
 <h2 id="propositions">Propositions</h2>
 <ul>
-<li>Statuts : enonce_20260322</li>
+<li>Statuts : lot_01_20260502 / enonce_20260322 /</li>
 <li>Solution : se conformer aux standards du marché en offrant des pages catégorie<ul>
-<li>en menu de header, avoir un lien sur la catégorie amenant à la page catégorie</li>
+<li>lot_01 :  en menu de header, avoir un lien sur la catégorie amenant à la page catégorie</li>
 <li>en menu header (lié à l'EB-012 de gestion des dates), afficher juste les unièmes posts les plus récents (nombre gérable en configuration)</li>
-<li>présenter des pages catégories</li>
-<li>en configuration, ajouter une description possible de chaque catégorie (un peu intrusif, limite pour la philosophie de la version STANDARD, gérer un contenu éditorial propre au site) / cette configuration pourra servir à choisisir le template type du post dans une version plus évoluée</li>
+<li>lot_01 : présenter des pages catégories</li>
+<li>lot_01 : en configuration, ajouter une description possible de chaque catégorie (un peu intrusif, limite pour la philosophie de la version STANDARD, gérer un contenu éditorial propre au site) / cette configuration pourra servir à choisir le template type du post dans une version plus évoluée</li>
 <li>réaliser une pagination des posts (la priorité de la fonctionnalité sera liée au volume de post)</li>
 <li>lié à la question du volume, afficher devant la catégorie le nombre présent (quel service réellement rendu ?)</li>
 </ul>
@@ -69,7 +69,7 @@
 </ul>
 <h2 id="arbitrages">Arbitrages</h2>
 <ul>
-<li>Difficulté : moyenne - rajouter des fonctions d'afficcahge dans la version STANDARD sans template est un peu lourd</li>
+<li>Difficulté : moyenne - rajouter des fonctions d'affichage dans la version STANDARD sans template est un peu lourd</li>
 </ul>
 <h2 id="controles">Contrôles</h2>
 <ul>
@@ -82,8 +82,8 @@
 <li>Une catégorie sans posts, présente en page de configuration, avec ou non sa description, est absente en menu et absente en page catégorie. </li>
 </ul>
 </li>
-</ul></article>
-<footer></footer><div id="finish"><p class="infos">généré depuis <a href="https://github.com/dev4use/marss" class="trademark">Marss ST-1.0.1</a> </p><ul class="postFooter">
+</ul>< <a href="EB-012-gerer-les-dates-de-posts.html">012 gerer les dates de posts</a> | ... | <a href="EB-014-gerer-les-images-de-posts.html">014 gerer les images de posts</a> ></article>
+<footer></footer><div id="finish"><p class="infos">généré depuis <a href="https://github.com/dev4use/marss" class="trademark">Marss ST-1.0.2</a> </p><ul class="postFooter">
 <li><a href="FOOTER-ligne-editoriale.html">ligne editoriale</a></li>
 <li><a href="FOOTER-mentions-legales.html">mentions legales</a></li>
 </ul>

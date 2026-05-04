@@ -4,18 +4,18 @@ Disposer de pages par catégorie, le problème se pose(ra) avec un nombre élev�
 
 ## Propositions
 
-- Statuts : enonce_20260322
+- Statuts : lot_01_20260502 / enonce_20260322 /
 - Solution : se conformer aux standards du marché en offrant des pages catégorie
-    - en menu de header, avoir un lien sur la catégorie amenant à la page catégorie
+    - lot_01 :  en menu de header, avoir un lien sur la catégorie amenant à la page catégorie
     - en menu header (lié à l'EB-012 de gestion des dates), afficher juste les unièmes posts les plus récents (nombre gérable en configuration)
-    - présenter des pages catégories
-    - en configuration, ajouter une description possible de chaque catégorie (un peu intrusif, limite pour la philosophie de la version STANDARD, gérer un contenu éditorial propre au site) / cette configuration pourra servir à choisisir le template type du post dans une version plus évoluée
+    - lot_01 : présenter des pages catégories
+    - lot_01 : en configuration, ajouter une description possible de chaque catégorie (un peu intrusif, limite pour la philosophie de la version STANDARD, gérer un contenu éditorial propre au site) / cette configuration pourra servir à choisir le template type du post dans une version plus évoluée
     - réaliser une pagination des posts (la priorité de la fonctionnalité sera liée au volume de post)
     - lié à la question du volume, afficher devant la catégorie le nombre présent (quel service réellement rendu ?)
 
 ## Arbitrages
 
-- Difficulté : moyenne - rajouter des fonctions d'afficcahge dans la version STANDARD sans template est un peu lourd
+- Difficulté : moyenne - rajouter des fonctions d'affichage dans la version STANDARD sans template est un peu lourd
 
 ## Contrôles
 
