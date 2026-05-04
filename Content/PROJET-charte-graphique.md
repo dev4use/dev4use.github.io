@@ -17,7 +17,7 @@ Les couleurs présentes se veulent sobres, austères. Il s'agit du noir et blanc
 - Le noir pour le texte.
 - Le blanc pour le fond.
 - Le bleu pour l'hyperlien.
-- Le orange uniquement pour le lien vers <a href="https://github.com/dev4use/marss" class="trademark">Marss</a>.
+- Le orange uniquement pour le lien vers <a href="https://github.com/dev4use/marss" class="trademark">Marss</a> ou pour une catégorie.
 
 S'il n'y avait cet orange, ce serait d'une tristesse et d'un sérieux confondant.  
 Digne de l'édition d'un journal papier en noir et blanc.   
@@ -27,7 +27,7 @@ Digne de l'édition d'un journal papier en noir et blanc.
 Aucun élement graphique n'est présent ni répété.  
 
 - Ni planète <a href="https://github.com/dev4use/marss" class="trademark">Marss</a>.
-- Ni orange à une seule exception près.
+- Ni orange à deux exceptions près.
 - Ni même l'usage des polices spéciales pour illustrer : catégorie ou tag, temps de l'édition et durée de la lecture...  
 
 ### Priorité au texte
