@@ -1,5 +1,5 @@
-<html><head><title>017 plan de site cible</title><meta http-equiv="Content-type" content="text/html;charset=utf-8" /><link rel="stylesheet" href="/media/style.css" media="all"></head><body class="markdown-body">
-<a href="./">accueil</a> > <a class="diff" href="EB.html">EB</a><input type="radio" id="men" name="menu" value="site" class="cache" ><label for="men">Menu du site</label><input type="radio" id="tdm" name="menu" value="page" class="cache" ><label for="tdm">Menu de la page</label><input type="radio" id="rien" name="menu" value="fermer" class="cache"><label for="rien">(FERMER MENU)</label>
+<html><head><title>equilibrer les sujets</title><meta http-equiv="Content-type" content="text/html;charset=utf-8" /><link rel="stylesheet" href="/media/style.css" media="all"></head><body class="markdown-body">
+<a href="./">accueil</a> > <a class="diff" href="US.html">US</a><input type="radio" id="men" name="menu" value="site" class="cache" ><label for="men">Menu du site</label><input type="radio" id="tdm" name="menu" value="page" class="cache" ><label for="tdm">Menu de la page</label><input type="radio" id="rien" name="menu" value="fermer" class="cache"><label for="rien">(FERMER MENU)</label>
 <div class="menu"><ul class="postCategorie" id=BUG><span title=BUG><a class="diff" href="BUG.html">BUG</a> (12)</span>
 <li><a href="BUG-040-nom-categorie-dans-lien-post.html">040 nom categorie dans lien post</a></li>
 <li><a href="BUG-041-hyperlien-md-non-transforme.html">041 hyperlien md non transforme</a></li>
@@ -22,7 +22,7 @@
 <li><a href="EB-014-gerer-les-images-de-posts.html">014 gerer les images de posts</a></li>
 <li><a href="EB-015-gerer-les-images-de-categorie.html">015 gerer les images de categorie</a></li>
 <li><a href="EB-016-compresser-les-fichiers-affiches.html">016 compresser les fichiers affiches</a></li>
-<li><a href="EB-017-plan-de-site-cible.html" class="active">017 plan de site cible</a></li>
+<li><a href="EB-017-plan-de-site-cible.html">017 plan de site cible</a></li>
 </ul>
 <ul class="postCategorie" id=PROJET><span title=PROJET><a class="diff" href="PROJET.html">PROJET</a> (10)</span>
 <li><a href="PROJET-charte-graphique.html">charte graphique</a></li>
@@ -46,7 +46,7 @@
 <li><a href="US-EPIC-aider-le-lecteur-a-choisir.html">EPIC aider le lecteur a choisir</a></li>
 <li><a href="US-connaitre-recence-information.html">connaitre recence information</a></li>
 <li><a href="US-equilibrer-le-contenu.html">equilibrer le contenu</a></li>
-<li><a href="US-equilibrer-les-sujets.html">equilibrer les sujets</a></li>
+<li><a href="US-equilibrer-les-sujets.html" class="active">equilibrer les sujets</a></li>
 <li><a href="US-presenter-article.html">presenter article</a></li>
 <li><a href="US-visualiser-le-poids-du-contenu.html">visualiser le poids du contenu</a></li>
 <li><a href="US-visualiser-le-poids-du-sujet.html">visualiser le poids du sujet</a></li>
@@ -54,43 +54,39 @@
 </div></header>
 <div class="toc">
 <ul>
-<li><a href="#eb-017-un-plan-de-site-plus-restreint-et-plus-approprie">EB-017 un plan de site plus restreint et plus approprié</a><ul>
-<li><a href="#propositions">Propositions</a></li>
-<li><a href="#arbitrages">Arbitrages</a></li>
-<li><a href="#controles">Contrôles</a></li>
+<li><a href="#equilibrer-les-sujets">Equilibrer les sujets</a><ul>
+<li><a href="#recit">Récit</a></li>
+<li><a href="#assertions">Assertions</a></li>
+<li><a href="#notes">Notes</a></li>
 </ul>
 </li>
 </ul>
 </div>
 
-<article>< <a href="EB-016-compresser-les-fichiers-affiches.html">016 compresser les fichiers affiches</a> | ... | <a href="EB-010-mentions-legales-obligatoires.html">010 mentions legales obligatoires</a> ><h1 id="eb-017-un-plan-de-site-plus-restreint-et-plus-approprie">EB-017 un plan de site plus restreint et plus approprié</h1>
-<p>Pour guider le lecteur dans un site qui prend de l'ampleur, en plan de site, présenter par défaut les posts liés à la rubrique.</p>
-<h2 id="propositions">Propositions</h2>
+<article>< <a href="US-equilibrer-le-contenu.html">equilibrer le contenu</a> | ... | <a href="US-presenter-article.html">presenter article</a> ><h1 id="equilibrer-les-sujets">Equilibrer les sujets</h1>
+<p>"De quoi parle le site" : plus de tel sujet que de tel autre ? Telle promesse n'est pas tenue, et telle autre est sur exploitée jusqu'à lassitude ?</p>
+<h2 id="recit">Récit</h2>
 <ul>
-<li>Statuts : enonce_20260411</li>
-<li>Solution : cibler les posts de la catégorie en cours<ul>
-<li>Parce que cela dépend du nombre de posts, laisser la décision à l'administrateur en présentant une gestion par configuration (pour l'instant, ne pas détecter automatiquement la quantité de posts et laisser le système décider : ou fixer le seuil en configuration).</li>
-<li>Lorsque l'option est activée en configuration, seuls les posts de la catégorie sont affichés.</li>
-<li>Sous les posts de la catégorie, un bouton "voir plus" permet d'afficher les posts des autres catégories.</li>
+<li>AFIN DE disposer d'un contenu équilibré,</li>
+<li>EN TANT QUE éditeur,</li>
+<li>JE VEUX connaître les sujets sur ou sous représentés...</li>
+</ul>
+<h2 id="assertions">Assertions</h2>
+<ul>
+<li>AVEC une remontée d'alerte,<ul>
+<li>JE PEUX avoir une double liste des sujets sur et surtout sous représentés.</li>
+<li>JE PEUX définir les seuils de déclenchement d'alertes vis-à-vis d'une moyenne.</li>
+<li>...</li>
+<li>...</li>
+<li>...</li>
 </ul>
 </li>
 </ul>
-<h2 id="arbitrages">Arbitrages</h2>
+<h2 id="notes">Notes</h2>
 <ul>
-<li>Importance : moyenne - le site va devenir de moins en moins ergonomique</li>
-<li>Urgence : basse - le positionnment du site actuel et de la version STANDARD peut excuser cette lacune ergonomique</li>
-<li>Difficulté : moyenne - alimenter deux listes (seulement la catégorie actuelle, seulement les autres catégories)</li>
-</ul>
-<h2 id="controles">Contrôles</h2>
-<ul>
-<li>Assertions :<ul>
-<li>En cas de non activation de l'option, rien ne change (ou lorsque le seuil n'est pas atteint).</li>
-<li>En cas d'activation de l'option, seuls les posts de la catégorie sont visibles.</li>
-<li>En cas d'activation de l'option, un lien "en savoir plus" est visible.</li>
-<li>En cas d'activation de l'option, au clic sur le lien "en savoir plus", toutes les autres catégories sont visibles avec leur post.</li>
-</ul>
-</li>
-</ul>< <a href="EB-016-compresser-les-fichiers-affiches.html">016 compresser les fichiers affiches</a> | ... | <a href="EB-010-mentions-legales-obligatoires.html">010 mentions legales obligatoires</a> ></article>
+<li>...</li>
+<li>...</li>
+</ul>< <a href="US-equilibrer-le-contenu.html">equilibrer le contenu</a> | ... | <a href="US-presenter-article.html">presenter article</a> ></article>
 <footer></footer><div id="finish"><p class="infos">généré depuis <a href="https://github.com/dev4use/marss" class="trademark">Marss ST-1.0.2</a> </p><ul class="postFooter">
 <li><a href="FOOTER-ligne-editoriale.html">ligne editoriale</a></li>
 <li><a href="FOOTER-mentions-legales.html">mentions legales</a></li>
