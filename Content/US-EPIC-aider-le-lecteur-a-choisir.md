@@ -10,7 +10,7 @@ Disposer d'un rapide aperçu du contenu du site, des principaux sujets abordés 
 
 ## Assertions
 
-- AVEC les US déclinant ce programme,
+- AVEC un ensemble d'éléments orientant mon choix,
 
     - JE PEUX [visualiser l'importance de chaque sujet](US-visualiser-le-poids-du-sujet.md) ou de chaque catégorie.
     - JE PEUX [visualiser le poids de chaque contenu](US-visualiser-le-poids-du-contenu.md), ou la taille d'un post.

@@ -11,6 +11,7 @@ Accéder à un rapide résumé natif de l'article, issu d'un chapô éditorial d
 ## Assertions
 
 - AVEC un rapide descriptif du post,
+
     - JE PEUX visualiser ce descriptif dans toute avant première : page d'accueil, page de catégorie, "landing page like"...
     - JE PEUX accéder au contenu se trouvant entre le titre de niveau 1 et de niveau 2 du markdown.
     - JE PEUX visualiser cet aperçu expurgé d'éventuelles balises html et donc sans effet de bord d'affichage.

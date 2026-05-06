@@ -11,6 +11,7 @@
 ## Assertions
 
 - AVEC une remontée d'alerte,
+
     - JE PEUX avoir une double liste des sujets sur et surtout sous représentés.
     - JE PEUX définir les seuils de déclenchement d'alertes vis-à-vis d'une moyenne.
     - ...

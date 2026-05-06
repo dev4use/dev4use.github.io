@@ -14,9 +14,9 @@ Un sujet est-il plus privilégié qu'un autre ?
 
     - JE PEUX visualiser le nombre de posts du sujet à côté du nom du sujet.
     - JE PEUX visualiser un sujet à 0 post si le sujet existe sans aucun post lié.
-    - JE PEUX
-    - JE PEUX
-    - JE PEUX 
+    - ...
+    - ...
+    - ... 
 
 ## Notes
 

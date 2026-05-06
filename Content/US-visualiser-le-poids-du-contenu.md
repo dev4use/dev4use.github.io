@@ -11,11 +11,12 @@ Aurai-je le temps de finir cet article si je le commence ?
 ## Assertions
 
 - AVEC un temps de lecture estimé,
+
     - JE PEUX visualiser le temps de lecture dans la barre de navigation et d'information de l'article.
     - JE PEUX visualiser également la valeur plus précise du nombre de mots du posts.
     - JE PEUX (en tant que éditeur) ajuster en configuration la règle de calcul du nombre de mots lus par minute.
-    - JE PEUX
-    - JE PEUX
+    - ...
+    - ...
 
 ## Notes
 

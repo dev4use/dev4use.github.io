@@ -18,3 +18,9 @@ L'auteur explore la double réalité du terrain :
 1. commenter cette démarche par des documents classiques en technique de gestion de projet logiciel : expression de besoin, suivi de bug, positionnement marketing...
 
 L'idée sous jacente est de **rendre accessible et compréhensible  par l'exemple** le cycle de développement logiciel, SDLC pour les intimes (Software Development Lifecycle).
+
+## Position de l'auteur
+
+Mea Culpa, l'auteur reconnaît un penchant pour la polémique et un goût pour le paradaoxe.   
+L'auteur essaie de rectifier cette courbure d'esprit en recherchant un ton plus apaisé et positif.  
+Pour tout risque de dérapage pressenti, l'auteur renverra à ce passage en guise d'avertissement.   
