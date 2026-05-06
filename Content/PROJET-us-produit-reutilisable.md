@@ -39,7 +39,7 @@ Là encore, une fois que [la promesse pour une conversation](https://www.les-tra
 
 Si j'adopte une perspective plus réaliste et pragmatique, basée sur ma propre expérience :
 
-Que signifie jeter la User Story après usage, [comme déjà évoqué](PROJET-us-projet-jetable.md) ?  
+Que signifie [jeter la User Story après usage](PROJET-us-projet-jetable.md), comme déjà évoqué ?  
 Qu'est-ce que cela implique ?   
 
 ### Un retour arrière possible
@@ -54,15 +54,15 @@ Pour ceux qui ont connu le cycle en V et des projets entonnoirs à long terme, a
 
 La User Story, porteuse de la valeur métier, n'aurait donc aucune valeur en elle-même, pas même documentaire ?   
 Ou c'est dans l'autre documentation, la vraie (LOL), qu'on va réexpliciter une nouvelle fois le besoin ?  
-Ou parce qu'il y a eu conversation, que l'application est opérationnelle, le besoin est satisfait et se voit et se comprend seul ?   
-Le besoin n'est plus noté nulle part (même pour un nouvel arrivant qui n'a pas participé à la conversation initiale puisqu'il peut converser avec le vieux de la vieille) ?   
+Ou parce qu'il y a déjà eu conversation et que l'application est opérationnelle, le besoin est satisfait et se voit et se comprend seul ?   
+Ou de toute façon le besoin n'a nul besoin de rester noté ou que ce soit (même à l'intention d'un nouvel arrivant qui n'a pas participé à la conversation initiale puisque le nouveau venu n'a qu'à converser avec le vieux de la vieille pour se mettre à niveau par transmission orale) ?   
 
 ### Une consolidation produit
 
 Ne risque-on pas d'aboutir à des visions extrêmes ?   
 
 - Vision  extrême de la communication qui frôle le recours à la compétence critique.   
-- Vision unique et restrictive de la documentation qui ne saurait inclure la user story, puisque [la User Story n'est qu'un élément de travail](#un-consommable-utilisé)  
+- Vision unique et restrictive de la documentation qui ne saurait inclure la user story, puisque [la User Story n'est qu'un élément de travail](#un-consommable-utilise)  
 
 Une autre approche existe, et elle est aussi Agile : **le story-mapping**.   
 

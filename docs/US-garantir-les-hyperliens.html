@@ -1,4 +1,4 @@
-<html><head><title>equilibrer les sujets</title><meta http-equiv="Content-type" content="text/html;charset=utf-8" /><link rel="stylesheet" href="/media/style.css" media="all"></head><body class="markdown-body">
+<html><head><title>garantir les hyperliens</title><meta http-equiv="Content-type" content="text/html;charset=utf-8" /><link rel="stylesheet" href="/media/style.css" media="all"></head><body class="markdown-body">
 <a href="./">accueil</a> > <a class="diff" href="US.html">US</a><input type="radio" id="men" name="menu" value="site" class="cache" ><label for="men">Menu du site</label><input type="radio" id="tdm" name="menu" value="page" class="cache" ><label for="tdm">Menu de la page</label><input type="radio" id="rien" name="menu" value="fermer" class="cache"><label for="rien">(FERMER MENU)</label>
 <div class="menu"><ul class="postCategorie" id=BUG><span title=BUG><a class="diff" href="BUG.html">BUG</a> (12)</span>
 <li><a href="BUG-040-nom-categorie-dans-lien-post.html">040 nom categorie dans lien post</a></li>
@@ -49,8 +49,8 @@
 <li><a href="US-EPIC-aider-le-lecteur-a-choisir.html">EPIC aider le lecteur a choisir</a></li>
 <li><a href="US-connaitre-recence-information.html">connaitre recence information</a></li>
 <li><a href="US-equilibrer-le-contenu.html">equilibrer le contenu</a></li>
-<li><a href="US-equilibrer-les-sujets.html" class="active">equilibrer les sujets</a></li>
-<li><a href="US-garantir-les-hyperliens.html">garantir les hyperliens</a></li>
+<li><a href="US-equilibrer-les-sujets.html">equilibrer les sujets</a></li>
+<li><a href="US-garantir-les-hyperliens.html" class="active">garantir les hyperliens</a></li>
 <li><a href="US-presenter-article.html">presenter article</a></li>
 <li><a href="US-visualiser-le-poids-du-contenu.html">visualiser le poids du contenu</a></li>
 <li><a href="US-visualiser-le-poids-du-sujet.html">visualiser le poids du sujet</a></li>
@@ -58,7 +58,7 @@
 </div></header>
 <div class="toc">
 <ul>
-<li><a href="#equilibrer-les-sujets">Equilibrer les sujets</a><ul>
+<li><a href="#garantir-des-hyperliens-fonctionnels">Garantir des hyperliens fonctionnels</a><ul>
 <li><a href="#recit">Récit</a></li>
 <li><a href="#assertions">Assertions</a></li>
 <li><a href="#notes">Notes</a></li>
@@ -67,22 +67,22 @@
 </ul>
 </div>
 
-<article>< <a href="US-equilibrer-le-contenu.html">equilibrer le contenu</a> | ... | <a href="US-garantir-les-hyperliens.html">garantir les hyperliens</a> ><h1 id="equilibrer-les-sujets">Equilibrer les sujets</h1>
-<p>"De quoi parle le site" : plus de tel sujet que de tel autre ? Telle promesse n'est pas tenue, et telle autre est sur exploitée jusqu'à lassitude ?</p>
+<article>< <a href="US-equilibrer-les-sujets.html">equilibrer les sujets</a> | ... | <a href="US-presenter-article.html">presenter article</a> ><h1 id="garantir-des-hyperliens-fonctionnels">Garantir des hyperliens fonctionnels</h1>
+<p>Eviter au lecteur les liens brisés en les inventoriant pour correction par l'éditeur.</p>
 <h2 id="recit">Récit</h2>
 <ul>
-<li>AFIN DE disposer d'un contenu équilibré,</li>
+<li>AFIN DE préserver l'intérêt du lecteur et de favoriser sa fidélisation,</li>
 <li>EN TANT QUE éditeur,</li>
-<li>JE VEUX connaître les sujets sur ou sous représentés...</li>
+<li>JE VEUX assurer la fourniture du contenu demandé...</li>
 </ul>
 <h2 id="assertions">Assertions</h2>
 <ul>
 <li>
-<p>AVEC une remontée d'alerte,</p>
+<p>AVEC la liste des liens brisés à réparer,</p>
 <ul>
-<li>JE PEUX avoir une double liste des sujets sur et surtout sous représentés.</li>
-<li>JE PEUX définir les seuils de déclenchement d'alertes vis-à-vis d'une moyenne.</li>
-<li>...</li>
+<li>JE PEUX avoir un recensement des problèmes d'hyperliens brisés avant publication définitive</li>
+<li>JE PEUX recouper ce recensement avec l'inventaire actuel des posts, pour ce qui concerne les liens internes, afin de rétablir rapidement la situation.</li>
+<li>JE PEUX relancer le contrôle des liens brisés externes pour vérifier qu'il ne s'agit pas d'une indisponibilité temporaire d'un partenaire.</li>
 <li>...</li>
 <li>...</li>
 </ul>
@@ -90,9 +90,12 @@
 </ul>
 <h2 id="notes">Notes</h2>
 <ul>
-<li>...</li>
-<li>...</li>
-</ul>< <a href="US-equilibrer-le-contenu.html">equilibrer le contenu</a> | ... | <a href="US-garantir-les-hyperliens.html">garantir les hyperliens</a> ></article>
+<li>Ce premier titre "éviter les déceptions" d'un point de vue lecteur, est trop vaste et vague : erreurs 404, mais aussi contenu inintéressant, avec fautes de frappes...</li>
+<li>"Eviter les déceptions" est également un titre avec une tournure négative, à éviter en termes d'exigences.</li>
+<li>Mais être trop précis avec : éviter les erreurs 404 ou les liens brisés n'est-il pas trop du côté de la solution, non ?</li>
+<li>"assurer la fourniture du contenu demandé" en tant que tel ne produit pas de valeur explicite, c'est une autre formulation de l'intention JE VEUX et non AFIN DE.</li>
+<li>JE VEUX est déplacé dans AVEC car c'est déjà une solution, même si d'assez haut niveau. Une compatibilité avec le pattern AVEC permet de se rendre compte qu'on est déjà dans la solution.</li>
+</ul>< <a href="US-equilibrer-les-sujets.html">equilibrer les sujets</a> | ... | <a href="US-presenter-article.html">presenter article</a> ></article>
 <footer></footer><div id="finish"><p class="infos">généré depuis <a href="https://github.com/dev4use/marss" class="trademark">Marss ST-1.0.2</a> </p><ul class="postFooter">
 <li><a href="FOOTER-ligne-editoriale.html">ligne editoriale</a></li>
 <li><a href="FOOTER-mentions-legales.html">mentions legales</a></li>
