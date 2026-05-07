@@ -1,6 +1,6 @@
 # BUG-044 le menu plan de site peut prendre trop de place
 
-Sur un post, le menu déplié à la verticale va très vite prendre tout l'écran.
+RESOLU: Sur un post, le menu déplié à la verticale va très vite prendre tout l'écran.
 
 ## Historique
 

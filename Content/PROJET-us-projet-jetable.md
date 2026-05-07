@@ -9,7 +9,9 @@ C'est qu'en utilisant toute méthode, l'auteur s'arroge le droit d'interroger la
 
 ## Un outil projet périssable
 
-Parce que la User Story n'est qu'un prétexte à discussion ([promesse pour une conversation](https://www.les-traducteurs-agiles.org/2017/08/17/histoire-de-l-origine-une-carte-de-story-est-une-promesse-pour-une-conversation.html), selon Alistair Cockburn), cet élément aurait une durée de vie extrêmement limitée pour certains(A).   
+Parce que la User Story n'est qu'un prétexte à discussion ([promesse pour une conversation](https://www.les-traducteurs-agiles.org/2017/08/17/histoire-de-l-origine-une-carte-de-story-est-une-promesse-pour-une-conversation.html), selon Alistair Cockburn), cet élément aurait une durée de vie extrêmement limitée pour certains [^1].   
+
+[^1]: Renvoi à mes propres expériences professionnelles proches où les US jira, et plutôt basées solutions ou tâches, sont inexploitées après fermeture.   
 
 Pour éviter de trop anticiper et pour faire du juste à temps,  
 
@@ -57,4 +59,4 @@ A moins qu'on ne soit pas en train de construire ensemble une grande histoire.
 
 Nous verrons dans un prochain article si la User Story peut prétendre, en certaines circonstances, à devenir [un élément produit réutilisable](PROJET-us-produit-reutilisable.md).
 
-A/: Renvoi à mes propres expériences professionnelles proches où les US jira, et plutôt basées solutions ou tâches, sont inexploitées après fermeture.   
+

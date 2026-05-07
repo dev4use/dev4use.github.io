@@ -1,5 +1,5 @@
-<html><head><title>mentions legales</title><meta http-equiv="Content-type" content="text/html;charset=utf-8" /><link rel="stylesheet" href="/media/style.css" media="all"></head><body class="markdown-body">
-<a href="./" class="">accueil</a><input type="radio" id="men" name="menu" value="site" class="cache" ><label for="men">Menu du site</label><input type="radio" id="tdm" name="menu" value="page" class="cache" ><label for="tdm">Menu de la page</label><input type="radio" id="rien" name="menu" value="fermer" class="cache"><label for="rien">(FERMER MENU)</label>
+<html><head><title>052 precedent suivant avec un seul post</title><meta http-equiv="Content-type" content="text/html;charset=utf-8" /><link rel="stylesheet" href="/media/style.css" media="all"></head><body class="markdown-body">
+<a href="./">accueil</a> > <a class="diff" href="BUG.html">BUG</a><input type="radio" id="men" name="menu" value="site" class="cache" ><label for="men">Menu du site</label><input type="radio" id="tdm" name="menu" value="page" class="cache" ><label for="tdm">Menu de la page</label><input type="radio" id="rien" name="menu" value="fermer" class="cache"><label for="rien">(FERMER MENU)</label>
 <div class="menu"><ul class="postCategorie" id=BUG><span title=BUG><a class="diff" href="BUG.html">BUG</a> (13)</span>
 <li><a href="BUG-040-nom-categorie-dans-lien-post.html">040 nom categorie dans lien post</a></li>
 <li><a href="BUG-041-hyperlien-md-non-transforme.html">041 hyperlien md non transforme</a></li>
@@ -13,7 +13,7 @@
 <li><a href="BUG-049-la-numerotation-de-second-niveau-est-en-lettres.html">049 la numerotation de second niveau est en lettres</a></li>
 <li><a href="BUG-050-le-label-de-lien-comporte-un-espace-au-debut.html">050 le label de lien comporte un espace au debut</a></li>
 <li><a href="BUG-051-espace-nom-fichier-markdown.html">051 espace nom fichier markdown</a></li>
-<li><a href="BUG-052-precedent-suivant-avec-un-seul-post-.html">052 precedent suivant avec un seul post</a></li>
+<li><a href="BUG-052-precedent-suivant-avec-un-seul-post-.html" class="active">052 precedent suivant avec un seul post</a></li>
 </ul>
 <ul class="postCategorie" id=DEV><span title=DEV><a class="diff" href="DEV.html">DEV</a> (1)</span>
 <li><a href="DEV-taille-du-code.html">taille du code</a></li>
@@ -62,39 +62,46 @@
 </div></header>
 <div class="toc">
 <ul>
-<li><a href="#mentions-legales">Mentions légales</a><ul>
-<li><a href="#coordonnees-de-lhebergeur">Coordonnées de l'hébergeur</a></li>
-<li><a href="#coordonees-de-lediteur">Coordonées de l'éditeur</a><ul>
-<li><a href="#texte-de-loi">Texte de loi</a></li>
-</ul>
-</li>
-<li><a href="#notes">Notes</a></li>
+<li><a href="#bug-052-erreur-fatale-pour-lien-suivant-precedent-avec-un-seul-post">BUG-052 erreur fatale pour lien suivant precedent avec un seul post</a><ul>
+<li><a href="#historique">Historique</a></li>
+<li><a href="#criticite">Criticité</a></li>
+<li><a href="#correction">Correction</a></li>
+<li><a href="#analyse">Analyse</a></li>
 </ul>
 </li>
 </ul>
 </div>
 
-<article><h1 id="mentions-legales">Mentions légales</h1>
-<p>Conformémement à la législation, voici la mention légale.</p>
-<h2 id="coordonnees-de-lhebergeur">Coordonnées de l'hébergeur</h2>
-<p>L'hébergeur est <a href="https://docs.github.com/en/site-policy/github-terms/github-terms-of-service">Github</a>.<br />
-L'hébergement est réalisé sur GithubPages.</p>
-<h2 id="coordonees-de-lediteur">Coordonées de l'éditeur</h2>
-<p>Comme semble l'autoriser le droit français(a), pour ne pas être importuné,
-en tant que particulier on peut se dispenser de détails.<br />
-L'hébergeur est censé être en mesure de divulguer tous les détails nécessaires en cas d'enquête.  </p>
-<h3 id="texte-de-loi">Texte de loi</h3>
-<p>Disponible sur <a href="https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000049568614">le site Legifrance</a></p>
-<blockquote>
-<p>Article 1.1<br />
-    I.-Les personnes dont l'activité est d'éditer un service de communication au public en ligne mettent à la disposition du public, dans un standard ouvert :<br />
-    1° S'il s'agit de personnes physiques, leurs nom, prénoms, <em>domicile</em> et numéro de téléphone [...]<br />
-    II.-Les personnes éditant à titre non professionnel un service de communication au public en ligne <strong>peuvent ne tenir à la disposition du public, pour préserver leur anonymat, que le nom, la dénomination ou la raison sociale et l'adresse du fournisseur de services d'hébergement</strong>, sous réserve d'avoir <em>communiqué à ce fournisseur</em> les éléments d'identification personnelle mentionnés au I du présent article.</p>
-</blockquote>
-<h2 id="notes">Notes</h2>
-<p>(a) les extraits mis en italiques sont un peu tendancieux à mon interprétation : pas sûr d'avoir officiellement indiqué à l'hébergeur gratuit GitHub l'adresse de mon domicile.</p></article>
+<article>< <a href="BUG-051-espace-nom-fichier-markdown.html">051 espace nom fichier markdown</a> | ... | <a href="BUG-040-nom-categorie-dans-lien-post.html">040 nom categorie dans lien post</a> ><h1 id="bug-052-erreur-fatale-pour-lien-suivant-precedent-avec-un-seul-post">BUG-052 erreur fatale pour lien suivant precedent avec un seul post</h1>
+<p>RESOLU: La génération du site échoue à l'étape d'affichage du menu précédent suivant pour un post seul dans sa rubrique.</p>
+<h2 id="historique">Historique</h2>
+<ul>
+<li>statuts : ferme_260507_() /ouvert_260507_()</li>
+<li>contexte : les éléments url et label des liens précédent et suivant ne sont pas générés et ne peuvent donc être affichés</li>
+</ul>
+<h2 id="criticite">Criticité</h2>
+<ul>
+<li>impact : bloquant</li>
+<li>fréquence : haute, si publication progressive avec 1 seul post au départ dans 1 rubrique nouvelle</li>
+<li>detection : facile, la génération du site échoue en console à cette étape</li>
+<li>contournement : aucun</li>
+</ul>
+<h2 id="correction">Correction</h2>
+<ul>
+<li>arbitrage : à corriger puisque bloquant</li>
+<li>correctif : oui</li>
+<li>changement :<ul>
+<li>en fonction d'affichage, test d'existence des clés url et label dans les dictionnaires precedent et suivant</li>
+<li>ajout de tests automatiques pour aller au bout et gérer ces cas pourtant connus aussi en étape d'affichage</li>
+</ul>
+</li>
+</ul>
+<h2 id="analyse">Analyse</h2>
+<ul>
+<li>cause racine : erreur humaine, dissociation des responsabilités. Cas géré en génération de variables et en couverture de tests de ces variables, mais oublié en affichage HTML de ces variables.</li>
+</ul>< <a href="BUG-051-espace-nom-fichier-markdown.html">051 espace nom fichier markdown</a> | ... | <a href="BUG-040-nom-categorie-dans-lien-post.html">040 nom categorie dans lien post</a> ></article>
 <footer></footer><div id="finish"><p class="infos">généré depuis <a href="https://github.com/dev4use/marss" class="trademark">Marss ST-1.0.2</a> </p><ul class="postFooter">
 <li><a href="FOOTER-ligne-editoriale.html">ligne editoriale</a></li>
-<li><a href="FOOTER-mentions-legales.html" class="active">mentions legales</a></li>
+<li><a href="FOOTER-mentions-legales.html">mentions legales</a></li>
 </ul>
 </div></body></html>

@@ -1,6 +1,6 @@
 # BUG-042 en accueil, le titre navigateur est celui du dernier post de plan de site
 
- A l'arrivée sur site ou au retour à l'accueil par lien de menu, le titre de navigateur est celui du dernier post listé en plan de site.
+ RESOLU: A l'arrivée sur site ou au retour à l'accueil par lien de menu, le titre de navigateur est celui du dernier post listé en plan de site.
 
 ## Historique
 

@@ -1,6 +1,6 @@
 # BUG-041 un hyperlien en extension md n’est pas transformé en html
 
-Au clic sur le lien en extension .md, on aboutit à une erreur 404.
+RESOLU: Au clic sur le lien en extension .md, on aboutit à une erreur 404.
 
 ## Historique
 

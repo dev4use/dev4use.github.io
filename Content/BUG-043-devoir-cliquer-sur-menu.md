@@ -1,6 +1,6 @@
 # BUG-043 chaque page est une impasse, pas de lien direct vers une autre page
 
-Il faut cliquer sur "menu site" pour accéder aux liens menant vers les autres pages du site.
+RESOLU: Il faut cliquer sur "menu site" pour accéder aux liens menant vers les autres pages du site.
 
 ## Historique
 

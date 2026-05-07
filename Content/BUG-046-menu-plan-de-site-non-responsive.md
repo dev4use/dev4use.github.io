@@ -1,6 +1,6 @@
 # BUG-046 le menu de plan de site est non responsive 
 
-Afficher le site sur un écran réduit fait se poursuivre la liste de catégorie 1 sur la catégorie 2 qui devient illisible.
+RESOLU: Afficher le site sur un écran réduit fait se poursuivre la liste de catégorie 1 sur la catégorie 2 qui devient illisible.
 
 
 ## Historique

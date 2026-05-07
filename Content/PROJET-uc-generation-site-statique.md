@@ -5,7 +5,7 @@ Application présentée en cas d'utilisation textuel, tel que prôné par Alista
 ## Contexte :
 
 Acteur principal : Le système  
-Acteur(s) secondair(es) : Le développeur(A)  
+Acteur(s) secondair(es) : Le développeur[^1].     
 
 Portée : site statique en local  
 Contexte d'utilisation : Le développeur veut générer un site statique.  
@@ -64,5 +64,4 @@ Garanties minimales (en cas d'échec) : Le développeur voit le programme s'arr�
   - et le traitement s'arrête.
 
 
-*Notes :*  
-- A/ L'utilisateur endosse le rôle de développeur de par sa capacité à récupérer un repo git, à modifier une configuration, et à lancer des lignes de commande en console de type linux.  
+[^1]: L'utilisateur endosse le rôle de développeur de par sa capacité à récupérer un repo git, à modifier une configuration, et à lancer des lignes de commande en console de type linux.  

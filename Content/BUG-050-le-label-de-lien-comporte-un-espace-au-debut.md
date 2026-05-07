@@ -1,6 +1,6 @@
 # BUG-050 le label de lien vers post débute par un espace
 
-La création du référentiel html détecte les catégories, mais ce faisant, laisse un blanc en remplacement dans le label.
+RESOLU: La création du référentiel html détecte les catégories, mais ce faisant, laisse un blanc en remplacement dans le label.
 
 ## Historique
 

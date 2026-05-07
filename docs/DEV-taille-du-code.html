@@ -1,5 +1,5 @@
-<html><head><title>mentions legales</title><meta http-equiv="Content-type" content="text/html;charset=utf-8" /><link rel="stylesheet" href="/media/style.css" media="all"></head><body class="markdown-body">
-<a href="./" class="">accueil</a><input type="radio" id="men" name="menu" value="site" class="cache" ><label for="men">Menu du site</label><input type="radio" id="tdm" name="menu" value="page" class="cache" ><label for="tdm">Menu de la page</label><input type="radio" id="rien" name="menu" value="fermer" class="cache"><label for="rien">(FERMER MENU)</label>
+<html><head><title>taille du code</title><meta http-equiv="Content-type" content="text/html;charset=utf-8" /><link rel="stylesheet" href="/media/style.css" media="all"></head><body class="markdown-body">
+<a href="./">accueil</a> > <a class="diff" href="DEV.html">DEV</a><input type="radio" id="men" name="menu" value="site" class="cache" ><label for="men">Menu du site</label><input type="radio" id="tdm" name="menu" value="page" class="cache" ><label for="tdm">Menu de la page</label><input type="radio" id="rien" name="menu" value="fermer" class="cache"><label for="rien">(FERMER MENU)</label>
 <div class="menu"><ul class="postCategorie" id=BUG><span title=BUG><a class="diff" href="BUG.html">BUG</a> (13)</span>
 <li><a href="BUG-040-nom-categorie-dans-lien-post.html">040 nom categorie dans lien post</a></li>
 <li><a href="BUG-041-hyperlien-md-non-transforme.html">041 hyperlien md non transforme</a></li>
@@ -16,7 +16,7 @@
 <li><a href="BUG-052-precedent-suivant-avec-un-seul-post-.html">052 precedent suivant avec un seul post</a></li>
 </ul>
 <ul class="postCategorie" id=DEV><span title=DEV><a class="diff" href="DEV.html">DEV</a> (1)</span>
-<li><a href="DEV-taille-du-code.html">taille du code</a></li>
+<li><a href="DEV-taille-du-code.html" class="active">taille du code</a></li>
 </ul>
 <ul class="postCategorie" id=EB><span title=EB><a class="diff" href="EB.html">EB</a> (8)</span>
 <li><a href="EB-010-mentions-legales-obligatoires.html">010 mentions legales obligatoires</a></li>
@@ -62,39 +62,76 @@
 </div></header>
 <div class="toc">
 <ul>
-<li><a href="#mentions-legales">Mentions légales</a><ul>
-<li><a href="#coordonnees-de-lhebergeur">Coordonnées de l'hébergeur</a></li>
-<li><a href="#coordonees-de-lediteur">Coordonées de l'éditeur</a><ul>
-<li><a href="#texte-de-loi">Texte de loi</a></li>
-</ul>
-</li>
-<li><a href="#notes">Notes</a></li>
+<li><a href="#maitriser-la-taille-du-code">Maîtriser la taille du code</a><ul>
+<li><a href="#linfluence-de-la-taille-du-code">L'influence de la taille du code</a></li>
+<li><a href="#le-code-interne">Le code interne</a></li>
+<li><a href="#le-code-externe">Le code externe</a></li>
 </ul>
 </li>
 </ul>
 </div>
 
-<article><h1 id="mentions-legales">Mentions légales</h1>
-<p>Conformémement à la législation, voici la mention légale.</p>
-<h2 id="coordonnees-de-lhebergeur">Coordonnées de l'hébergeur</h2>
-<p>L'hébergeur est <a href="https://docs.github.com/en/site-policy/github-terms/github-terms-of-service">Github</a>.<br />
-L'hébergement est réalisé sur GithubPages.</p>
-<h2 id="coordonees-de-lediteur">Coordonées de l'éditeur</h2>
-<p>Comme semble l'autoriser le droit français(a), pour ne pas être importuné,
-en tant que particulier on peut se dispenser de détails.<br />
-L'hébergeur est censé être en mesure de divulguer tous les détails nécessaires en cas d'enquête.  </p>
-<h3 id="texte-de-loi">Texte de loi</h3>
-<p>Disponible sur <a href="https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000049568614">le site Legifrance</a></p>
+<article><h1 id="maitriser-la-taille-du-code">Maîtriser la taille du code</h1>
+<p>Une application est composée de code source, si si je vous le dis. Et même en No Code (LOL). Le code source est donc un facteur à prendre en considération... qualité et quantité.</p>
+<h2 id="linfluence-de-la-taille-du-code">L'influence de la taille du code</h2>
+<p>Plus il y a de code, plus il y a de risques de défauts. Ce principe est tenu pour axiome (pas par moi, par la communauté logicielle).  </p>
+<p>Limiter la croissance du code, du moins mesurer et maîtriser l'accroissement du code source est donc une décision censée.   </p>
+<p>Mais il faut contrebalancer cette intention par <strong>le principe de précaution</strong>. Dès qu'une métrique est mise en place, sitôt comprise, la métrique peut être faussée lorsque les comportements humains changent en vue d'obtenir de meilleurs scores. </p>
+<p>Pour que le opérateurs restent focalisés sur leur travail habituel, un focus sur d'autres facettes de la valeur produite par leur travail peut être effectué.</p>
+<p>Dans un contexte Agile, si on se réfère (<a href="PROJET-us-projet-jetable.html#un-gachis-volontaire">une fois de plus</a>) au 
+<a href="https://manifesteagile.fr/">manifeste Agile</a> :</p>
 <blockquote>
-<p>Article 1.1<br />
-    I.-Les personnes dont l'activité est d'éditer un service de communication au public en ligne mettent à la disposition du public, dans un standard ouvert :<br />
-    1° S'il s'agit de personnes physiques, leurs nom, prénoms, <em>domicile</em> et numéro de téléphone [...]<br />
-    II.-Les personnes éditant à titre non professionnel un service de communication au public en ligne <strong>peuvent ne tenir à la disposition du public, pour préserver leur anonymat, que le nom, la dénomination ou la raison sociale et l'adresse du fournisseur de services d'hébergement</strong>, sous réserve d'avoir <em>communiqué à ce fournisseur</em> les éléments d'identification personnelle mentionnés au I du présent article.</p>
+<p>"Porter continuellement attention à l’excellence technique et à la qualité de la conception renforce l’agilité."</p>
 </blockquote>
-<h2 id="notes">Notes</h2>
-<p>(a) les extraits mis en italiques sont un peu tendancieux à mon interprétation : pas sûr d'avoir officiellement indiqué à l'hébergeur gratuit GitHub l'adresse de mon domicile.</p></article>
+<p>Mais il ne faut pas se méprendre sur la valeur de l'excellence. Ce pourrait être <a href="PROJET-us-projet-jetable.html">un autre point polémique</a>.<br />
+L'excellence du code est un juste équilibre entre plusieurs facteurs :</p>
+<ul>
+<li>la performance du code ou toute autre considération qui entre en ligne de compte dans l'application,   </li>
+<li>la lisibilité du code,  </li>
+<li>la maintenabilité du code.</li>
+</ul>
+<p>Il faut <strong>un juste niveau de qualité</strong>. </p>
+<blockquote>
+<p>Une excellence/optimisation extrême du code rendrait le code incompréhensible, inexploitable et inmaintenable par tout autre membre de l'équipe que son concepteur expert. </p>
+</blockquote>
+<p>Or, en Agile version utopique, les membres de l'équipe ont des postes interchangeables.   </p>
+<h2 id="le-code-interne">Le code interne</h2>
+<p>L'objectif, surtout avec la version STANDARD est de rester modéré en taille d'application et nombre de lignes de code. <br />
+Pour information, cette taille est mesurée par pygount. <br />
+L'objectif est de vérifier qu'il n'y a pas un effet d'emballement dans le temps. <br />
+Pourrait exister une courbe de croissance de ce type :</p>
+<table>
+<thead>
+<tr>
+<th>numero de version</th>
+<th>valeur acquise</th>
+<th>taille atteinte</th>
+<th>valeur du code</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>30</td>
+<td>300</td>
+<td>10</td>
+</tr>
+<tr>
+<td>2</td>
+<td>33</td>
+<td>300</td>
+<td>9</td>
+</tr>
+</tbody>
+</table>
+<p>Vous allez peut-être me dire que vous ne savez pas mesurer la valeur (quand bien-même vous seriez en méthode Agile) ? Touvez/inventez un autre élément de mesure.</p>
+<h2 id="le-code-externe">Le code externe</h2>
+<p>L'application utilise des librariries tierces.<br />
+Ces librariries tierces contiennent des lignes de code qui viennent s'ajouter aux premières.<br />
+Cette seconde taille est le plus souvent masquée et ignorée. <br />
+L'objectif est de mettre en évidence cette seconde taille. Cela permet de mesurer la taille "réelle" totale de l'application.     </p></article>
 <footer></footer><div id="finish"><p class="infos">généré depuis <a href="https://github.com/dev4use/marss" class="trademark">Marss ST-1.0.2</a> </p><ul class="postFooter">
 <li><a href="FOOTER-ligne-editoriale.html">ligne editoriale</a></li>
-<li><a href="FOOTER-mentions-legales.html" class="active">mentions legales</a></li>
+<li><a href="FOOTER-mentions-legales.html">mentions legales</a></li>
 </ul>
 </div></body></html>

@@ -1,6 +1,6 @@
 # BUG-047 visualiser la page en cours dans le menu
 
-Dans le menu, on peut recliquer sur la page où on est sans le savoir, car notre position n'est pas indiquée.
+RESOLU: Dans le menu, on peut recliquer sur la page où on est sans le savoir, car notre position n'est pas indiquée.
 
 ## Historique
 

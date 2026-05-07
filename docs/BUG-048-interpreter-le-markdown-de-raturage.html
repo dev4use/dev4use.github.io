@@ -1,6 +1,6 @@
 <html><head><title>048 interpreter le markdown de raturage</title><meta http-equiv="Content-type" content="text/html;charset=utf-8" /><link rel="stylesheet" href="/media/style.css" media="all"></head><body class="markdown-body">
 <a href="./">accueil</a> > <a class="diff" href="BUG.html">BUG</a><input type="radio" id="men" name="menu" value="site" class="cache" ><label for="men">Menu du site</label><input type="radio" id="tdm" name="menu" value="page" class="cache" ><label for="tdm">Menu de la page</label><input type="radio" id="rien" name="menu" value="fermer" class="cache"><label for="rien">(FERMER MENU)</label>
-<div class="menu"><ul class="postCategorie" id=BUG><span title=BUG><a class="diff" href="BUG.html">BUG</a> (12)</span>
+<div class="menu"><ul class="postCategorie" id=BUG><span title=BUG><a class="diff" href="BUG.html">BUG</a> (13)</span>
 <li><a href="BUG-040-nom-categorie-dans-lien-post.html">040 nom categorie dans lien post</a></li>
 <li><a href="BUG-041-hyperlien-md-non-transforme.html">041 hyperlien md non transforme</a></li>
 <li><a href="BUG-042-titre-navigateur-page-accueil.html">042 titre navigateur page accueil</a></li>
@@ -13,6 +13,10 @@
 <li><a href="BUG-049-la-numerotation-de-second-niveau-est-en-lettres.html">049 la numerotation de second niveau est en lettres</a></li>
 <li><a href="BUG-050-le-label-de-lien-comporte-un-espace-au-debut.html">050 le label de lien comporte un espace au debut</a></li>
 <li><a href="BUG-051-espace-nom-fichier-markdown.html">051 espace nom fichier markdown</a></li>
+<li><a href="BUG-052-precedent-suivant-avec-un-seul-post-.html">052 precedent suivant avec un seul post</a></li>
+</ul>
+<ul class="postCategorie" id=DEV><span title=DEV><a class="diff" href="DEV.html">DEV</a> (1)</span>
+<li><a href="DEV-taille-du-code.html">taille du code</a></li>
 </ul>
 <ul class="postCategorie" id=EB><span title=EB><a class="diff" href="EB.html">EB</a> (8)</span>
 <li><a href="EB-010-mentions-legales-obligatoires.html">010 mentions legales obligatoires</a></li>
@@ -69,16 +73,16 @@
 </div>
 
 <article>< <a href="BUG-047-indiquer-ou-on-est-dans-le-menu.html">047 indiquer ou on est dans le menu</a> | ... | <a href="BUG-049-la-numerotation-de-second-niveau-est-en-lettres.html">049 la numerotation de second niveau est en lettres</a> ><h1 id="bug-048-barrer-un-texte-en-markdown">BUG-048 barrer un texte en markdown</h1>
-<p>Barrer un texte en markdown ~~de la sorte~~ par des tildes ne fonctionne pas avec la libaririe externe utilisée.</p>
+<p>RESOLU: Barrer un texte en markdown <del>de la sorte</del> par des tildes ne fonctionne pas avec la libaririe externe utilisée.</p>
 <h2 id="historique">Historique</h2>
 <ul>
-<li>statuts : ouvert_260322_() / </li>
+<li>statuts : ferme_260507_(ajout de la lib) / ouvert_260322_() </li>
 <li>contexte : <a href="https://www.markdownlang.com/fr/extended/strikethrough.html">un texte peut être barré en markdown</a> pour signifier une rature, une obsolescence, un repentir, et a une signification forte qui doit être gardée en html</li>
 </ul>
 <h2 id="criticite">Criticité</h2>
 <ul>
 <li>impact : fonctionnalité non délivrée, effet cosmétique</li>
-<li>fréquence : basse (pas tous les jours qu'on barre du texte et laisse ce texte dans un document, sauf dans des specs, solutions...)</li>
+<li>fréquence : basse (pas tous les jours qu'on barre du texte et laisse ce texte dans un document, <del>sauf</del> dans des specs, solutions...)</li>
 <li>detection : moyenne (tomber sur le cas) mais facile (se voit à l'oeil nu)</li>
 <li>contournement : ne pas utiliser le tilde de suppression</li>
 </ul>
@@ -86,9 +90,9 @@
 <ul>
 <li>arbitrage : il serait bien d'avoir une compatibilité maximum avec le langage markdown</li>
 <li>correctif : voir s'il ne faut pas une extension supplémentaire dans la librairie externe</li>
-<li>changement : <ul>
-<li>soit ajouter l'option de l'extension</li>
-<li>soit signaler l'incident à l'éditeur et attendre une montée de version corrective</li>
+<li>changement : <ul class="task-list">
+<li class="task-list-item"><input type="checkbox" disabled checked/> soit ajouter l'option de l'extension : installer pymdown-extensions et appeler extensions=['pymdownx.tilde']</li>
+<li class="task-list-item"><input type="checkbox" disabled/> soit signaler l'incident à l'éditeur et attendre une montée de version corrective</li>
 </ul>
 </li>
 </ul>

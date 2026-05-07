@@ -1,6 +1,6 @@
 # BUG-040 le nom de la catégorie est répété en libellé de chaque post 
 
-La liste horizontale des posts met en évidence la répétition du nom de la catégorie.
+RESOLU: La liste horizontale des posts met en évidence la répétition du nom de la catégorie.
 
 ## Historique
 
