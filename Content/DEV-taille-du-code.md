@@ -41,7 +41,7 @@ Pourrait exister une courbe de croissance de ce type :
 | numero de version | valeur acquise | taille atteinte | valeur du code |
 | ---- | ---- | ---- | ---- |
 | 1 | 30 | 300 | 10 |
-| 2 | 33 | 300 | 9 |
+| 2 | 44 | 400 | 9 |
 
 
 

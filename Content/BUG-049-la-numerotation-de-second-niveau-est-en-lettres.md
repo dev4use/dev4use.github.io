@@ -4,7 +4,7 @@ Même sans numéroter le niveau 1, dès que le niveau deux est numéroté il s'�
 
 ## Historique
 
-- statuts : ouvert_260322_() / 
+- statuts : ouvert_260322_() / ferme_260508_(juste css)
 - contexte : [les liste en markdown](https://www.markdownlang.com/fr/basic/lists.html) peuvent avoir plusieurs niveaux, mais comment garder ces niveaux au format numérique
 
 ## Criticité
@@ -21,7 +21,7 @@ Même sans numéroter le niveau 1, dès que le niveau deux est numéroté il s'�
 - changement : (on peut voir ci dessous i, ii, tant que incident non résolu)
     1. voir s'il y a une option de configuration dans l'outil tierce
     1. soit signaler l'incident à l'éditeur et attendre une montée de version corrective
-    1. ou gestion par simple css en enlevant les chiffres romains
+    1. ou gestion par simple css en enlevant les chiffres romains OUI=FIX
 
 ## Analyse
 
