@@ -1,6 +1,6 @@
 # Visualiser le poids d'un sujet
 
-Un sujet est-il plus privilégié qu'un autre ?
+DONE: Un sujet est-il plus privilégié qu'un autre ?
 
 ## Récit
 

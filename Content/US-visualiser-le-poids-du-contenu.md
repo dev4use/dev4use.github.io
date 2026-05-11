@@ -1,6 +1,6 @@
 # Visualiser le poids d'un contenu
 
-Aurai-je le temps de finir cet article si je le commence ?
+DONE: Aurai-je le temps de finir cet article si je le commence ?
 
 ## Récit
 

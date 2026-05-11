@@ -55,7 +55,7 @@ Pour ceux qui ont connu le cycle en V et des projets entonnoirs à long terme, a
 La User Story, porteuse de la valeur métier, n'aurait donc aucune valeur en elle-même, pas même documentaire ?   
 Ou c'est dans l'autre documentation, la vraie (LOL), qu'on va réexpliciter une nouvelle fois le besoin ?  
 Ou parce qu'il y a déjà eu conversation et que l'application est opérationnelle, le besoin est satisfait et se voit et se comprend seul ?   
-Ou de toute façon le besoin n'a nul besoin de rester noté ou que ce soit (même à l'intention d'un nouvel arrivant qui n'a pas participé à la conversation initiale puisque le nouveau venu n'a qu'à converser avec le vieux de la vieille pour se mettre à niveau par transmission orale) ?   
+Ou de toute façon le besoin n'a nul besoin de rester noté où que ce soit (même à l'intention d'un nouvel arrivant qui n'a pas participé à la conversation initiale puisque le nouveau venu n'a qu'à converser avec le vieux de la vieille pour se mettre à niveau par transmission orale) ?   
 
 ### Une consolidation produit
 
@@ -74,7 +74,7 @@ Il s'agit d'une véritable vision arborescente du produit.
 Avec les outils informatiques, pourquoi ne pas envisager une navigation entre les différents items ?
 
 C'est ce que réalise la spécification stricte et complète du **Use Case textuel d'Alistair Cockburn** (dont voici [un exemple adapté](PROJET-uc-generation-site-statique.md) à ce blog).  
-Les UC permettent de mettre en place des systèmes de sommaire ou d'imbrication à la manière de poupées russe.  
+Les UC permettent de mettre en place des systèmes de sommaire ou d'imbrication à la manière de poupées russes.  
 
 Transposé à la modélisation des US,  
 Rien n'empêche les epics de citer les US, les US de citer les documentations, specifications, exigences...   
