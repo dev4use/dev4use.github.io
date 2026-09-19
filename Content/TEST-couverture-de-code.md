@@ -2,6 +2,8 @@
 
 Pratique assez controversée, la couverture de code par les tests est quantitative mais peut néanmoins servir de garde fou.  
 
+![couverture de code par le test](../Media/couverture-code.jpg "couverture de code source")
+
 ## Instaurer une fausse confiance
 
 Dans <a href="https://github.com/dev4use/marss" class="trademark">Marss</a>, j'ai recours à la couverture de code, et à une couverture à 100 % pour [une livraison officielle majeure.](PROJET-versions-editeur.md#approche-qualite)  

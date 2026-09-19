@@ -5,6 +5,8 @@ Lorsqu'il existe une pluralité de versions, ces versions peuvent décliner les 
 
 ## Déclinaison de l'offre
 
+![offre logicielle](../Media/comparatif-offre-logiciel.png "comparatifs de versions produit")
+
 A noter une perméabilité descendante ou rétrocompatibilité des versions.
 Une version supérieure doit être capable de réaliser les opérations d'une version inférieure. Cette possibilité doit rester offerte à l'utilisateur.
  > Principe du : qui peut le plus peut le moins.

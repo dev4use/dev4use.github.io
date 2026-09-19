@@ -1,6 +1,6 @@
 # Lire le descriptif de l'article
 
-Accéder à un rapide résumé natif de l'article, issu d'un chapô éditorial déjà présent en markdown.
+DONE: Accéder à un rapide résumé natif de l'article, issu d'un chapô éditorial déjà présent en markdown.
 
 ## Récit
 

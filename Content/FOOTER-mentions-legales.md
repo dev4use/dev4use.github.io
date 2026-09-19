@@ -2,6 +2,8 @@
 
 Conformémement à la législation, voici la mention légale.
 
+![mentions legales](../Media/mentions-legales.jpg "mentions légales")
+
 ## Coordonnées de l'hébergeur
 
 L'hébergeur est [Github](https://docs.github.com/en/site-policy/github-terms/github-terms-of-service).  

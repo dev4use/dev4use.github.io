@@ -3,6 +3,8 @@
 Pourquoi ne pas entretenir et maintenir plusieurs versions de la solution ?  
 Exercice de style intéressant et maîtrise précise des périmètres fonctionnels.  
 
+![plusieurs versions d'un même produit](../Media/comparatif-offre-logiciel.jpg "offres produit")
+
 ## Maîtrise du périmètre fonctionnel
 
 Il est si facile de s'égarer, d'aller trop loin, de tomber dans le gadget et le superflu.  

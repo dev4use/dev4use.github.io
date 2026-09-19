@@ -2,6 +2,8 @@
 
 Bien que censée être une approche produit, et basée sur l'utilisateur, la méthode Agile assumerait ouvertement une approche projet jetable ?  
 
+![US jetable](../Media/US-jetable.jpg"user story projet")
+
 ## Avertissement
 
 Attention, [les propos peuvent paraître quelque peu polémiques](FOOTER-ligne-editoriale.md#position-de-lauteur).   

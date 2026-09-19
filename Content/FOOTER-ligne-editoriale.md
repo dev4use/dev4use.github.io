@@ -3,6 +3,8 @@
 Les propos tenus sur le site n'engagent que leur auteur.   
 Pour toute réclamation, reportez vous aux [mentions légales](FOOTER-mentions-legales.md)
 
+![ligne editoriale](../Media/ligne-editoriale.png "code de conduite éditorial")
+
 ## Objet du site
 
 Le site porte sur deux éléments principaux :   

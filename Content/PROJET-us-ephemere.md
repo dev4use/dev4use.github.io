@@ -2,6 +2,8 @@
 
 Un article trouvé sur le net m'a fait réagir. Réaction mitigée où il convient de comprendre les points de vue.
 
+![duree de vie user story](../Media/us-ephemere.jpg "user story cycle de vie")
+
 ## De la conservation ou non des User Stories
 
 L'article qui comporte le nom de [User Story éphémère](https://substack.jp-lambert.com/p/une-user-story-est-elle-ephemere-9949d2eb914f) est intéressant en ce que l'auteur ouvre la discussion sous formes de questions réponses. 

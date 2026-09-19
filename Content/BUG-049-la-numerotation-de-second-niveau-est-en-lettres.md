@@ -1,6 +1,6 @@
 # BUG-049 numérotation de second niveau en chiffres romains
 
-Même sans numéroter le niveau 1, dès que le niveau deux est numéroté il s'écrit sous forme de chiffres romains i, ii (ce qui est peu compréhensible si on veut avoir une grande lisibilité pour plus tard effectuer de la traçabilité).
+RESOLU: Même sans numéroter le niveau 1, dès que le niveau deux est numéroté il s'écrit sous forme de chiffres romains i, ii (ce qui est peu compréhensible si on veut avoir une grande lisibilité pour plus tard effectuer de la traçabilité).
 
 ## Historique
 

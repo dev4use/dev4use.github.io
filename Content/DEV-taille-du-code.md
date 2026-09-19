@@ -2,13 +2,15 @@
 
 Une application est composée de code source, si si je vous le dis. Et même en No Code (LOL). Le code source est donc un facteur à prendre en considération... qualité et quantité.
 
+![taille code](../Media/taille-code.jpg "taille du code source")
+
 ## L'influence de la taille du code
 
 Plus il y a de code, plus il y a de risques de défauts. Ce principe est tenu pour axiome (pas par moi, par la communauté logicielle).  
 
 Limiter la croissance du code, du moins mesurer et maîtriser l'accroissement du code source est donc une décision censée.   
 
-Mais il faut contrebalancer cette intention par **le principe de précaution**. Dès qu'une métrique est mise en place, sitôt comprise, la métrique peut être faussée lorsque les comportements humains changent en vue d'obtenir de meilleurs scores. 
+Mais il faut contrebalancer cette intention par **le principe de précaution**. Dès qu'une métrique est mise en place, sitôt comprise, la métrique peut être faussée. Les comportements humains peuvent changer en vue d'obtenir de meilleurs scores. 
 
 Pour que le opérateurs restent focalisés sur leur travail habituel, un focus sur d'autres facettes de la valeur produite par leur travail peut être effectué.
 
@@ -52,5 +54,5 @@ Vous allez peut-être me dire que vous ne savez pas mesurer la valeur (quand bie
 L'application utilise des librariries tierces.  
 Ces librariries tierces contiennent des lignes de code qui viennent s'ajouter aux premières.  
 Cette seconde taille est le plus souvent masquée et ignorée.   
-L'objectif est de mettre en évidence cette seconde taille. Cela permet de mesurer la taille "réelle" totale de l'application.     
+L'objectif idéal serait de mettre en évidence cette seconde taille. Cela permettrait de mesurer la taille "réelle" totale de l'application.     
 

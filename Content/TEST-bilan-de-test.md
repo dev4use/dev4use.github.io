@@ -2,6 +2,8 @@
 
 Si vous pensez au PV de recette, en tant que référentiel de haut niveau, l'ISTQB n'entre pas dans ce niveau de détail et ne cite pas un tel document.   
 
+![pv de recette](../Media/pv-recette-test.jpg "bilan des tests")
+
 ## Quel bilan de test ?
 
 Il existe plusieurs niveaux de bilan de tests :
@@ -15,7 +17,7 @@ Il existe plusieurs niveaux de bilan de tests :
 - sur un projet.  
 
 Difficile de savoir de quoi on parle.  
-Ce qui manque peut-être ajourd'hui, mais peut-être pas demain dans le référentiel ISTQB au tournant Agile(A) affirmé, c'est l'angle rétrospective.  
+Ce qui manque peut-être ajourd'hui, mais peut-être pas demain dans le référentiel ISTQB au tournant Agile[^1] affirmé, c'est l'angle rétrospective.  
 
 ## Contexte de la mission Marss
 
@@ -46,5 +48,4 @@ Analyse :
 - Pratique pour l'instant assumée au titre d'une démonstration de mise en oeuvre.
 
 
-*Notes :*    
-A/ L'ISTQB a pris comme prétexte le tournant Agile pour vulgariser et simplifier au point de vider certaines notions de leur substance ou de faire disparaître ces notions.  
+[^1]: L'ISTQB a pris comme prétexte le tournant Agile pour vulgariser et simplifier au point de vider certaines notions de leur substance ou de faire disparaître ces notions.  

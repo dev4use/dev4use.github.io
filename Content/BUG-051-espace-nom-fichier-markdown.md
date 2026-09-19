@@ -1,6 +1,6 @@
 # BUG-051 oubli d'espace en nom de fichier markdown
 
-En regardant attentivement les urls, il m'arrive de voir des pourcentages liés aux espaces/vides/blancs en nom de fichier.
+En regardant attentivement les urls, il m'arrive de voir des pourcentages liés aux espaces vides blancs en nom de fichier.
 
 ## Historique
 

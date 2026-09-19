@@ -50,9 +50,9 @@ Quelle place apportez-vous au test dans l'organisation ?
 
 Voila quelques exemples de questions à se poser et à poser si la politique de test n'existe pas ou n'a pas répondu à ces questions.
 
-## Entre extrémisme
+## Entre extrémisme...
 
-Bien-sûr vous aurez remarqué que les positions sont un peu tranchées entre les deux parties séparées du OU, et que c'est un peu une vision manichéenne du test qui se dégage(A).  
+Bien-sûr vous aurez remarqué que les positions sont un peu tranchées entre les deux parties séparées du OU, et que c'est un peu une vision manichéenne du test qui se dégage[^1].  
 Il semble y avoir le bien d'un côté et le mal de l'autre. La réalité terrain est bien plus subtile et les lignes ne sont pas si claires. 
 
 ## Et pragmatisme
@@ -76,5 +76,4 @@ Mais l'existence de tels documents permet justement d'identifier ces écarts.
 > On ne pourra pas dire qu'on ne vous l'avait pas dit et que vous n'êtiez pas au courant. Ici, on fait entorse à tel principe... Merci de ne pas réécrire l'histoire.
 
 
-*Notes :*   
-A/ [Le manifeste agile](https://agilemanifesto.org/iso/fr/manifesto.html) n'était pas manichéen en ajoutant un avertissement tel que : "Nous reconnaissons la valeur des seconds éléments, mais privilégions les premiers.".
+[^1]: [Le manifeste agile](https://agilemanifesto.org/iso/fr/manifesto.html) n'était pas manichéen en ajoutant un avertissement tel que : "Nous reconnaissons la valeur des seconds éléments, mais privilégions les premiers.".

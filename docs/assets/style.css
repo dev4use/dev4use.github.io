@@ -1004,6 +1004,7 @@
 }
 .cache {
   visibility: hidden
+  /* display: none; BUG remove separator */
 }
 .postCategorie li::before {
   content: " - ";
@@ -1087,4 +1088,7 @@ text-decoration: none;
   display: inline-block;
 }
 */
-
+img {
+  max-width: 100%;
+  height: auto;
+}

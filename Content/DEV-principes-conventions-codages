@@ -1,0 +1,44 @@
+# Principes et conventions de codage
+
+
+## KISS
+
+KISS (Keep It Simple Stupid !) dans sa version insultante est un rappel incisif au bon sens.   
+Rien de plus difficile cependant que la simplicité.  
+Garder l'évidence apparue au moment de la réflexion et la propager jusque dans la conception et l'implémentation.  
+
+Ici, cela rejoint le nommage et la documentation par le code et les tests.   
+Volonté d'expliciter par l'exemple.   
+
+## YAGNI
+
+- [Principe YAGNI de **Martin Fowler**](https://martinfowler.com/bliki/Yagni.html) (You Aren't Gonna Need It) : éviter le superflu qui ajoute une complexité pour satisfaire un besoin inutile au présent (meême si envisagé à l'avenir). Je renverrai à un autre article sur la mise à l'épreuve de la maintenabilité par la pratique.
+
+## DRY
+
+- DRY (Do not Repeat Yourself)
+- https://github.com/gmoral/Books/blob/master/The%20Pragmatic%20Programmer%20Your%20Journey%20to%20Mastery%2C%2020th%20Anniversary%20Edition%20by%20Andrew%20Hunt%20David%20Hurst%20Thomas.pdf
+Le principe 
+DRY
+ a été introduit en 1999 par Andy Hunt et Dave Thomas dans leur livre "The Pragmatic Programmer", conseil 15
+ 
+ Certitude d'oublier 
+ > It isn’t a question of whether you’ll remember: it’s a question of when you’ll forget.
+Dépasse le simple code
+> DRY is about the duplication of knowledge, of intent.
+S'applique par exemple aussi à la documentation, qui parfois ne fait que répéter ce qui est explicite en code et en nom de fonction (attention particulière à ne pas tomber dans ce travers sur Marss, à part réexpliciter le titre par précaution et répétition didactique)
+
+## CUPID
+
+[Référence de **Dan North**](https://dannorth.net/blog/cupid-for-joyful-coding/)
+
+- Composable : Composant : éléments potentiellement ajustables à plusieurs contextes et compatibles avec d'autres composants
+- Unix : Unique : chaque composant ne fait qu'ne chose et une seule (parfois, j'ai un peu de mélange des genres en dette technique)
+- Predictable : Prédictible : comportements attendus connus et testés
+- Idiomatic : Implicite : code compréhensible de lui même
+- Domain-based : Déclaratif : voir DDD, exprime et élicite la satisfaction du besoin métier
+
+
+## SOLID
+
+[Critique du pattern par **Dan North**](https://dannorth.net/blog/cupid-the-back-story/)
